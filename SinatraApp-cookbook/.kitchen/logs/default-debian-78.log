@@ -1,0 +1,950 @@
+I, [2016-02-04T11:33:05.115778 #3990]  INFO -- default-debian-78: -----> Cleaning up any prior instances of <default-debian-78>
+I, [2016-02-04T11:33:05.117765 #3990]  INFO -- default-debian-78: -----> Destroying <default-debian-78>...
+I, [2016-02-04T11:33:08.282757 #3990]  INFO -- default-debian-78: ==> default: Forcing shutdown of VM...
+I, [2016-02-04T11:33:09.660108 #3990]  INFO -- default-debian-78: ==> default: Destroying VM and associated drives...
+I, [2016-02-04T11:33:09.908510 #3990]  INFO -- default-debian-78: Vagrant instance <default-debian-78> destroyed.
+I, [2016-02-04T11:33:09.909411 #3990]  INFO -- default-debian-78: Finished destroying <default-debian-78> (0m4.79s).
+I, [2016-02-04T11:33:09.909690 #3990]  INFO -- default-debian-78: -----> Testing <default-debian-78>
+I, [2016-02-04T11:33:09.909816 #3990]  INFO -- default-debian-78: -----> Creating <default-debian-78>...
+I, [2016-02-04T11:33:12.107938 #3990]  INFO -- default-debian-78: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2016-02-04T11:33:12.352320 #3990]  INFO -- default-debian-78: ==> default: Importing base box 'opscode-debian-7.8'...
+I, [2016-02-04T11:33:18.577119 #3990]  INFO -- default-debian-78: [KProgress: 10%[KProgress: 30%[KProgress: 40%[KProgress: 60%[KProgress: 70%[KProgress: 80%[KProgress: 90%[K==> default: Matching MAC address for NAT networking...
+I, [2016-02-04T11:33:19.538841 #3990]  INFO -- default-debian-78: ==> default: Setting the name of the VM: kitchen-sinatra-default-debian-78_default_1454607199483_76450
+I, [2016-02-04T11:33:19.927998 #3990]  INFO -- default-debian-78: ==> default: Fixed port collision for 22 => 2222. Now on port 2200.
+I, [2016-02-04T11:33:20.028063 #3990]  INFO -- default-debian-78: ==> default: Clearing any previously set network interfaces...
+I, [2016-02-04T11:33:20.095368 #3990]  INFO -- default-debian-78: ==> default: Preparing network interfaces based on configuration...
+I, [2016-02-04T11:33:20.096153 #3990]  INFO -- default-debian-78:     default: Adapter 1: nat
+I, [2016-02-04T11:33:20.172583 #3990]  INFO -- default-debian-78: ==> default: Forwarding ports...
+I, [2016-02-04T11:33:20.268589 #3990]  INFO -- default-debian-78:     default: 22 => 2200 (adapter 1)
+I, [2016-02-04T11:33:20.437741 #3990]  INFO -- default-debian-78: ==> default: Booting VM...
+I, [2016-02-04T11:33:20.678280 #3990]  INFO -- default-debian-78: ==> default: Waiting for machine to boot. This may take a few minutes...
+I, [2016-02-04T11:33:21.248722 #3990]  INFO -- default-debian-78:     default: SSH address: 127.0.0.1:2200
+I, [2016-02-04T11:33:21.248906 #3990]  INFO -- default-debian-78:     default: SSH username: vagrant
+I, [2016-02-04T11:33:21.249082 #3990]  INFO -- default-debian-78:     default: SSH auth method: private key
+I, [2016-02-04T11:33:36.436229 #3990]  INFO -- default-debian-78:     default: Warning: Connection timeout. Retrying...
+I, [2016-02-04T11:33:36.830024 #3990]  INFO -- default-debian-78:     default: 
+I, [2016-02-04T11:33:36.830081 #3990]  INFO -- default-debian-78:     default: Vagrant insecure key detected. Vagrant will automatically replace
+I, [2016-02-04T11:33:36.830098 #3990]  INFO -- default-debian-78:     default: this with a newly generated keypair for better security.
+I, [2016-02-04T11:33:37.273897 #3990]  INFO -- default-debian-78:     default: 
+I, [2016-02-04T11:33:37.274136 #3990]  INFO -- default-debian-78:     default: Inserting generated public key within guest...
+I, [2016-02-04T11:33:37.342946 #3990]  INFO -- default-debian-78:     default: Removing insecure key from the guest if it's present...
+I, [2016-02-04T11:33:37.387886 #3990]  INFO -- default-debian-78:     default: Key inserted! Disconnecting and reconnecting using new SSH key...
+I, [2016-02-04T11:33:37.727927 #3990]  INFO -- default-debian-78: ==> default: Machine booted and ready!
+I, [2016-02-04T11:33:37.728282 #3990]  INFO -- default-debian-78: ==> default: Checking for guest additions in VM...
+I, [2016-02-04T11:33:37.775013 #3990]  INFO -- default-debian-78: ==> default: Setting hostname...
+I, [2016-02-04T11:33:40.301371 #3990]  INFO -- default-debian-78: ==> default: Machine not provisioned because `--no-provision` is specified.
+I, [2016-02-04T11:33:42.874428 #3990]  INFO -- default-debian-78: [SSH] Established
+I, [2016-02-04T11:33:42.874791 #3990]  INFO -- default-debian-78: Vagrant instance <default-debian-78> created.
+I, [2016-02-04T11:33:42.875740 #3990]  INFO -- default-debian-78: Finished creating <default-debian-78> (0m32.96s).
+I, [2016-02-04T11:33:42.875924 #3990]  INFO -- default-debian-78: -----> Converging <default-debian-78>...
+I, [2016-02-04T11:33:42.877499 #3990]  INFO -- default-debian-78: Preparing files for transfer
+I, [2016-02-04T11:33:42.877576 #3990]  INFO -- default-debian-78: Preparing dna.json
+I, [2016-02-04T11:33:42.877904 #3990]  INFO -- default-debian-78: Resolving cookbook dependencies with Berkshelf 4.0.1...
+I, [2016-02-04T11:33:43.828993 #3990]  INFO -- default-debian-78: Removing non-cookbook files before transfer
+I, [2016-02-04T11:33:43.847537 #3990]  INFO -- default-debian-78: Preparing solo.rb
+I, [2016-02-04T11:33:43.854050 #3990]  INFO -- default-debian-78: -----> Installing Chef Omnibus (install only if missing)
+I, [2016-02-04T11:33:43.854621 #3990]  INFO -- default-debian-78: Downloading https://www.chef.io/chef/install.sh to file /tmp/install.sh
+I, [2016-02-04T11:33:43.854674 #3990]  INFO -- default-debian-78: Trying wget...
+I, [2016-02-04T11:33:44.618183 #3990]  INFO -- default-debian-78: Download complete.
+I, [2016-02-04T11:33:44.626511 #3990]  INFO -- default-debian-78: Getting information for chef stable  for debian...
+I, [2016-02-04T11:33:44.626565 #3990]  INFO -- default-debian-78: downloading https://omnitruck-direct.chef.io/stable/chef/metadata?v=&p=debian&pv=6&m=x86_64
+I, [2016-02-04T11:33:44.626582 #3990]  INFO -- default-debian-78:   to file /tmp/install.sh.2855/metadata.txt
+I, [2016-02-04T11:33:44.626794 #3990]  INFO -- default-debian-78: trying wget...
+I, [2016-02-04T11:33:45.300866 #3990]  INFO -- default-debian-78: url	https://opscode-omnibus-packages.s3.amazonaws.com/debian/6/x86_64/chef_12.6.0-1_amd64.deb
+I, [2016-02-04T11:33:45.303893 #3990]  INFO -- default-debian-78: md5	4e630c4ca8c52a39f3fdbc2d60aa61b5
+I, [2016-02-04T11:33:45.304086 #3990]  INFO -- default-debian-78: sha256	172a968a9bc7fab4ecc6335f21f81cd23a2677fb86236511f313bbd60d4a0d18
+I, [2016-02-04T11:33:45.307227 #3990]  INFO -- default-debian-78: downloaded metadata file looks valid...
+I, [2016-02-04T11:33:45.316376 #3990]  INFO -- default-debian-78: downloading https://opscode-omnibus-packages.s3.amazonaws.com/debian/6/x86_64/chef_12.6.0-1_amd64.deb
+I, [2016-02-04T11:33:45.316468 #3990]  INFO -- default-debian-78:   to file /tmp/install.sh.2855/chef_12.6.0-1_amd64.deb
+I, [2016-02-04T11:33:45.317554 #3990]  INFO -- default-debian-78: trying wget...
+I, [2016-02-04T11:33:53.077748 #3990]  INFO -- default-debian-78: Comparing checksum with sha256sum...
+I, [2016-02-04T11:33:53.269494 #3990]  INFO -- default-debian-78: 
+I, [2016-02-04T11:33:53.269602 #3990]  INFO -- default-debian-78: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2016-02-04T11:33:53.269625 #3990]  INFO -- default-debian-78: 
+I, [2016-02-04T11:33:53.269640 #3990]  INFO -- default-debian-78: You are installing an omnibus package without a version pin.  If you are installing
+I, [2016-02-04T11:33:53.269654 #3990]  INFO -- default-debian-78: on production servers via an automated process this is DANGEROUS and you will
+I, [2016-02-04T11:33:53.269667 #3990]  INFO -- default-debian-78: be upgraded without warning on new releases, even to new major releases.
+I, [2016-02-04T11:33:53.269683 #3990]  INFO -- default-debian-78: Letting the version float is only appropriate in desktop, test, development or
+I, [2016-02-04T11:33:53.269709 #3990]  INFO -- default-debian-78: CI/CD environments.
+I, [2016-02-04T11:33:53.269762 #3990]  INFO -- default-debian-78: 
+I, [2016-02-04T11:33:53.269781 #3990]  INFO -- default-debian-78: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2016-02-04T11:33:53.269796 #3990]  INFO -- default-debian-78: 
+I, [2016-02-04T11:33:53.269826 #3990]  INFO -- default-debian-78: Installing chef 
+I, [2016-02-04T11:33:53.269841 #3990]  INFO -- default-debian-78: installing with dpkg...
+I, [2016-02-04T11:33:53.329768 #3990]  INFO -- default-debian-78: Selecting previously unselected package chef.
+I, [2016-02-04T11:33:53.412543 #3990]  INFO -- default-debian-78: (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 26390 files and directories currently installed.)
+I, [2016-02-04T11:33:53.434415 #3990]  INFO -- default-debian-78: Unpacking chef (from .../chef_12.6.0-1_amd64.deb) ...
+I, [2016-02-04T11:33:57.826798 #3990]  INFO -- default-debian-78: Setting up chef (12.6.0-1) ...
+I, [2016-02-04T11:33:57.879002 #3990]  INFO -- default-debian-78: Thank you for installing Chef!
+I, [2016-02-04T11:33:57.926160 #3990]  INFO -- default-debian-78: Transferring files to <default-debian-78>
+I, [2016-02-04T11:33:59.383217 #3990]  INFO -- default-debian-78: Starting Chef Client, version 12.6.0
+I, [2016-02-04T11:34:00.612888 #3990]  INFO -- default-debian-78: Compiling Cookbooks...
+I, [2016-02-04T11:34:00.747572 #3990]  INFO -- default-debian-78: Recipe: ohai::default
+I, [2016-02-04T11:34:00.753375 #3990]  INFO -- default-debian-78:   * remote_directory[/etc/chef/ohai_plugins for cookbook ohai] action create
+I, [2016-02-04T11:34:00.758305 #3990]  INFO -- default-debian-78:     - create new directory /etc/chef/ohai_plugins
+I, [2016-02-04T11:34:00.764322 #3990]  INFO -- default-debian-78:     - change mode from '' to '0755'
+I, [2016-02-04T11:34:00.765111 #3990]  INFO -- default-debian-78:   Recipe: <Dynamically Defined Resource>
+I, [2016-02-04T11:34:00.767213 #3990]  INFO -- default-debian-78:     * cookbook_file[/etc/chef/ohai_plugins/README] action create
+I, [2016-02-04T11:34:00.771973 #3990]  INFO -- default-debian-78:       - create new file /etc/chef/ohai_plugins/README
+I, [2016-02-04T11:34:00.774412 #3990]  INFO -- default-debian-78:       - update content in file /etc/chef/ohai_plugins/README from none to 775fa7
+I, [2016-02-04T11:34:00.776715 #3990]  INFO -- default-debian-78:       --- /etc/chef/ohai_plugins/README	2016-02-04 17:33:58.887498000 +0000
+I, [2016-02-04T11:34:00.777574 #3990]  INFO -- default-debian-78:       +++ /etc/chef/ohai_plugins/.README20160204-2937-5evcu4	2016-02-04 17:33:58.887498000 +0000
+I, [2016-02-04T11:34:00.778174 #3990]  INFO -- default-debian-78:       @@ -1 +1,2 @@
+I, [2016-02-04T11:34:00.780155 #3990]  INFO -- default-debian-78:       +This directory contains custom plugins for Ohai.
+I, [2016-02-04T11:34:00.781256 #3990]  INFO -- default-debian-78:       - change mode from '' to '0644'
+I, [2016-02-04T11:34:00.781658 #3990]  INFO -- default-debian-78:   
+I, [2016-02-04T11:34:00.782733 #3990]  INFO -- default-debian-78: Recipe: ohai::default
+I, [2016-02-04T11:34:00.784340 #3990]  INFO -- default-debian-78:   * ohai[custom_plugins] action reload[2016-02-04T17:33:58+00:00] WARN: Ohai::Config[:plugin_path] is set. Ohai::Config[:plugin_path] is deprecated and will be removed in future releases of ohai. Use ohai.plugin_path in your configuration file to configure :plugin_path for ohai.
+I, [2016-02-04T11:34:00.787606 #3990]  INFO -- default-debian-78: [2016-02-04T17:33:58+00:00] WARN: Ohai::Config[:plugin_path] is set. Ohai::Config[:plugin_path] is deprecated and will be removed in future releases of ohai. Use ohai.plugin_path in your configuration file to configure :plugin_path for ohai.
+I, [2016-02-04T11:34:02.033246 #3990]  INFO -- default-debian-78: 
+I, [2016-02-04T11:34:02.033775 #3990]  INFO -- default-debian-78:     - re-run ohai and merge results into node attributes
+I, [2016-02-04T11:34:02.047312 #3990]  INFO -- default-debian-78: [2016-02-04T17:34:00+00:00] WARN: Cloning resource attributes for service[nginx] from prior resource (CHEF-3694)
+I, [2016-02-04T11:34:02.047643 #3990]  INFO -- default-debian-78: [2016-02-04T17:34:00+00:00] WARN: Previous service[nginx]: /tmp/kitchen/cookbooks/nginx/recipes/package.rb:47:in `from_file'
+I, [2016-02-04T11:34:02.047961 #3990]  INFO -- default-debian-78: [2016-02-04T17:34:00+00:00] WARN: Current  service[nginx]: /tmp/kitchen/cookbooks/nginx/recipes/default.rb:24:in `from_file'
+I, [2016-02-04T11:34:02.061636 #3990]  INFO -- default-debian-78: [2016-02-04T17:34:00+00:00] WARN: Cloning resource attributes for service[nginx] from prior resource (CHEF-3694)
+I, [2016-02-04T11:34:02.061892 #3990]  INFO -- default-debian-78: [2016-02-04T17:34:00+00:00] WARN: Previous service[nginx]: /tmp/kitchen/cookbooks/nginx/recipes/default.rb:24:in `from_file'
+I, [2016-02-04T11:34:02.062250 #3990]  INFO -- default-debian-78: [2016-02-04T17:34:00+00:00] WARN: Current  service[nginx]: /tmp/kitchen/cookbooks/sinatra/recipes/configure.rb:87:in `from_file'
+I, [2016-02-04T11:34:02.063086 #3990]  INFO -- default-debian-78:   Converging 53 resources
+I, [2016-02-04T11:34:02.064414 #3990]  INFO -- default-debian-78: Recipe: apt::default
+I, [2016-02-04T11:34:02.065377 #3990]  INFO -- default-debian-78:   * file[/var/lib/apt/periodic/update-success-stamp] action nothing (skipped due to action :nothing)
+I, [2016-02-04T11:34:02.070275 #3990]  INFO -- default-debian-78:   * directory[/etc/apt/apt.conf.d] action create (up to date)
+I, [2016-02-04T11:34:02.080228 #3990]  INFO -- default-debian-78:   * cookbook_file[/etc/apt/apt.conf.d/15update-stamp] action create
+I, [2016-02-04T11:34:02.081623 #3990]  INFO -- default-debian-78:     - create new file /etc/apt/apt.conf.d/15update-stamp
+I, [2016-02-04T11:34:02.082123 #3990]  INFO -- default-debian-78:     - update content in file /etc/apt/apt.conf.d/15update-stamp from none to 174cdb
+I, [2016-02-04T11:34:02.082911 #3990]  INFO -- default-debian-78:     --- /etc/apt/apt.conf.d/15update-stamp	2016-02-04 17:34:00.200154000 +0000
+I, [2016-02-04T11:34:02.085520 #3990]  INFO -- default-debian-78:     +++ /etc/apt/apt.conf.d/.15update-stamp20160204-2937-2wila5	2016-02-04 17:34:00.200154000 +0000
+I, [2016-02-04T11:34:02.085833 #3990]  INFO -- default-debian-78:     @@ -1 +1,2 @@
+I, [2016-02-04T11:34:02.086021 #3990]  INFO -- default-debian-78:     +APT::Update::Post-Invoke-Success {"touch /var/lib/apt/periodic/update-success-stamp 2>/dev/null || true";};
+I, [2016-02-04T11:34:02.086470 #3990]  INFO -- default-debian-78:   * execute[apt-get update] action nothing (skipped due to action :nothing)
+I, [2016-02-04T11:34:02.087584 #3990]  INFO -- default-debian-78:   * execute[apt-get autoremove] action nothing (skipped due to action :nothing)
+I, [2016-02-04T11:34:02.088654 #3990]  INFO -- default-debian-78:   * execute[apt-get autoclean] action nothing (skipped due to action :nothing)
+I, [2016-02-04T11:34:11.854516 #3990]  INFO -- default-debian-78:   * execute[apt-get-update-periodic] action run
+I, [2016-02-04T11:34:11.854562 #3990]  INFO -- default-debian-78:     - execute apt-get update
+I, [2016-02-04T11:34:11.859295 #3990]  INFO -- default-debian-78: 
+I, [2016-02-04T11:34:11.860216 #3990]  INFO -- default-debian-78:     - update utime on file /var/lib/apt/periodic/update-success-stamp
+I, [2016-02-04T11:34:11.862140 #3990]  INFO -- default-debian-78:   * directory[/var/cache/local] action create
+I, [2016-02-04T11:34:11.863701 #3990]  INFO -- default-debian-78:     - create new directory /var/cache/local
+I, [2016-02-04T11:34:11.864140 #3990]  INFO -- default-debian-78:     - change mode from '' to '0755'
+I, [2016-02-04T11:34:11.866052 #3990]  INFO -- default-debian-78:     - change owner from '' to 'root'
+I, [2016-02-04T11:34:11.866104 #3990]  INFO -- default-debian-78:     - change group from '' to 'root'
+I, [2016-02-04T11:34:11.867136 #3990]  INFO -- default-debian-78: 
+I, [2016-02-04T11:34:11.868818 #3990]  INFO -- default-debian-78:     - create new directory /var/cache/local/preseeding
+I, [2016-02-04T11:34:11.869272 #3990]  INFO -- default-debian-78:     - change mode from '' to '0755'
+I, [2016-02-04T11:34:11.869674 #3990]  INFO -- default-debian-78:     - change owner from '' to 'root'
+I, [2016-02-04T11:34:11.870553 #3990]  INFO -- default-debian-78:     - change group from '' to 'root'
+I, [2016-02-04T11:34:11.874688 #3990]  INFO -- default-debian-78:   * template[/etc/apt/apt.conf.d/10recommends] action create
+I, [2016-02-04T11:34:11.876802 #3990]  INFO -- default-debian-78:     - create new file /etc/apt/apt.conf.d/10recommends
+I, [2016-02-04T11:34:11.877238 #3990]  INFO -- default-debian-78:     - update content in file /etc/apt/apt.conf.d/10recommends from none to f41e1d
+I, [2016-02-04T11:34:11.879560 #3990]  INFO -- default-debian-78:     --- /etc/apt/apt.conf.d/10recommends	2016-02-04 17:34:10.001052000 +0000
+I, [2016-02-04T11:34:11.879621 #3990]  INFO -- default-debian-78:     +++ /etc/apt/apt.conf.d/.10recommends20160204-2937-esb12u	2016-02-04 17:34:10.001052000 +0000
+I, [2016-02-04T11:34:11.879698 #3990]  INFO -- default-debian-78:     @@ -1 +1,4 @@
+I, [2016-02-04T11:34:11.879723 #3990]  INFO -- default-debian-78:     +# Managed by Chef
+I, [2016-02-04T11:34:11.879741 #3990]  INFO -- default-debian-78:     +APT::Install-Recommends "1";
+I, [2016-02-04T11:34:11.885966 #3990]  INFO -- default-debian-78: 
+I, [2016-02-04T11:34:11.886317 #3990]  INFO -- default-debian-78:     - change mode from '' to '0644'
+I, [2016-02-04T11:34:11.886596 #3990]  INFO -- default-debian-78:     - change owner from '' to 'root'
+I, [2016-02-04T11:34:11.886780 #3990]  INFO -- default-debian-78:     - change group from '' to 'root'
+I, [2016-02-04T11:34:13.581009 #3990]  INFO -- default-debian-78:   * apt_package[apt-transport-https] action install
+I, [2016-02-04T11:34:13.581104 #3990]  INFO -- default-debian-78:     - install version 0.9.7.9+deb7u7 of package apt-transport-https
+I, [2016-02-04T11:34:13.581150 #3990]  INFO -- default-debian-78: Recipe: sinatra::default
+I, [2016-02-04T11:34:45.368354 #3990]  INFO -- default-debian-78: 
+I, [2016-02-04T11:34:45.368408 #3990]  INFO -- default-debian-78:     - install version 1:1.9.3 of package ruby-dev
+I, [2016-02-04T11:34:45.368427 #3990]  INFO -- default-debian-78: Recipe: nginx::ohai_plugin
+I, [2016-02-04T11:34:45.368444 #3990]  INFO -- default-debian-78:   * ohai[reload_nginx] action nothing (skipped due to action :nothing)
+I, [2016-02-04T11:34:45.401138 #3990]  INFO -- default-debian-78: 
+I, [2016-02-04T11:34:45.403623 #3990]  INFO -- default-debian-78:     - create new file /etc/chef/ohai_plugins/nginx.rb
+I, [2016-02-04T11:34:45.404620 #3990]  INFO -- default-debian-78:     - update content in file /etc/chef/ohai_plugins/nginx.rb from none to 9f7e82
+I, [2016-02-04T11:34:45.405677 #3990]  INFO -- default-debian-78:     --- /etc/chef/ohai_plugins/nginx.rb	2016-02-04 17:34:43.541813999 +0000
+I, [2016-02-04T11:34:45.406763 #3990]  INFO -- default-debian-78:     +++ /etc/chef/ohai_plugins/.nginx.rb20160204-2937-119ppqu	2016-02-04 17:34:43.533810001 +0000
+I, [2016-02-04T11:34:45.407069 #3990]  INFO -- default-debian-78:     @@ -1 +1,67 @@
+I, [2016-02-04T11:34:45.407725 #3990]  INFO -- default-debian-78:     +#
+I, [2016-02-04T11:34:45.408076 #3990]  INFO -- default-debian-78:     +# Author:: Jamie Winsor (<jamie@vialstudios.com>)
+I, [2016-02-04T11:34:45.409937 #3990]  INFO -- default-debian-78:     +#
+I, [2016-02-04T11:34:45.410522 #3990]  INFO -- default-debian-78:     +# Copyright 2012, Riot Games
+I, [2016-02-04T11:34:45.410907 #3990]  INFO -- default-debian-78:     +#
+I, [2016-02-04T11:34:45.411281 #3990]  INFO -- default-debian-78:     +# Licensed under the Apache License, Version 2.0 (the "License");
+I, [2016-02-04T11:34:45.411460 #3990]  INFO -- default-debian-78:     +# you may not use this file except in compliance with the License.
+I, [2016-02-04T11:34:45.411634 #3990]  INFO -- default-debian-78:     +# You may obtain a copy of the License at
+I, [2016-02-04T11:34:45.411845 #3990]  INFO -- default-debian-78:     +#
+I, [2016-02-04T11:34:45.412021 #3990]  INFO -- default-debian-78:     +#     http://www.apache.org/licenses/LICENSE-2.0
+I, [2016-02-04T11:34:45.412271 #3990]  INFO -- default-debian-78:     +#
+I, [2016-02-04T11:34:45.412536 #3990]  INFO -- default-debian-78:     +# Unless required by applicable law or agreed to in writing, software
+I, [2016-02-04T11:34:45.412786 #3990]  INFO -- default-debian-78:     +# distributed under the License is distributed on an "AS IS" BASIS,
+I, [2016-02-04T11:34:45.413148 #3990]  INFO -- default-debian-78:     +# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+I, [2016-02-04T11:34:45.413420 #3990]  INFO -- default-debian-78:     +# See the License for the specific language governing permissions and
+I, [2016-02-04T11:34:45.413667 #3990]  INFO -- default-debian-78:     +# limitations under the License.
+I, [2016-02-04T11:34:45.413890 #3990]  INFO -- default-debian-78:     +#
+I, [2016-02-04T11:34:45.414110 #3990]  INFO -- default-debian-78:     +
+I, [2016-02-04T11:34:45.415117 #3990]  INFO -- default-debian-78:     +provides "nginx"
+I, [2016-02-04T11:34:45.415178 #3990]  INFO -- default-debian-78:     +provides "nginx/version"
+I, [2016-02-04T11:34:45.415211 #3990]  INFO -- default-debian-78:     +provides "nginx/configure_arguments"
+I, [2016-02-04T11:34:45.415237 #3990]  INFO -- default-debian-78:     +provides "nginx/prefix"
+I, [2016-02-04T11:34:45.415258 #3990]  INFO -- default-debian-78:     +provides "nginx/conf_path"
+I, [2016-02-04T11:34:45.415283 #3990]  INFO -- default-debian-78:     +
+I, [2016-02-04T11:34:45.415307 #3990]  INFO -- default-debian-78:     +def parse_flags(flags)
+I, [2016-02-04T11:34:45.415326 #3990]  INFO -- default-debian-78:     +  prefix = nil
+I, [2016-02-04T11:34:45.415344 #3990]  INFO -- default-debian-78:     +  conf_path = nil
+I, [2016-02-04T11:34:45.415364 #3990]  INFO -- default-debian-78:     +
+I, [2016-02-04T11:34:45.415385 #3990]  INFO -- default-debian-78:     +  flags.each do |flag|
+I, [2016-02-04T11:34:45.415407 #3990]  INFO -- default-debian-78:     +    case flag
+I, [2016-02-04T11:34:45.415429 #3990]  INFO -- default-debian-78:     +    when /^--prefix=(.+)$/
+I, [2016-02-04T11:34:45.415449 #3990]  INFO -- default-debian-78:     +      prefix = $1
+I, [2016-02-04T11:34:45.415472 #3990]  INFO -- default-debian-78:     +    when /^--conf-path=(.+)$/
+I, [2016-02-04T11:34:45.415497 #3990]  INFO -- default-debian-78:     +      conf_path = $1
+I, [2016-02-04T11:34:45.415519 #3990]  INFO -- default-debian-78:     +    end
+I, [2016-02-04T11:34:45.415542 #3990]  INFO -- default-debian-78:     +  end
+I, [2016-02-04T11:34:45.415563 #3990]  INFO -- default-debian-78:     +
+I, [2016-02-04T11:34:45.415589 #3990]  INFO -- default-debian-78:     +  [ prefix, conf_path ]
+I, [2016-02-04T11:34:45.415610 #3990]  INFO -- default-debian-78:     +end
+I, [2016-02-04T11:34:45.415631 #3990]  INFO -- default-debian-78:     +
+I, [2016-02-04T11:34:45.415685 #3990]  INFO -- default-debian-78:     +nginx Mash.new unless nginx
+I, [2016-02-04T11:34:45.415707 #3990]  INFO -- default-debian-78:     +nginx[:version]             = nil unless nginx[:version]
+I, [2016-02-04T11:34:45.415729 #3990]  INFO -- default-debian-78:     +nginx[:configure_arguments] = Array.new unless nginx[:configure_arguments]
+I, [2016-02-04T11:34:45.415761 #3990]  INFO -- default-debian-78:     +nginx[:prefix]              = nil unless nginx[:prefix]
+I, [2016-02-04T11:34:45.415783 #3990]  INFO -- default-debian-78:     +nginx[:conf_path]           = nil unless nginx[:conf_path]
+I, [2016-02-04T11:34:45.415807 #3990]  INFO -- default-debian-78:     +
+I, [2016-02-04T11:34:45.415831 #3990]  INFO -- default-debian-78:     +status, stdout, stderr = run_command(:no_status_check => true, :command => "/usr/sbin/nginx -V")
+I, [2016-02-04T11:34:45.415860 #3990]  INFO -- default-debian-78:     +
+I, [2016-02-04T11:34:45.415882 #3990]  INFO -- default-debian-78:     +if status == 0
+I, [2016-02-04T11:34:45.415904 #3990]  INFO -- default-debian-78:     +  stderr.split("\n").each do |line|
+I, [2016-02-04T11:34:45.415942 #3990]  INFO -- default-debian-78:     +    case line
+I, [2016-02-04T11:34:45.415964 #3990]  INFO -- default-debian-78:     +    when /^configure arguments:(.+)/
+I, [2016-02-04T11:34:45.415988 #3990]  INFO -- default-debian-78:     +      # This could be better: I'm splitting on configure arguments which removes them and also
+I, [2016-02-04T11:34:45.416030 #3990]  INFO -- default-debian-78:     +      # adds a blank string at index 0 of the array. This is why we drop index 0 and map to
+I, [2016-02-04T11:34:45.416056 #3990]  INFO -- default-debian-78:     +      # add the '--' prefix back to the configure argument.
+I, [2016-02-04T11:34:45.416162 #3990]  INFO -- default-debian-78:     +      nginx[:configure_arguments] = $1.split(/\s--/).drop(1).map { |ca| "--#{ca}" }
+I, [2016-02-04T11:34:45.416194 #3990]  INFO -- default-debian-78:     +
+I, [2016-02-04T11:34:45.416218 #3990]  INFO -- default-debian-78:     +      prefix, conf_path = parse_flags(nginx[:configure_arguments])
+I, [2016-02-04T11:34:45.417517 #3990]  INFO -- default-debian-78: 
+I, [2016-02-04T11:34:45.417593 #3990]  INFO -- default-debian-78:     +      nginx[:prefix] = prefix
+I, [2016-02-04T11:34:45.417632 #3990]  INFO -- default-debian-78:     +      nginx[:conf_path] = conf_path
+I, [2016-02-04T11:34:45.417660 #3990]  INFO -- default-debian-78:     +    when /^nginx version: nginx\/(\d+\.\d+\.\d+)/
+I, [2016-02-04T11:34:45.417685 #3990]  INFO -- default-debian-78:     +      nginx[:version] = $1
+I, [2016-02-04T11:34:45.417708 #3990]  INFO -- default-debian-78:     +    end
+I, [2016-02-04T11:34:45.417731 #3990]  INFO -- default-debian-78:     +  end
+I, [2016-02-04T11:34:45.418946 #3990]  INFO -- default-debian-78:     +end
+I, [2016-02-04T11:34:45.419670 #3990]  INFO -- default-debian-78:     - change mode from '' to '0755'
+I, [2016-02-04T11:34:45.420291 #3990]  INFO -- default-debian-78:     - change owner from '' to 'root'
+I, [2016-02-04T11:34:45.421445 #3990]  INFO -- default-debian-78:     - change group from '' to 'root'
+I, [2016-02-04T11:34:45.423007 #3990]  INFO -- default-debian-78:   * ohai[reload_nginx] action reload[2016-02-04T17:34:43+00:00] WARN: Ohai::Config[:plugin_path] is set. Ohai::Config[:plugin_path] is deprecated and will be removed in future releases of ohai. Use ohai.plugin_path in your configuration file to configure :plugin_path for ohai.
+I, [2016-02-04T11:34:45.425032 #3990]  INFO -- default-debian-78: [2016-02-04T17:34:43+00:00] WARN: Ohai::Config[:plugin_path] is set. Ohai::Config[:plugin_path] is deprecated and will be removed in future releases of ohai. Use ohai.plugin_path in your configuration file to configure :plugin_path for ohai.
+I, [2016-02-04T11:34:45.426600 #3990]  INFO -- default-debian-78: [2016-02-04T17:34:43+00:00] WARN: [DEPRECATION] Plugin at /etc/chef/ohai_plugins/nginx.rb is a version 6 plugin. Version 6 plugins will not be supported in future releases of Ohai. Please upgrade your plugin to version 7 plugin syntax. For more information visit here: docs.chef.io/ohai_custom.html
+I, [2016-02-04T11:34:45.488000 #3990]  INFO -- default-debian-78: 
+I, [2016-02-04T11:34:45.488531 #3990]  INFO -- default-debian-78:     - re-run ohai and merge results into node attributes
+I, [2016-02-04T11:34:45.489408 #3990]  INFO -- default-debian-78: Recipe: ohai::default
+I, [2016-02-04T11:34:45.490728 #3990]  INFO -- default-debian-78:   * remote_directory[/etc/chef/ohai_plugins for cookbook ohai] action nothing (skipped due to action :nothing)
+I, [2016-02-04T11:34:45.492022 #3990]  INFO -- default-debian-78:   * ohai[custom_plugins] action nothing (skipped due to action :nothing)
+I, [2016-02-04T11:34:45.492813 #3990]  INFO -- default-debian-78: Recipe: nginx::package
+I, [2016-02-04T11:34:48.114841 #3990]  INFO -- default-debian-78:   * apt_package[nginx] action install
+I, [2016-02-04T11:34:48.114889 #3990]  INFO -- default-debian-78:     - install version 1.2.1-2.2+wheezy3 of package nginx
+I, [2016-02-04T11:34:48.114908 #3990]  INFO -- default-debian-78: Recipe: nginx::ohai_plugin
+I, [2016-02-04T11:34:48.114940 #3990]  INFO -- default-debian-78:   * ohai[reload_nginx] action reload[2016-02-04T17:34:46+00:00] WARN: Ohai::Config[:plugin_path] is set. Ohai::Config[:plugin_path] is deprecated and will be removed in future releases of ohai. Use ohai.plugin_path in your configuration file to configure :plugin_path for ohai.
+I, [2016-02-04T11:34:48.114956 #3990]  INFO -- default-debian-78: [2016-02-04T17:34:46+00:00] WARN: Ohai::Config[:plugin_path] is set. Ohai::Config[:plugin_path] is deprecated and will be removed in future releases of ohai. Use ohai.plugin_path in your configuration file to configure :plugin_path for ohai.
+I, [2016-02-04T11:34:48.114970 #3990]  INFO -- default-debian-78: [2016-02-04T17:34:46+00:00] WARN: [DEPRECATION] Plugin at /etc/chef/ohai_plugins/nginx.rb is a version 6 plugin. Version 6 plugins will not be supported in future releases of Ohai. Please upgrade your plugin to version 7 plugin syntax. For more information visit here: docs.chef.io/ohai_custom.html
+I, [2016-02-04T11:34:48.209411 #3990]  INFO -- default-debian-78: 
+I, [2016-02-04T11:34:48.210062 #3990]  INFO -- default-debian-78:     - re-run ohai and merge results into node attributes
+I, [2016-02-04T11:34:48.210520 #3990]  INFO -- default-debian-78: Recipe: nginx::package
+I, [2016-02-04T11:34:48.262272 #3990]  INFO -- default-debian-78:   * service[nginx] action enable (up to date)
+I, [2016-02-04T11:34:48.263347 #3990]  INFO -- default-debian-78: Recipe: nginx::commons_dir
+I, [2016-02-04T11:34:48.268258 #3990]  INFO -- default-debian-78:   * directory[/etc/nginx] action create (up to date)
+I, [2016-02-04T11:34:48.272845 #3990]  INFO -- default-debian-78:   * directory[/var/log/nginx] action create
+I, [2016-02-04T11:34:48.273193 #3990]  INFO -- default-debian-78:     - change mode from '0755' to '0750'
+I, [2016-02-04T11:34:48.274149 #3990]  INFO -- default-debian-78:     - change owner from 'root' to 'www-data'
+I, [2016-02-04T11:34:48.277388 #3990]  INFO -- default-debian-78:   * directory[/var/run] action create (up to date)
+I, [2016-02-04T11:34:48.280372 #3990]  INFO -- default-debian-78:   * directory[/etc/nginx/sites-available] action create (up to date)
+I, [2016-02-04T11:34:48.283317 #3990]  INFO -- default-debian-78:   * directory[/etc/nginx/sites-enabled] action create (up to date)
+I, [2016-02-04T11:34:48.286377 #3990]  INFO -- default-debian-78:   * directory[/etc/nginx/conf.d] action create (up to date)
+I, [2016-02-04T11:34:48.286811 #3990]  INFO -- default-debian-78: Recipe: nginx::commons_script
+I, [2016-02-04T11:34:48.291588 #3990]  INFO -- default-debian-78:   * template[/usr/sbin/nxensite] action create
+I, [2016-02-04T11:34:48.293703 #3990]  INFO -- default-debian-78:     - create new file /usr/sbin/nxensite
+I, [2016-02-04T11:34:48.294251 #3990]  INFO -- default-debian-78:     - update content in file /usr/sbin/nxensite from none to fa46fb
+I, [2016-02-04T11:34:48.297236 #3990]  INFO -- default-debian-78:     --- /usr/sbin/nxensite	2016-02-04 17:34:46.435260001 +0000
+I, [2016-02-04T11:34:48.297283 #3990]  INFO -- default-debian-78:     +++ /usr/sbin/.nxensite20160204-2937-1mny7f0	2016-02-04 17:34:46.435260001 +0000
+I, [2016-02-04T11:34:48.297323 #3990]  INFO -- default-debian-78:     @@ -1 +1,39 @@
+I, [2016-02-04T11:34:48.297336 #3990]  INFO -- default-debian-78:     +#!/bin/sh -e
+I, [2016-02-04T11:34:48.297348 #3990]  INFO -- default-debian-78:     +
+I, [2016-02-04T11:34:48.297360 #3990]  INFO -- default-debian-78:     +SYSCONFDIR='/etc/nginx'
+I, [2016-02-04T11:34:48.297371 #3990]  INFO -- default-debian-78:     +
+I, [2016-02-04T11:34:48.297383 #3990]  INFO -- default-debian-78:     +if [ -z $1 ]; then
+I, [2016-02-04T11:34:48.297396 #3990]  INFO -- default-debian-78:     +        echo "Which site would you like to enable?"
+I, [2016-02-04T11:34:48.297408 #3990]  INFO -- default-debian-78:     +        echo -n "Your choices are: "
+I, [2016-02-04T11:34:48.297420 #3990]  INFO -- default-debian-78:     +        ls $SYSCONFDIR/sites-available/* | \
+I, [2016-02-04T11:34:48.297432 #3990]  INFO -- default-debian-78:     +        sed -e "s,$SYSCONFDIR/sites-available/,,g" | xargs echo
+I, [2016-02-04T11:34:48.297459 #3990]  INFO -- default-debian-78:     +        echo -n "Site name? "
+I, [2016-02-04T11:34:48.297472 #3990]  INFO -- default-debian-78:     +        read SITENAME
+I, [2016-02-04T11:34:48.297483 #3990]  INFO -- default-debian-78:     +else
+I, [2016-02-04T11:34:48.297495 #3990]  INFO -- default-debian-78:     +        SITENAME=$1
+I, [2016-02-04T11:34:48.297506 #3990]  INFO -- default-debian-78:     +fi
+I, [2016-02-04T11:34:48.297518 #3990]  INFO -- default-debian-78:     +
+I, [2016-02-04T11:34:48.297529 #3990]  INFO -- default-debian-78:     +if [ $SITENAME = "default" ]; then
+I, [2016-02-04T11:34:48.297541 #3990]  INFO -- default-debian-78:     +        PRIORITY="000"
+I, [2016-02-04T11:34:48.297552 #3990]  INFO -- default-debian-78:     +fi
+I, [2016-02-04T11:34:48.297563 #3990]  INFO -- default-debian-78:     +
+I, [2016-02-04T11:34:48.297574 #3990]  INFO -- default-debian-78:     +if [ -e $SYSCONFDIR/sites-enabled/$SITENAME -o \
+I, [2016-02-04T11:34:48.297605 #3990]  INFO -- default-debian-78:     +     -e $SYSCONFDIR/sites-enabled/"$PRIORITY"-"$SITENAME" ]; then
+I, [2016-02-04T11:34:48.297618 #3990]  INFO -- default-debian-78:     +        echo "This site is already enabled!"
+I, [2016-02-04T11:34:48.297630 #3990]  INFO -- default-debian-78:     +        exit 0
+I, [2016-02-04T11:34:48.297642 #3990]  INFO -- default-debian-78:     +fi
+I, [2016-02-04T11:34:48.297653 #3990]  INFO -- default-debian-78:     +
+I, [2016-02-04T11:34:48.297665 #3990]  INFO -- default-debian-78:     +if ! [ -e $SYSCONFDIR/sites-available/$SITENAME ]; then
+I, [2016-02-04T11:34:48.297677 #3990]  INFO -- default-debian-78:     +        echo "This site does not exist!"
+I, [2016-02-04T11:34:48.297689 #3990]  INFO -- default-debian-78:     +        exit 1
+I, [2016-02-04T11:34:48.297700 #3990]  INFO -- default-debian-78:     +fi
+I, [2016-02-04T11:34:48.297711 #3990]  INFO -- default-debian-78:     +
+I, [2016-02-04T11:34:48.297723 #3990]  INFO -- default-debian-78:     +if [ $SITENAME = "default" ]; then
+I, [2016-02-04T11:34:48.297734 #3990]  INFO -- default-debian-78:     +        ln -sf $SYSCONFDIR/sites-available/$SITENAME \
+I, [2016-02-04T11:34:48.297747 #3990]  INFO -- default-debian-78:     +               $SYSCONFDIR/sites-enabled/"$PRIORITY"-"$SITENAME"
+I, [2016-02-04T11:34:48.297758 #3990]  INFO -- default-debian-78:     +else
+I, [2016-02-04T11:34:48.297770 #3990]  INFO -- default-debian-78:     +        ln -sf $SYSCONFDIR/sites-available/$SITENAME $SYSCONFDIR/sites-enabled/$SITENAME
+I, [2016-02-04T11:34:48.297782 #3990]  INFO -- default-debian-78:     +fi
+I, [2016-02-04T11:34:48.297793 #3990]  INFO -- default-debian-78:     +
+I, [2016-02-04T11:34:48.298906 #3990]  INFO -- default-debian-78: 
+I, [2016-02-04T11:34:48.299703 #3990]  INFO -- default-debian-78:     - change mode from '' to '0755'
+I, [2016-02-04T11:34:48.300310 #3990]  INFO -- default-debian-78:     - change owner from '' to 'root'
+I, [2016-02-04T11:34:48.301066 #3990]  INFO -- default-debian-78:     - change group from '' to 'root'
+I, [2016-02-04T11:34:48.304678 #3990]  INFO -- default-debian-78:   * template[/usr/sbin/nxdissite] action create
+I, [2016-02-04T11:34:48.306349 #3990]  INFO -- default-debian-78:     - create new file /usr/sbin/nxdissite
+I, [2016-02-04T11:34:48.306826 #3990]  INFO -- default-debian-78:     - update content in file /usr/sbin/nxdissite from none to cc16ec
+I, [2016-02-04T11:34:48.307459 #3990]  INFO -- default-debian-78:     --- /usr/sbin/nxdissite	2016-02-04 17:34:46.447266001 +0000
+I, [2016-02-04T11:34:48.308390 #3990]  INFO -- default-debian-78:     +++ /usr/sbin/.nxdissite20160204-2937-138jxxd	2016-02-04 17:34:46.447266001 +0000
+I, [2016-02-04T11:34:48.309670 #3990]  INFO -- default-debian-78:     @@ -1 +1,30 @@
+I, [2016-02-04T11:34:48.310471 #3990]  INFO -- default-debian-78:     +#!/bin/sh -e
+I, [2016-02-04T11:34:48.310878 #3990]  INFO -- default-debian-78:     +
+I, [2016-02-04T11:34:48.311619 #3990]  INFO -- default-debian-78:     +SYSCONFDIR='/etc/nginx'
+I, [2016-02-04T11:34:48.312231 #3990]  INFO -- default-debian-78:     +
+I, [2016-02-04T11:34:48.313029 #3990]  INFO -- default-debian-78:     +if [ -z $1 ]; then
+I, [2016-02-04T11:34:48.313781 #3990]  INFO -- default-debian-78:     +        echo "Which site would you like to disable?"
+I, [2016-02-04T11:34:48.313819 #3990]  INFO -- default-debian-78:     +        echo -n "Your choices are: "
+I, [2016-02-04T11:34:48.313860 #3990]  INFO -- default-debian-78:     +        ls $SYSCONFDIR/sites-enabled/* | \
+I, [2016-02-04T11:34:48.313877 #3990]  INFO -- default-debian-78:     +        sed -e "s,$SYSCONFDIR/sites-enabled/,,g" | xargs echo
+I, [2016-02-04T11:34:48.314555 #3990]  INFO -- default-debian-78:     +        echo -n "Site name? "
+I, [2016-02-04T11:34:48.314883 #3990]  INFO -- default-debian-78:     +        read SITENAME
+I, [2016-02-04T11:34:48.315070 #3990]  INFO -- default-debian-78:     +else
+I, [2016-02-04T11:34:48.315337 #3990]  INFO -- default-debian-78:     +        SITENAME=$1
+I, [2016-02-04T11:34:48.315376 #3990]  INFO -- default-debian-78:     +fi
+I, [2016-02-04T11:34:48.315605 #3990]  INFO -- default-debian-78:     +
+I, [2016-02-04T11:34:48.315848 #3990]  INFO -- default-debian-78: +if [ $SITENAME = "default" ]; then
+I, [2016-02-04T11:34:48.315877 #3990]  INFO -- default-debian-78:     +        PRIORITY="000"
+I, [2016-02-04T11:34:48.316267 #3990]  INFO -- default-debian-78: +fi
+I, [2016-02-04T11:34:48.316300 #3990]  INFO -- default-debian-78:     +
+I, [2016-02-04T11:34:48.316317 #3990]  INFO -- default-debian-78:     +if ! [ -e $SYSCONFDIR/sites-enabled/$SITENAME -o \
+I, [2016-02-04T11:34:48.316332 #3990]  INFO -- default-debian-78:     +       -e $SYSCONFDIR/sites-enabled/"$PRIORITY"-"$SITENAME" ]; then
+I, [2016-02-04T11:34:48.316347 #3990]  INFO -- default-debian-78:     +        echo "This site is already disabled, or does not exist!"
+I, [2016-02-04T11:34:48.316363 #3990]  INFO -- default-debian-78:     +        exit 1
+I, [2016-02-04T11:34:48.316421 #3990]  INFO -- default-debian-78:     +fi
+I, [2016-02-04T11:34:48.316435 #3990]  INFO -- default-debian-78:     +
+I, [2016-02-04T11:34:48.316669 #3990]  INFO -- default-debian-78: +if ! rm $SYSCONFDIR/sites-enabled/$SITENAME 2>/dev/null; then
+I, [2016-02-04T11:34:48.316706 #3990]  INFO -- default-debian-78:     +        rm -f $SYSCONFDIR/sites-enabled/"$PRIORITY"-"$SITENAME"
+I, [2016-02-04T11:34:48.316722 #3990]  INFO -- default-debian-78:     +fi
+I, [2016-02-04T11:34:48.317956 #3990]  INFO -- default-debian-78:     +echo "Site $SITENAME disabled; reload nginx to disable."
+I, [2016-02-04T11:34:48.318388 #3990]  INFO -- default-debian-78:     - change mode from '' to '0755'
+I, [2016-02-04T11:34:48.318787 #3990]  INFO -- default-debian-78:     - change owner from '' to 'root'
+I, [2016-02-04T11:34:48.319602 #3990]  INFO -- default-debian-78:     - change group from '' to 'root'
+I, [2016-02-04T11:34:48.319993 #3990]  INFO -- default-debian-78: Recipe: nginx::commons_conf
+I, [2016-02-04T11:34:48.328909 #3990]  INFO -- default-debian-78:   * template[nginx.conf] action create
+I, [2016-02-04T11:34:48.329243 #3990]  INFO -- default-debian-78:     - update content in file /etc/nginx/nginx.conf from 38154b to 09af7a
+I, [2016-02-04T11:34:48.330017 #3990]  INFO -- default-debian-78:     --- /etc/nginx/nginx.conf	2014-09-18 13:18:31.000000000 +0000
+I, [2016-02-04T11:34:48.330811 #3990]  INFO -- default-debian-78:     +++ /etc/nginx/.nginx.conf20160204-2937-173nogw	2016-02-04 17:34:46.467276001 +0000
+I, [2016-02-04T11:34:48.331330 #3990]  INFO -- default-debian-78:     @@ -1,96 +1,48 @@
+I, [2016-02-04T11:34:48.331732 #3990]  INFO -- default-debian-78:      user www-data;
+I, [2016-02-04T11:34:48.332235 #3990]  INFO -- default-debian-78:     -worker_processes 4;
+I, [2016-02-04T11:34:48.332743 #3990]  INFO -- default-debian-78:     -pid /var/run/nginx.pid;
+I, [2016-02-04T11:34:48.333110 #3990]  INFO -- default-debian-78:     +worker_processes  1;
+I, [2016-02-04T11:34:48.333540 #3990]  INFO -- default-debian-78:      
+I, [2016-02-04T11:34:48.333910 #3990]  INFO -- default-debian-78:     +error_log  /var/log/nginx/error.log;
+I, [2016-02-04T11:34:48.334413 #3990]  INFO -- default-debian-78:     +pid        /var/run/nginx.pid;
+I, [2016-02-04T11:34:48.335348 #3990]  INFO -- default-debian-78:     +
+I, [2016-02-04T11:34:48.335403 #3990]  INFO -- default-debian-78:      events {
+I, [2016-02-04T11:34:48.335426 #3990]  INFO -- default-debian-78:     -	worker_connections 768;
+I, [2016-02-04T11:34:48.335440 #3990]  INFO -- default-debian-78:     -	# multi_accept on;
+I, [2016-02-04T11:34:48.335453 #3990]  INFO -- default-debian-78:     +  worker_connections  1024;
+I, [2016-02-04T11:34:48.335464 #3990]  INFO -- default-debian-78:      }
+I, [2016-02-04T11:34:48.335476 #3990]  INFO -- default-debian-78:      
+I, [2016-02-04T11:34:48.335488 #3990]  INFO -- default-debian-78:      http {
+I, [2016-02-04T11:34:48.335499 #3990]  INFO -- default-debian-78:      
+I, [2016-02-04T11:34:48.335510 #3990]  INFO -- default-debian-78:     -	##
+I, [2016-02-04T11:34:48.335522 #3990]  INFO -- default-debian-78:     -	# Basic Settings
+I, [2016-02-04T11:34:48.335533 #3990]  INFO -- default-debian-78:     -	##
+I, [2016-02-04T11:34:48.335850 #3990]  INFO -- default-debian-78: +  include       /etc/nginx/mime.types;
+I, [2016-02-04T11:34:48.336030 #3990]  INFO -- default-debian-78: +  default_type  application/octet-stream;
+I, [2016-02-04T11:34:48.336064 #3990]  INFO -- default-debian-78:      
+I, [2016-02-04T11:34:48.336081 #3990]  INFO -- default-debian-78:     -	sendfile on;
+I, [2016-02-04T11:34:48.336096 #3990]  INFO -- default-debian-78:     -	tcp_nopush on;
+I, [2016-02-04T11:34:48.336109 #3990]  INFO -- default-debian-78:     -	tcp_nodelay on;
+I, [2016-02-04T11:34:48.336123 #3990]  INFO -- default-debian-78:     -	keepalive_timeout 65;
+I, [2016-02-04T11:34:48.336136 #3990]  INFO -- default-debian-78:     -	types_hash_max_size 2048;
+I, [2016-02-04T11:34:48.336149 #3990]  INFO -- default-debian-78:     -	# server_tokens off;
+I, [2016-02-04T11:34:48.336429 #3990]  INFO -- default-debian-78:  
+I, [2016-02-04T11:34:48.336454 #3990]  INFO -- default-debian-78:     -	# server_names_hash_bucket_size 64;
+I, [2016-02-04T11:34:48.336470 #3990]  INFO -- default-debian-78:     -	# server_name_in_redirect off;
+I, [2016-02-04T11:34:48.336484 #3990]  INFO -- default-debian-78:     +  access_log    /var/log/nginx/access.log;
+I, [2016-02-04T11:34:48.336497 #3990]  INFO -- default-debian-78:      
+I, [2016-02-04T11:34:48.336679 #3990]  INFO -- default-debian-78:     -	include /etc/nginx/mime.types;
+I, [2016-02-04T11:34:48.336701 #3990]  INFO -- default-debian-78:     -	default_type application/octet-stream;
+I, [2016-02-04T11:34:48.336716 #3990]  INFO -- default-debian-78:     +  sendfile on;
+I, [2016-02-04T11:34:48.336729 #3990]  INFO -- default-debian-78:     +  tcp_nopush on;
+I, [2016-02-04T11:34:48.336742 #3990]  INFO -- default-debian-78:     +  tcp_nodelay on;
+I, [2016-02-04T11:34:48.336755 #3990]  INFO -- default-debian-78:      
+I, [2016-02-04T11:34:48.336769 #3990]  INFO -- default-debian-78:     -	##
+I, [2016-02-04T11:34:48.336782 #3990]  INFO -- default-debian-78:     -	# Logging Settings
+I, [2016-02-04T11:34:48.337211 #3990]  INFO -- default-debian-78:     -	##
+I, [2016-02-04T11:34:48.337244 #3990]  INFO -- default-debian-78:     +  keepalive_requests 100;
+I, [2016-02-04T11:34:48.337260 #3990]  INFO -- default-debian-78:     +  keepalive_timeout  65;
+I, [2016-02-04T11:34:48.337304 #3990]  INFO -- default-debian-78:      
+I, [2016-02-04T11:34:48.337316 #3990]  INFO -- default-debian-78:     -	access_log /var/log/nginx/access.log;
+I, [2016-02-04T11:34:48.337336 #3990]  INFO -- default-debian-78:     -	error_log /var/log/nginx/error.log;
+I, [2016-02-04T11:34:48.337384 #3990]  INFO -- default-debian-78:      
+I, [2016-02-04T11:34:48.337407 #3990]  INFO -- default-debian-78:     -	##
+I, [2016-02-04T11:34:48.337420 #3990]  INFO -- default-debian-78:     -	# Gzip Settings
+I, [2016-02-04T11:34:48.337432 #3990]  INFO -- default-debian-78:     -	##
+I, [2016-02-04T11:34:48.337737 #3990]  INFO -- default-debian-78:     +  gzip  on;
+I, [2016-02-04T11:34:48.337787 #3990]  INFO -- default-debian-78:     +  gzip_http_version 1.0;
+I, [2016-02-04T11:34:48.337837 #3990]  INFO -- default-debian-78:     +  gzip_comp_level 2;
+I, [2016-02-04T11:34:48.337852 #3990]  INFO -- default-debian-78:     +  gzip_proxied any;
+I, [2016-02-04T11:34:48.337866 #3990]  INFO -- default-debian-78:     +  gzip_vary off;
+I, [2016-02-04T11:34:48.337880 #3990]  INFO -- default-debian-78:     +  gzip_types text/plain text/css application/x-javascript text/xml application/xml application/rss+xml application/atom+xml text/javascript application/javascript application/json text/mathml;
+I, [2016-02-04T11:34:48.338121 #3990]  INFO -- default-debian-78: 
+I, [2016-02-04T11:34:48.338152 #3990]  INFO -- default-debian-78:     +  gzip_disable     "MSIE [1-6]\.";
+I, [2016-02-04T11:34:48.338172 #3990]  INFO -- default-debian-78:      
+I, [2016-02-04T11:34:48.338193 #3990]  INFO -- default-debian-78:     -	gzip on;
+I, [2016-02-04T11:34:48.338215 #3990]  INFO -- default-debian-78:     -	gzip_disable "msie6";
+I, [2016-02-04T11:34:48.338457 #3990]  INFO -- default-debian-78: 
+I, [2016-02-04T11:34:48.338491 #3990]  INFO -- default-debian-78:     -	# gzip_vary on;
+I, [2016-02-04T11:34:48.338738 #3990]  INFO -- default-debian-78:     -	# gzip_proxied any;
+I, [2016-02-04T11:34:48.338766 #3990]  INFO -- default-debian-78:     -	# gzip_comp_level 6;
+I, [2016-02-04T11:34:48.338782 #3990]  INFO -- default-debian-78:     -	# gzip_buffers 16 8k;
+I, [2016-02-04T11:34:48.339044 #3990]  INFO -- default-debian-78:     -	# gzip_http_version 1.1;
+I, [2016-02-04T11:34:48.339071 #3990]  INFO -- default-debian-78:     -	# gzip_types text/plain text/css application/json application/x-javascript text/xml application/xml application/xml+rss text/javascript;
+I, [2016-02-04T11:34:48.339086 #3990]  INFO -- default-debian-78:     +  variables_hash_max_size 1024;
+I, [2016-02-04T11:34:48.339099 #3990]  INFO -- default-debian-78:     +  variables_hash_bucket_size 64;
+I, [2016-02-04T11:34:48.339111 #3990]  INFO -- default-debian-78:     +  server_names_hash_bucket_size 64;
+I, [2016-02-04T11:34:48.339123 #3990]  INFO -- default-debian-78:     +  types_hash_max_size 2048;
+I, [2016-02-04T11:34:48.339135 #3990]  INFO -- default-debian-78:     +  types_hash_bucket_size 64;
+I, [2016-02-04T11:34:48.339146 #3990]  INFO -- default-debian-78:      
+I, [2016-02-04T11:34:48.339158 #3990]  INFO -- default-debian-78:     -	##
+I, [2016-02-04T11:34:48.342784 #3990]  INFO -- default-debian-78: 	# nginx-naxsi config
+I, [2016-02-04T11:34:48.342839 #3990]  INFO -- default-debian-78:     -	##
+I, [2016-02-04T11:34:48.342856 #3990]  INFO -- default-debian-78:     -	# Uncomment it if you installed nginx-naxsi
+I, [2016-02-04T11:34:48.342870 #3990]  INFO -- default-debian-78:     -	##
+I, [2016-02-04T11:34:48.342884 #3990]  INFO -- default-debian-78:      
+I, [2016-02-04T11:34:48.342897 #3990]  INFO -- default-debian-78:     -	#include /etc/nginx/naxsi_core.rules;
+I, [2016-02-04T11:34:48.342909 #3990]  INFO -- default-debian-78:      
+I, [2016-02-04T11:34:48.342921 #3990]  INFO -- default-debian-78:     -	##
+I, [2016-02-04T11:34:48.342934 #3990]  INFO -- default-debian-78:     -	# nginx-passenger config
+I, [2016-02-04T11:34:48.342946 #3990]  INFO -- default-debian-78:     -	##
+I, [2016-02-04T11:34:48.342959 #3990]  INFO -- default-debian-78:     -	# Uncomment it if you installed nginx-passenger
+I, [2016-02-04T11:34:48.342972 #3990]  INFO -- default-debian-78:     -	##
+I, [2016-02-04T11:34:48.342984 #3990]  INFO -- default-debian-78:     -	
+I, [2016-02-04T11:34:48.344192 #3990]  INFO -- default-debian-78: -	#passenger_root /usr;
+I, [2016-02-04T11:34:48.344956 #3990]  INFO -- default-debian-78:     -	#passenger_ruby /usr/bin/ruby;
+I, [2016-02-04T11:34:48.345293 #3990]  INFO -- default-debian-78:     -
+I, [2016-02-04T11:34:48.345886 #3990]  INFO -- default-debian-78:     -	##
+I, [2016-02-04T11:34:48.346622 #3990]  INFO -- default-debian-78:     -	# Virtual Host Configs
+I, [2016-02-04T11:34:48.347346 #3990]  INFO -- default-debian-78:     -	##
+I, [2016-02-04T11:34:48.347753 #3990]  INFO -- default-debian-78:     -
+I, [2016-02-04T11:34:48.348818 #3990]  INFO -- default-debian-78:     -	include /etc/nginx/conf.d/*.conf;
+I, [2016-02-04T11:34:48.349918 #3990]  INFO -- default-debian-78:     -	include /etc/nginx/sites-enabled/*;
+I, [2016-02-04T11:34:48.349977 #3990]  INFO -- default-debian-78:     +  include /etc/nginx/conf.d/*.conf;
+I, [2016-02-04T11:34:48.350357 #3990]  INFO -- default-debian-78:     +  include /etc/nginx/sites-enabled/*;
+I, [2016-02-04T11:34:48.350405 #3990]  INFO -- default-debian-78:      }
+I, [2016-02-04T11:34:48.350785 #3990]  INFO -- default-debian-78:     -
+I, [2016-02-04T11:34:48.350828 #3990]  INFO -- default-debian-78:     -
+I, [2016-02-04T11:34:48.350859 #3990]  INFO -- default-debian-78:     -#mail {
+I, [2016-02-04T11:34:48.351251 #3990]  INFO -- default-debian-78:     -#	# See sample authentication script at:
+I, [2016-02-04T11:34:48.351293 #3990]  INFO -- default-debian-78:     -#	# http://wiki.nginx.org/ImapAuthenticateWithApachePhpScript
+I, [2016-02-04T11:34:48.351323 #3990]  INFO -- default-debian-78:     -# 
+I, [2016-02-04T11:34:48.351744 #3990]  INFO -- default-debian-78: 
+I, [2016-02-04T11:34:48.351788 #3990]  INFO -- default-debian-78:     -#	# pop3_capabilities "TOP" "USER";
+I, [2016-02-04T11:34:48.351817 #3990]  INFO -- default-debian-78:     -#	# imap_capabilities "IMAP4rev1" "UIDPLUS";
+I, [2016-02-04T11:34:48.351842 #3990]  INFO -- default-debian-78:     -# 
+I, [2016-02-04T11:34:48.351866 #3990]  INFO -- default-debian-78:     -#	server {
+I, [2016-02-04T11:34:48.351893 #3990]  INFO -- default-debian-78:     -#		listen     localhost:110;
+I, [2016-02-04T11:34:48.352123 #3990]  INFO -- default-debian-78: 	protocol   pop3;
+I, [2016-02-04T11:34:48.352157 #3990]  INFO -- default-debian-78:     -#		proxy      on;
+I, [2016-02-04T11:34:48.352180 #3990]  INFO -- default-debian-78:     -#	}
+I, [2016-02-04T11:34:48.352646 #3990]  INFO -- default-debian-78:     -# 
+I, [2016-02-04T11:34:48.352688 #3990]  INFO -- default-debian-78:     -#	server {
+I, [2016-02-04T11:34:48.352714 #3990]  INFO -- default-debian-78:     -#		listen     localhost:143;
+I, [2016-02-04T11:34:48.352740 #3990]  INFO -- default-debian-78:     -#		protocol   imap;
+I, [2016-02-04T11:34:48.352765 #3990]  INFO -- default-debian-78:     -#		proxy      on;
+I, [2016-02-04T11:34:48.353833 #3990]  INFO -- default-debian-78: 	}
+I, [2016-02-04T11:34:48.353885 #3990]  INFO -- default-debian-78:     -#}
+I, [2016-02-04T11:34:48.361069 #3990]  INFO -- default-debian-78:   * template[/etc/nginx/sites-available/default] action create
+I, [2016-02-04T11:34:48.361839 #3990]  INFO -- default-debian-78:     - update content in file /etc/nginx/sites-available/default from 767369 to a5d9df
+I, [2016-02-04T11:34:48.363413 #3990]  INFO -- default-debian-78:     --- /etc/nginx/sites-available/default	2014-09-18 13:18:31.000000000 +0000
+I, [2016-02-04T11:34:48.363988 #3990]  INFO -- default-debian-78:     +++ /etc/nginx/sites-available/.default20160204-2937-61yqag	2016-02-04 17:34:46.499292001 +0000
+I, [2016-02-04T11:34:48.364422 #3990]  INFO -- default-debian-78:     @@ -1,121 +1,12 @@
+I, [2016-02-04T11:34:48.364981 #3990]  INFO -- default-debian-78:     -# You may add here your
+I, [2016-02-04T11:34:48.365451 #3990]  INFO -- default-debian-78:     -# server {
+I, [2016-02-04T11:34:48.366188 #3990]  INFO -- default-debian-78:     -#	...
+I, [2016-02-04T11:34:48.366702 #3990]  INFO -- default-debian-78:     -# }
+I, [2016-02-04T11:34:48.366745 #3990]  INFO -- default-debian-78:     -# statements for each of your virtual hosts to this file
+I, [2016-02-04T11:34:48.366777 #3990]  INFO -- default-debian-78:     -
+I, [2016-02-04T11:34:48.366799 #3990]  INFO -- default-debian-78:     -##
+I, [2016-02-04T11:34:48.367167 #3990]  INFO -- default-debian-78:     -# You should look at the following URL's in order to grasp a solid understanding
+I, [2016-02-04T11:34:48.367207 #3990]  INFO -- default-debian-78:     -# of Nginx configuration files in order to fully unleash the power of Nginx.
+I, [2016-02-04T11:34:48.367734 #3990]  INFO -- default-debian-78: 
+I, [2016-02-04T11:34:48.367802 #3990]  INFO -- default-debian-78:     -# http://wiki.nginx.org/QuickStart
+I, [2016-02-04T11:34:48.367837 #3990]  INFO -- default-debian-78:     -# http://wiki.nginx.org/Configuration
+I, [2016-02-04T11:34:48.367852 #3990]  INFO -- default-debian-78:     -#
+I, [2016-02-04T11:34:48.367895 #3990]  INFO -- default-debian-78:     -# Generally, you will want to move this file somewhere, and start with a clean
+I, [2016-02-04T11:34:48.367909 #3990]  INFO -- default-debian-78:     -# file but keep this around for reference. Or just disable in sites-enabled.
+I, [2016-02-04T11:34:48.367922 #3990]  INFO -- default-debian-78:     -#
+I, [2016-02-04T11:34:48.367934 #3990]  INFO -- default-debian-78:     -# Please see /usr/share/doc/nginx-doc/examples/ for more detailed examples.
+I, [2016-02-04T11:34:48.367945 #3990]  INFO -- default-debian-78:     -##
+I, [2016-02-04T11:34:48.367957 #3990]  INFO -- default-debian-78:     -
+I, [2016-02-04T11:34:48.367969 #3990]  INFO -- default-debian-78:      server {
+I, [2016-02-04T11:34:48.368302 #3990]  INFO -- default-debian-78:     -	#listen   80; ## listen for ipv4; this line is default and implied
+I, [2016-02-04T11:34:48.368374 #3990]  INFO -- default-debian-78:     -	#listen   [::]:80 default_server ipv6only=on; ## listen for ipv6
+I, [2016-02-04T11:34:48.368580 #3990]  INFO -- default-debian-78:     +  listen   80;
+I, [2016-02-04T11:34:48.368630 #3990]  INFO -- default-debian-78:     +  server_name  default-debian-78;
+I, [2016-02-04T11:34:48.368650 #3990]  INFO -- default-debian-78:      
+I, [2016-02-04T11:34:48.368664 #3990]  INFO -- default-debian-78:     -	root /usr/share/nginx/www;
+I, [2016-02-04T11:34:48.368864 #3990]  INFO -- default-debian-78:     -	index index.html index.htm;
+I, [2016-02-04T11:34:48.369130 #3990]  INFO -- default-debian-78:     +  access_log  /var/log/nginx/localhost.access.log;
+I, [2016-02-04T11:34:48.369284 #3990]  INFO -- default-debian-78:      
+I, [2016-02-04T11:34:48.369318 #3990]  INFO -- default-debian-78:     -	# Make site accessible from http://localhost/
+I, [2016-02-04T11:34:48.369335 #3990]  INFO -- default-debian-78:     -	server_name localhost;
+I, [2016-02-04T11:34:48.369348 #3990]  INFO -- default-debian-78:     -
+I, [2016-02-04T11:34:48.369360 #3990]  INFO -- default-debian-78:     -	location / {
+I, [2016-02-04T11:34:48.369679 #3990]  INFO -- default-debian-78: 		# First attempt to serve request as file, then
+I, [2016-02-04T11:34:48.369706 #3990]  INFO -- default-debian-78:     -		# as directory, then fall back to displaying a 404.
+I, [2016-02-04T11:34:48.369723 #3990]  INFO -- default-debian-78:     -		try_files $uri $uri/ /index.html;
+I, [2016-02-04T11:34:48.369736 #3990]  INFO -- default-debian-78:     -		# Uncomment to enable naxsi on this location
+I, [2016-02-04T11:34:48.369749 #3990]  INFO -- default-debian-78:     -		# include /etc/nginx/naxsi.rules
+I, [2016-02-04T11:34:48.369761 #3990]  INFO -- default-debian-78:     -	}
+I, [2016-02-04T11:34:48.369773 #3990]  INFO -- default-debian-78:     -
+I, [2016-02-04T11:34:48.369785 #3990]  INFO -- default-debian-78:     -	location /doc/ {
+I, [2016-02-04T11:34:48.369797 #3990]  INFO -- default-debian-78:     -		alias /usr/share/doc/;
+I, [2016-02-04T11:34:48.369809 #3990]  INFO -- default-debian-78:     -		autoindex on;
+I, [2016-02-04T11:34:48.369821 #3990]  INFO -- default-debian-78:     -		allow 127.0.0.1;
+I, [2016-02-04T11:34:48.369860 #3990]  INFO -- default-debian-78:     -		allow ::1;
+I, [2016-02-04T11:34:48.369883 #3990]  INFO -- default-debian-78:     -		deny all;
+I, [2016-02-04T11:34:48.369898 #3990]  INFO -- default-debian-78:     -	}
+I, [2016-02-04T11:34:48.369911 #3990]  INFO -- default-debian-78:     -
+I, [2016-02-04T11:34:48.369924 #3990]  INFO -- default-debian-78:     -	# Only for nginx-naxsi used with nginx-naxsi-ui : process denied requests
+I, [2016-02-04T11:34:48.370469 #3990]  INFO -- default-debian-78: -	#location /RequestDenied {
+I, [2016-02-04T11:34:48.370518 #3990]  INFO -- default-debian-78:     -	#	proxy_pass http://127.0.0.1:8080;    
+I, [2016-02-04T11:34:48.370572 #3990]  INFO -- default-debian-78:     -	#}
+I, [2016-02-04T11:34:48.370601 #3990]  INFO -- default-debian-78:     -
+I, [2016-02-04T11:34:48.370628 #3990]  INFO -- default-debian-78:     -	#error_page 404 /404.html;
+I, [2016-02-04T11:34:48.370652 #3990]  INFO -- default-debian-78:     -
+I, [2016-02-04T11:34:48.371060 #3990]  INFO -- default-debian-78: 	# redirect server error pages to the static page /50x.html
+I, [2016-02-04T11:34:48.371101 #3990]  INFO -- default-debian-78:     -	#
+I, [2016-02-04T11:34:48.371120 #3990]  INFO -- default-debian-78:     -	#error_page 500 502 503 504 /50x.html;
+I, [2016-02-04T11:34:48.371341 #3990]  INFO -- default-debian-78: -	#location = /50x.html {
+I, [2016-02-04T11:34:48.371605 #3990]  INFO -- default-debian-78:     -	#	root /usr/share/nginx/www;
+I, [2016-02-04T11:34:48.372075 #3990]  INFO -- default-debian-78:     -	#}
+I, [2016-02-04T11:34:48.372116 #3990]  INFO -- default-debian-78:     -
+I, [2016-02-04T11:34:48.372147 #3990]  INFO -- default-debian-78:     -	# pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
+I, [2016-02-04T11:34:48.372169 #3990]  INFO -- default-debian-78:     -	#
+I, [2016-02-04T11:34:48.372183 #3990]  INFO -- default-debian-78:     -	#location ~ \.php$ {
+I, [2016-02-04T11:34:48.372196 #3990]  INFO -- default-debian-78:     -	#	fastcgi_split_path_info ^(.+\.php)(/.+)$;
+I, [2016-02-04T11:34:48.372209 #3990]  INFO -- default-debian-78:     -	#	# NOTE: You should have "cgi.fix_pathinfo = 0;" in php.ini
+I, [2016-02-04T11:34:48.372252 #3990]  INFO -- default-debian-78:     -	#
+I, [2016-02-04T11:34:48.372608 #3990]  INFO -- default-debian-78:     -	#	# With php5-cgi alone:
+I, [2016-02-04T11:34:48.372638 #3990]  INFO -- default-debian-78:     -	#	fastcgi_pass 127.0.0.1:9000;
+I, [2016-02-04T11:34:48.372655 #3990]  INFO -- default-debian-78:     -	#	# With php5-fpm:
+I, [2016-02-04T11:34:48.373124 #3990]  INFO -- default-debian-78: 	#	fastcgi_pass unix:/var/run/php5-fpm.sock;
+I, [2016-02-04T11:34:48.373159 #3990]  INFO -- default-debian-78:     -	#	fastcgi_index index.php;
+I, [2016-02-04T11:34:48.373176 #3990]  INFO -- default-debian-78:     -	#	include fastcgi_params;
+I, [2016-02-04T11:34:48.373189 #3990]  INFO -- default-debian-78:     -	#}
+I, [2016-02-04T11:34:48.373202 #3990]  INFO -- default-debian-78:     -
+I, [2016-02-04T11:34:48.373215 #3990]  INFO -- default-debian-78:     -	# deny access to .htaccess files, if Apache's document root
+I, [2016-02-04T11:34:48.373229 #3990]  INFO -- default-debian-78:     -	# concurs with nginx's one
+I, [2016-02-04T11:34:48.373241 #3990]  INFO -- default-debian-78:     -	#
+I, [2016-02-04T11:34:48.373254 #3990]  INFO -- default-debian-78:     -	#location ~ /\.ht {
+I, [2016-02-04T11:34:48.373639 #3990]  INFO -- default-debian-78:     -	#	deny all;
+I, [2016-02-04T11:34:48.373672 #3990]  INFO -- default-debian-78:     -	#}
+I, [2016-02-04T11:34:48.373690 #3990]  INFO -- default-debian-78:     +  location / {
+I, [2016-02-04T11:34:48.373705 #3990]  INFO -- default-debian-78:     +    root   /var/www/nginx-default;
+I, [2016-02-04T11:34:48.373718 #3990]  INFO -- default-debian-78:     +    index  index.html index.htm;
+I, [2016-02-04T11:34:48.373731 #3990]  INFO -- default-debian-78:     +  }
+I, [2016-02-04T11:34:48.373743 #3990]  INFO -- default-debian-78:      }
+I, [2016-02-04T11:34:48.373755 #3990]  INFO -- default-debian-78:     -
+I, [2016-02-04T11:34:48.373767 #3990]  INFO -- default-debian-78:     -
+I, [2016-02-04T11:34:48.374112 #3990]  INFO -- default-debian-78:     -# another virtual host using mix of IP-, name-, and port-based configuration
+I, [2016-02-04T11:34:48.374143 #3990]  INFO -- default-debian-78:     -#
+I, [2016-02-04T11:34:48.374158 #3990]  INFO -- default-debian-78:     -#server {
+I, [2016-02-04T11:34:48.374171 #3990]  INFO -- default-debian-78:     -#	listen 8000;
+I, [2016-02-04T11:34:48.374184 #3990]  INFO -- default-debian-78:     -#	listen somename:8080;
+I, [2016-02-04T11:34:48.374196 #3990]  INFO -- default-debian-78:     -#	server_name somename alias another.alias;
+I, [2016-02-04T11:34:48.374229 #3990]  INFO -- default-debian-78:     -#	root html;
+I, [2016-02-04T11:34:48.374244 #3990]  INFO -- default-debian-78:     -#	index index.html index.htm;
+I, [2016-02-04T11:34:48.374261 #3990]  INFO -- default-debian-78:     -#
+I, [2016-02-04T11:34:48.374284 #3990]  INFO -- default-debian-78:     -#	location / {
+I, [2016-02-04T11:34:48.374307 #3990]  INFO -- default-debian-78:     -#		try_files $uri $uri/ =404;
+I, [2016-02-04T11:34:48.374321 #3990]  INFO -- default-debian-78:     -#	}
+I, [2016-02-04T11:34:48.374333 #3990]  INFO -- default-debian-78:     -#}
+I, [2016-02-04T11:34:48.374345 #3990]  INFO -- default-debian-78:     -
+I, [2016-02-04T11:34:48.374679 #3990]  INFO -- default-debian-78: -
+I, [2016-02-04T11:34:48.374716 #3990]  INFO -- default-debian-78:     -# HTTPS server
+I, [2016-02-04T11:34:48.374913 #3990]  INFO -- default-debian-78:     -#
+I, [2016-02-04T11:34:48.374946 #3990]  INFO -- default-debian-78:     -#server {
+I, [2016-02-04T11:34:48.374963 #3990]  INFO -- default-debian-78:     -#	listen 443;
+I, [2016-02-04T11:34:48.375047 #3990]  INFO -- default-debian-78:     -#	server_name localhost;
+I, [2016-02-04T11:34:48.375071 #3990]  INFO -- default-debian-78:     -#
+I, [2016-02-04T11:34:48.375085 #3990]  INFO -- default-debian-78:     -#	root html;
+I, [2016-02-04T11:34:48.375098 #3990]  INFO -- default-debian-78:     -#	index index.html index.htm;
+I, [2016-02-04T11:34:48.375113 #3990]  INFO -- default-debian-78:     -#
+I, [2016-02-04T11:34:48.375329 #3990]  INFO -- default-debian-78: 	ssl on;
+I, [2016-02-04T11:34:48.375352 #3990]  INFO -- default-debian-78:     -#	ssl_certificate cert.pem;
+I, [2016-02-04T11:34:48.375368 #3990]  INFO -- default-debian-78:     -#	ssl_certificate_key cert.key;
+I, [2016-02-04T11:34:48.375382 #3990]  INFO -- default-debian-78:     -#
+I, [2016-02-04T11:34:48.375443 #3990]  INFO -- default-debian-78:     -#	ssl_session_timeout 5m;
+I, [2016-02-04T11:34:48.375768 #3990]  INFO -- default-debian-78:     -#
+I, [2016-02-04T11:34:48.375798 #3990]  INFO -- default-debian-78:     -#	ssl_protocols SSLv3 TLSv1;
+I, [2016-02-04T11:34:48.375813 #3990]  INFO -- default-debian-78:     -#	ssl_ciphers ALL:!ADH:!EXPORT56:RC4+RSA:+HIGH:+MEDIUM:+LOW:+SSLv3:+EXP;
+I, [2016-02-04T11:34:48.376079 #3990]  INFO -- default-debian-78: -#	ssl_prefer_server_ciphers on;
+I, [2016-02-04T11:34:48.376113 #3990]  INFO -- default-debian-78:     -#
+I, [2016-02-04T11:34:48.376129 #3990]  INFO -- default-debian-78:     -#	location / {
+I, [2016-02-04T11:34:48.376143 #3990]  INFO -- default-debian-78:     -#		try_files $uri $uri/ =404;
+I, [2016-02-04T11:34:48.376395 #3990]  INFO -- default-debian-78: -#	}
+I, [2016-02-04T11:34:48.377892 #3990]  INFO -- default-debian-78: -#}
+I, [2016-02-04T11:34:48.379443 #3990]  INFO -- default-debian-78:   * execute[nxensite default] action run (skipped due to not_if)
+I, [2016-02-04T11:34:48.380101 #3990]  INFO -- default-debian-78: Recipe: nginx::default
+I, [2016-02-04T11:34:48.429089 #3990]  INFO -- default-debian-78:   * service[nginx] action start
+I, [2016-02-04T11:34:48.429148 #3990]  INFO -- default-debian-78:     - start service service[nginx]
+I, [2016-02-04T11:34:48.429167 #3990]  INFO -- default-debian-78: Recipe: build-essential::_debian
+I, [2016-02-04T11:34:50.560497 #3990]  INFO -- default-debian-78: 
+I, [2016-02-04T11:34:50.560558 #3990]  INFO -- default-debian-78:     - install version 2.69-1 of package autoconf
+I, [2016-02-04T11:34:52.375613 #3990]  INFO -- default-debian-78: 
+I, [2016-02-04T11:34:52.375662 #3990]  INFO -- default-debian-78:     - install version 2.22-8+deb7u2 of package binutils-doc
+I, [2016-02-04T11:34:54.077299 #3990]  INFO -- default-debian-78: 
+I, [2016-02-04T11:34:54.077363 #3990]  INFO -- default-debian-78:     - install version 1:2.5.dfsg-2.1 of package bison
+I, [2016-02-04T11:34:59.917896 #3990]  INFO -- default-debian-78: 
+I, [2016-02-04T11:34:59.917967 #3990]  INFO -- default-debian-78:     - install version 11.5 of package build-essential
+I, [2016-02-04T11:35:01.899709 #3990]  INFO -- default-debian-78: 
+I, [2016-02-04T11:35:01.899806 #3990]  INFO -- default-debian-78:     - install version 2.5.35-10.1 of package flex
+I, [2016-02-04T11:35:08.786159 #3990]  INFO -- default-debian-78: 
+I, [2016-02-04T11:35:08.786239 #3990]  INFO -- default-debian-78:     - install version 0.18.1.1-9 of package gettext
+I, [2016-02-04T11:35:10.301989 #3990]  INFO -- default-debian-78: 
+I, [2016-02-04T11:35:10.302041 #3990]  INFO -- default-debian-78:     - install version (none) of package ncurses-dev
+I, [2016-02-04T11:35:10.302059 #3990]  INFO -- default-debian-78: Recipe: unicorn::default
+I, [2016-02-04T11:35:25.397150 #3990]  INFO -- default-debian-78: 
+I, [2016-02-04T11:35:25.397203 #3990]  INFO -- default-debian-78:     - install version 5.0.1 of package unicorn
+I, [2016-02-04T11:35:25.397254 #3990]  INFO -- default-debian-78: Recipe: sinatra::install
+I, [2016-02-04T11:35:40.205018 #3990]  INFO -- default-debian-78: 
+I, [2016-02-04T11:35:40.205066 #3990]  INFO -- default-debian-78:     - install version 1.4.6 of package sinatra
+I, [2016-02-04T11:35:56.683633 #3990]  INFO -- default-debian-78: 
+I, [2016-02-04T11:35:56.684677 #3990]  INFO -- default-debian-78:     - install version >0 of package sinatra-contrib
+I, [2016-02-04T11:35:56.685444 #3990]  INFO -- default-debian-78: Recipe: sinatra::configure
+I, [2016-02-04T11:35:56.696934 #3990]  INFO -- default-debian-78:   * directory[/var/www] action create
+I, [2016-02-04T11:35:56.698855 #3990]  INFO -- default-debian-78:     - create new directory /var/www
+I, [2016-02-04T11:35:56.699246 #3990]  INFO -- default-debian-78:     - change mode from '' to '0755'
+I, [2016-02-04T11:35:56.699872 #3990]  INFO -- default-debian-78:     - change owner from '' to 'root'
+I, [2016-02-04T11:35:56.700903 #3990]  INFO -- default-debian-78:     - change group from '' to 'root'
+I, [2016-02-04T11:35:56.702876 #3990]  INFO -- default-debian-78:   * directory[/var/www/public] action create
+I, [2016-02-04T11:35:56.705621 #3990]  INFO -- default-debian-78:     - create new directory /var/www/public
+I, [2016-02-04T11:35:56.706289 #3990]  INFO -- default-debian-78:     - change mode from '' to '0755'
+I, [2016-02-04T11:35:56.706772 #3990]  INFO -- default-debian-78:     - change owner from '' to 'root'
+I, [2016-02-04T11:35:56.707856 #3990]  INFO -- default-debian-78:     - change group from '' to 'root'
+I, [2016-02-04T11:35:56.709888 #3990]  INFO -- default-debian-78:   * directory[/var/www/tmp] action create
+I, [2016-02-04T11:35:56.712168 #3990]  INFO -- default-debian-78:     - create new directory /var/www/tmp
+I, [2016-02-04T11:35:56.712626 #3990]  INFO -- default-debian-78:     - change mode from '' to '0755'
+I, [2016-02-04T11:35:56.713041 #3990]  INFO -- default-debian-78:     - change owner from '' to 'root'
+I, [2016-02-04T11:35:56.714151 #3990]  INFO -- default-debian-78:     - change group from '' to 'root'
+I, [2016-02-04T11:35:56.716306 #3990]  INFO -- default-debian-78:   * directory[/var/www/tmp/sockets] action create
+I, [2016-02-04T11:35:56.718488 #3990]  INFO -- default-debian-78:     - create new directory /var/www/tmp/sockets
+I, [2016-02-04T11:35:56.719262 #3990]  INFO -- default-debian-78:     - change mode from '' to '0755'
+I, [2016-02-04T11:35:56.719882 #3990]  INFO -- default-debian-78:     - change owner from '' to 'root'
+I, [2016-02-04T11:35:56.720827 #3990]  INFO -- default-debian-78:     - change group from '' to 'root'
+I, [2016-02-04T11:35:56.723408 #3990]  INFO -- default-debian-78:   * directory[/var/www/tmp/pids] action create
+I, [2016-02-04T11:35:56.725964 #3990]  INFO -- default-debian-78:     - create new directory /var/www/tmp/pids
+I, [2016-02-04T11:35:56.726739 #3990]  INFO -- default-debian-78:     - change mode from '' to '0755'
+I, [2016-02-04T11:35:56.727317 #3990]  INFO -- default-debian-78:     - change owner from '' to 'root'
+I, [2016-02-04T11:35:56.728141 #3990]  INFO -- default-debian-78:     - change group from '' to 'root'
+I, [2016-02-04T11:35:56.729892 #3990]  INFO -- default-debian-78:   * directory[/var/www/log] action create
+I, [2016-02-04T11:35:56.731871 #3990]  INFO -- default-debian-78:     - create new directory /var/www/log
+I, [2016-02-04T11:35:56.732404 #3990]  INFO -- default-debian-78:     - change mode from '' to '0755'
+I, [2016-02-04T11:35:56.732881 #3990]  INFO -- default-debian-78:     - change owner from '' to 'root'
+I, [2016-02-04T11:35:56.733970 #3990]  INFO -- default-debian-78:     - change group from '' to 'root'
+I, [2016-02-04T11:35:56.791356 #3990]  INFO -- default-debian-78:   * template[/etc/nginx/nginx.conf] action create
+I, [2016-02-04T11:35:56.792072 #3990]  INFO -- default-debian-78:     - update content in file /etc/nginx/nginx.conf from 09af7a to 53c67d
+I, [2016-02-04T11:35:56.792745 #3990]  INFO -- default-debian-78:     --- /etc/nginx/nginx.conf	2016-02-04 17:34:46.467276001 +0000
+I, [2016-02-04T11:35:56.793671 #3990]  INFO -- default-debian-78:     +++ /etc/nginx/.nginx.conf20160204-2937-bd8jcg	2016-02-04 17:35:54.957504000 +0000
+I, [2016-02-04T11:35:56.794217 #3990]  INFO -- default-debian-78:     @@ -1,48 +1,74 @@
+I, [2016-02-04T11:35:56.794957 #3990]  INFO -- default-debian-78:     -user www-data;
+I, [2016-02-04T11:35:56.795826 #3990]  INFO -- default-debian-78:     -worker_processes  1;
+I, [2016-02-04T11:35:56.796324 #3990]  INFO -- default-debian-78:     +# this sets the user nginx will run as,
+I, [2016-02-04T11:35:56.796824 #3990]  INFO -- default-debian-78:     +#and the number of worker processes
+I, [2016-02-04T11:35:56.797477 #3990]  INFO -- default-debian-78:     +user nobody nogroup;
+I, [2016-02-04T11:35:56.798071 #3990]  INFO -- default-debian-78:     +worker_processes  4;
+I, [2016-02-04T11:35:56.798601 #3990]  INFO -- default-debian-78:      
+I, [2016-02-04T11:35:56.799207 #3990]  INFO -- default-debian-78:     +# setup where nginx will log errors to
+I, [2016-02-04T11:35:56.799955 #3990]  INFO -- default-debian-78:     +# and where the nginx process id resides
+I, [2016-02-04T11:35:56.800059 #3990]  INFO -- default-debian-78:      error_log  /var/log/nginx/error.log;
+I, [2016-02-04T11:35:56.800100 #3990]  INFO -- default-debian-78:      pid        /var/run/nginx.pid;
+I, [2016-02-04T11:35:56.800380 #3990]  INFO -- default-debian-78:      
+I, [2016-02-04T11:35:56.800419 #3990]  INFO -- default-debian-78:      events {
+I, [2016-02-04T11:35:56.800459 #3990]  INFO -- default-debian-78: worker_connections  1024;
+I, [2016-02-04T11:35:56.800486 #3990]  INFO -- default-debian-78:     +  # set to on if you have more than 1 worker_processes
+I, [2016-02-04T11:35:56.800511 #3990]  INFO -- default-debian-78:     +  accept_mutex off;
+I, [2016-02-04T11:35:56.800536 #3990]  INFO -- default-debian-78:      }
+I, [2016-02-04T11:35:56.800557 #3990]  INFO -- default-debian-78:      
+I, [2016-02-04T11:35:56.800947 #3990]  INFO -- default-debian-78:      http {
+I, [2016-02-04T11:35:56.801026 #3990]  INFO -- default-debian-78:     -
+I, [2016-02-04T11:35:56.801362 #3990]  INFO -- default-debian-78: include       /etc/nginx/mime.types;
+I, [2016-02-04T11:35:56.801588 #3990]  INFO -- default-debian-78: 
+I, [2016-02-04T11:35:56.801888 #3990]  INFO -- default-debian-78:      
+I, [2016-02-04T11:35:56.801934 #3990]  INFO -- default-debian-78:     +  default_type application/octet-stream;
+I, [2016-02-04T11:35:56.801966 #3990]  INFO -- default-debian-78:     +  access_log /tmp/nginx.access.log combined;
+I, [2016-02-04T11:35:56.801986 #3990]  INFO -- default-debian-78:      
+I, [2016-02-04T11:35:56.802009 #3990]  INFO -- default-debian-78:     -  access_log    /var/log/nginx/access.log;
+I, [2016-02-04T11:35:56.802034 #3990]  INFO -- default-debian-78:     +  # use the kernel sendfile
+I, [2016-02-04T11:35:56.802058 #3990]  INFO -- default-debian-78:     +  sendfile        on;
+I, [2016-02-04T11:35:56.802457 #3990]  INFO -- default-debian-78:     +  # prepend http headers before sendfile()
+I, [2016-02-04T11:35:56.802714 #3990]  INFO -- default-debian-78: 
+I, [2016-02-04T11:35:56.802758 #3990]  INFO -- default-debian-78:      
+I, [2016-02-04T11:35:56.802788 #3990]  INFO -- default-debian-78:     -  sendfile on;
+I, [2016-02-04T11:35:56.802814 #3990]  INFO -- default-debian-78:     -  tcp_nopush on;
+I, [2016-02-04T11:35:56.802852 #3990]  INFO -- default-debian-78:     -  tcp_nodelay on;
+I, [2016-02-04T11:35:56.803426 #3990]  INFO -- default-debian-78: +  keepalive_timeout  5;
+I, [2016-02-04T11:35:56.803648 #3990]  INFO -- default-debian-78: 
+I, [2016-02-04T11:35:56.804348 #3990]  INFO -- default-debian-78:      
+I, [2016-02-04T11:35:56.805035 #3990]  INFO -- default-debian-78:     -  keepalive_requests 100;
+I, [2016-02-04T11:35:56.805471 #3990]  INFO -- default-debian-78:     -  keepalive_timeout  65;
+I, [2016-02-04T11:35:56.805983 #3990]  INFO -- default-debian-78: 
+I, [2016-02-04T11:35:56.806037 #3990]  INFO -- default-debian-78:     -
+I, [2016-02-04T11:35:56.806068 #3990]  INFO -- default-debian-78: gzip  on;
+I, [2016-02-04T11:35:56.806086 #3990]  INFO -- default-debian-78:     -  gzip_http_version 1.0;
+I, [2016-02-04T11:35:56.806099 #3990]  INFO -- default-debian-78:     -  gzip_comp_level 2;
+I, [2016-02-04T11:35:56.806113 #3990]  INFO -- default-debian-78:     -  gzip_proxied any;
+I, [2016-02-04T11:35:56.806126 #3990]  INFO -- default-debian-78:     -  gzip_vary off;
+I, [2016-02-04T11:35:56.806139 #3990]  INFO -- default-debian-78:     -  gzip_types text/plain text/css application/x-javascript text/xml application/xml application/rss+xml application/atom+xml text/javascript application/javascript application/json text/mathml;
+I, [2016-02-04T11:35:56.806152 #3990]  INFO -- default-debian-78:     -  gzip_min_length  1000;
+I, [2016-02-04T11:35:56.806488 #3990]  INFO -- default-debian-78: -  gzip_disable     "MSIE [1-6]\.";
+I, [2016-02-04T11:35:56.806710 #3990]  INFO -- default-debian-78: 
+I, [2016-02-04T11:35:56.806748 #3990]  INFO -- default-debian-78:     +  gzip_min_length 500;
+I, [2016-02-04T11:35:56.807041 #3990]  INFO -- default-debian-78:      
+I, [2016-02-04T11:35:56.807197 #3990]  INFO -- default-debian-78:     +  gzip_disable "MSIE [1-6]\.(?!.*SV1)";
+I, [2016-02-04T11:35:56.807232 #3990]  INFO -- default-debian-78:     +  gzip_types text/plain text/xml text/css
+I, [2016-02-04T11:35:56.807250 #3990]  INFO -- default-debian-78:     +     text/comma-separated-values
+I, [2016-02-04T11:35:56.807264 #3990]  INFO -- default-debian-78:     +     text/javascript application/x-javascript
+I, [2016-02-04T11:35:56.807277 #3990]  INFO -- default-debian-78:     +     application/atom+xml image/x-icon;
+I, [2016-02-04T11:35:56.807291 #3990]  INFO -- default-debian-78:      
+I, [2016-02-04T11:35:56.807516 #3990]  INFO -- default-debian-78:     -  variables_hash_max_size 1024;
+I, [2016-02-04T11:35:56.807550 #3990]  INFO -- default-debian-78:     -  variables_hash_bucket_size 64;
+I, [2016-02-04T11:35:56.807567 #3990]  INFO -- default-debian-78:     -  server_names_hash_bucket_size 64;
+I, [2016-02-04T11:35:56.807581 #3990]  INFO -- default-debian-78:     -  types_hash_max_size 2048;
+I, [2016-02-04T11:35:56.807595 #3990]  INFO -- default-debian-78:     -  types_hash_bucket_size 64;
+I, [2016-02-04T11:35:56.807607 #3990]  INFO -- default-debian-78:     +  # use the socket we configured in our unicorn.rb
+I, [2016-02-04T11:35:56.807850 #3990]  INFO -- default-debian-78:     +  upstream unicorn_server {
+I, [2016-02-04T11:35:56.807874 #3990]  INFO -- default-debian-78:     +    server unix:/var/www/tmp/sockets/unicorn.sock
+I, [2016-02-04T11:35:56.807890 #3990]  INFO -- default-debian-78:     +        fail_timeout=0;
+I, [2016-02-04T11:35:56.807904 #3990]  INFO -- default-debian-78:     +  }
+I, [2016-02-04T11:35:56.807955 #3990]  INFO -- default-debian-78:      
+I, [2016-02-04T11:35:56.808163 #3990]  INFO -- default-debian-78: +  # configure the virtual host
+I, [2016-02-04T11:35:56.808197 #3990]  INFO -- default-debian-78:     +  server {
+I, [2016-02-04T11:35:56.808218 #3990]  INFO -- default-debian-78:     +    # replace with your domain name
+I, [2016-02-04T11:35:56.808232 #3990]  INFO -- default-debian-78:     +    server_name my-sinatra-app.com;
+I, [2016-02-04T11:35:56.808615 #3990]  INFO -- default-debian-78:     +    # replace this with your static Sinatra app files, root + public
+I, [2016-02-04T11:35:56.809183 #3990]  INFO -- default-debian-78:     +    root /var/www/public;
+I, [2016-02-04T11:35:56.809247 #3990]  INFO -- default-debian-78:     +    # port to listen for requests on
+I, [2016-02-04T11:35:56.809281 #3990]  INFO -- default-debian-78:     +    listen 80;
+I, [2016-02-04T11:35:56.809303 #3990]  INFO -- default-debian-78:     +    # maximum accepted body size of client request
+I, [2016-02-04T11:35:56.809319 #3990]  INFO -- default-debian-78:     +    client_max_body_size 4G;
+I, [2016-02-04T11:35:56.809333 #3990]  INFO -- default-debian-78:     +    # the server will close connections after this time
+I, [2016-02-04T11:35:56.809346 #3990]  INFO -- default-debian-78:     +    keepalive_timeout 5;
+I, [2016-02-04T11:35:56.809358 #3990]  INFO -- default-debian-78:      
+I, [2016-02-04T11:35:56.809370 #3990]  INFO -- default-debian-78:     +    location / {
+I, [2016-02-04T11:35:56.809722 #3990]  INFO -- default-debian-78: 
+I, [2016-02-04T11:35:56.809751 #3990]  INFO -- default-debian-78:     +    }
+I, [2016-02-04T11:35:56.809766 #3990]  INFO -- default-debian-78:      
+I, [2016-02-04T11:35:56.810037 #3990]  INFO -- default-debian-78:     -  include /etc/nginx/conf.d/*.conf;
+I, [2016-02-04T11:35:56.810081 #3990]  INFO -- default-debian-78:     -  include /etc/nginx/sites-enabled/*;
+I, [2016-02-04T11:35:56.810100 #3990]  INFO -- default-debian-78:     +    location @app {
+I, [2016-02-04T11:35:56.810115 #3990]  INFO -- default-debian-78:     +      proxy_set_header X-Forwarded-For \$proxy_add_x_forwarded_for; 
+I, [2016-02-04T11:35:56.810129 #3990]  INFO -- default-debian-78:     +      proxy_set_header Host \$http_host;
+I, [2016-02-04T11:35:56.810358 #3990]  INFO -- default-debian-78:     +      proxy_redirect off;
+I, [2016-02-04T11:35:56.810390 #3990]  INFO -- default-debian-78:     +      # pass to the upstream unicorn server mentioned above
+I, [2016-02-04T11:35:56.811542 #3990]  INFO -- default-debian-78:     +      proxy_pass http://unicorn_server;
+I, [2016-02-04T11:35:56.811607 #3990]  INFO -- default-debian-78:     +      proxy_set_header X-Forwarded-Proto \$scheme;
+I, [2016-02-04T11:35:56.811685 #3990]  INFO -- default-debian-78:     +    }
+I, [2016-02-04T11:35:56.811725 #3990]  INFO -- default-debian-78:     +  }
+I, [2016-02-04T11:35:56.811756 #3990]  INFO -- default-debian-78:      }
+I, [2016-02-04T11:35:56.814689 #3990]  INFO -- default-debian-78:   * template[/var/www/unicorn.rb] action create
+I, [2016-02-04T11:35:56.816860 #3990]  INFO -- default-debian-78:     - create new file /var/www/unicorn.rb
+I, [2016-02-04T11:35:56.817498 #3990]  INFO -- default-debian-78:     - update content in file /var/www/unicorn.rb from none to 6b0581
+I, [2016-02-04T11:35:56.818234 #3990]  INFO -- default-debian-78:     --- /var/www/unicorn.rb	2016-02-04 17:35:54.989520001 +0000
+I, [2016-02-04T11:35:56.818962 #3990]  INFO -- default-debian-78:     +++ /var/www/.unicorn.rb20160204-2937-i252vo	2016-02-04 17:35:54.989520001 +0000
+I, [2016-02-04T11:35:56.819514 #3990]  INFO -- default-debian-78:     @@ -1 +1,20 @@
+I, [2016-02-04T11:35:56.820162 #3990]  INFO -- default-debian-78:     +# set path to app that will be used to configure unicorn,
+I, [2016-02-04T11:35:56.820665 #3990]  INFO -- default-debian-78:     +# note the trailing slash in this example
+I, [2016-02-04T11:35:56.821138 #3990]  INFO -- default-debian-78:     +@dir = "/var/www/"
+I, [2016-02-04T11:35:56.821648 #3990]  INFO -- default-debian-78:     +
+I, [2016-02-04T11:35:56.822079 #3990]  INFO -- default-debian-78:     +worker_processes 2
+I, [2016-02-04T11:35:56.822766 #3990]  INFO -- default-debian-78:     +working_directory @dir
+I, [2016-02-04T11:35:56.823240 #3990]  INFO -- default-debian-78:     +
+I, [2016-02-04T11:35:56.823801 #3990]  INFO -- default-debian-78:     +timeout 30
+I, [2016-02-04T11:35:56.824240 #3990]  INFO -- default-debian-78:     +
+I, [2016-02-04T11:35:56.824664 #3990]  INFO -- default-debian-78:     +# Specify path to socket unicorn listens to,
+I, [2016-02-04T11:35:56.824703 #3990]  INFO -- default-debian-78:     +# we will use this in our nginx.conf later
+I, [2016-02-04T11:35:56.824758 #3990]  INFO -- default-debian-78:     +listen "#{@dir}tmp/sockets/unicorn.sock", :backlog => 64
+I, [2016-02-04T11:35:56.824791 #3990]  INFO -- default-debian-78:     +
+I, [2016-02-04T11:35:56.825047 #3990]  INFO -- default-debian-78:     +# Set process id path
+I, [2016-02-04T11:35:56.825087 #3990]  INFO -- default-debian-78:     +pid "#{@dir}tmp/pids/unicorn.pid"
+I, [2016-02-04T11:35:56.826401 #3990]  INFO -- default-debian-78:     +
+I, [2016-02-04T11:35:56.826479 #3990]  INFO -- default-debian-78:     +# Set log file paths
+I, [2016-02-04T11:35:56.826524 #3990]  INFO -- default-debian-78:     +stderr_path "#{@dir}log/unicorn.stderr.log"
+I, [2016-02-04T11:35:56.826560 #3990]  INFO -- default-debian-78:     +stdout_path "#{@dir}log/unicorn.stdout.log"
+I, [2016-02-04T11:35:56.827526 #3990]  INFO -- default-debian-78:     - change mode from '' to '0755'
+I, [2016-02-04T11:35:56.833724 #3990]  INFO -- default-debian-78:   * cookbook_file[/etc/init.d/unicorn] action create
+I, [2016-02-04T11:35:56.835911 #3990]  INFO -- default-debian-78:     - create new file /etc/init.d/unicorn
+I, [2016-02-04T11:35:56.836601 #3990]  INFO -- default-debian-78:     - update content in file /etc/init.d/unicorn from none to 885136
+I, [2016-02-04T11:35:56.837397 #3990]  INFO -- default-debian-78:     --- /etc/init.d/unicorn	2016-02-04 17:35:55.013532000 +0000
+I, [2016-02-04T11:35:56.838240 #3990]  INFO -- default-debian-78:     +++ /etc/init.d/.unicorn20160204-2937-1fzrqmy	2016-02-04 17:35:55.005528000 +0000
+I, [2016-02-04T11:35:56.838668 #3990]  INFO -- default-debian-78:     @@ -1 +1,94 @@
+I, [2016-02-04T11:35:56.839163 #3990]  INFO -- default-debian-78:     +#!/bin/sh
+I, [2016-02-04T11:35:56.839674 #3990]  INFO -- default-debian-78:     +### BEGIN INIT INFO
+I, [2016-02-04T11:35:56.840061 #3990]  INFO -- default-debian-78:     +# Provides:
+I, [2016-02-04T11:35:56.840687 #3990]  INFO -- default-debian-78:     +# Required-Start:    $remote_fs $syslog
+I, [2016-02-04T11:35:56.841202 #3990]  INFO -- default-debian-78:     +# Required-Stop:     $remote_fs $syslog
+I, [2016-02-04T11:35:56.841749 #3990]  INFO -- default-debian-78:     +# Default-Start:     2 3 4 5
+I, [2016-02-04T11:35:56.842222 #3990]  INFO -- default-debian-78:     +# Default-Stop:      0 1 6
+I, [2016-02-04T11:35:56.842669 #3990]  INFO -- default-debian-78:     +# Short-Description: Start daemon at boot time
+I, [2016-02-04T11:35:56.843132 #3990]  INFO -- default-debian-78:     +# Description:       Enable service provided by daemon.
+I, [2016-02-04T11:35:56.843622 #3990]  INFO -- default-debian-78:     +### END INIT INFO
+I, [2016-02-04T11:35:56.844116 #3990]  INFO -- default-debian-78:     +
+I, [2016-02-04T11:35:56.844774 #3990]  INFO -- default-debian-78:     +cmd="unicorn -c "/var/www/unicorn.rb" -E development -D"
+I, [2016-02-04T11:35:56.844837 #3990]  INFO -- default-debian-78:     +user="root"
+I, [2016-02-04T11:35:56.844906 #3990]  INFO -- default-debian-78:     +
+I, [2016-02-04T11:35:56.845115 #3990]  INFO -- default-debian-78:     +name=`basename $0`
+I, [2016-02-04T11:35:56.845599 #3990]  INFO -- default-debian-78:     +pid_file="/var/www/tmp/pids/unicorn.pid"
+I, [2016-02-04T11:35:56.845660 #3990]  INFO -- default-debian-78:     +
+I, [2016-02-04T11:35:56.845691 #3990]  INFO -- default-debian-78:     +get_pid() {
+I, [2016-02-04T11:35:56.845707 #3990]  INFO -- default-debian-78:     +    cat "$pid_file"
+I, [2016-02-04T11:35:56.845754 #3990]  INFO -- default-debian-78:     +}
+I, [2016-02-04T11:35:56.845767 #3990]  INFO -- default-debian-78:     +
+I, [2016-02-04T11:35:56.845780 #3990]  INFO -- default-debian-78:     +is_running() {
+I, [2016-02-04T11:35:56.845793 #3990]  INFO -- default-debian-78:     +    [ -f "$pid_file" ] && ps `get_pid` > /dev/null 2>&1
+I, [2016-02-04T11:35:56.845807 #3990]  INFO -- default-debian-78:     +}
+I, [2016-02-04T11:35:56.845819 #3990]  INFO -- default-debian-78:     +
+I, [2016-02-04T11:35:56.845831 #3990]  INFO -- default-debian-78:     +case "$1" in
+I, [2016-02-04T11:35:56.846185 #3990]  INFO -- default-debian-78:     +    start)
+I, [2016-02-04T11:35:56.846267 #3990]  INFO -- default-debian-78:     +    if is_running; then
+I, [2016-02-04T11:35:56.846287 #3990]  INFO -- default-debian-78:     +        echo "Already started"
+I, [2016-02-04T11:35:56.846301 #3990]  INFO -- default-debian-78:     +    else
+I, [2016-02-04T11:35:56.846316 #3990]  INFO -- default-debian-78:     +        echo "Starting $name"
+I, [2016-02-04T11:35:56.846339 #3990]  INFO -- default-debian-78:     +        if [ -z "$user" ]; then
+I, [2016-02-04T11:35:56.846363 #3990]  INFO -- default-debian-78:     +            sudo $cmd 
+I, [2016-02-04T11:35:56.846405 #3990]  INFO -- default-debian-78:     +        else
+I, [2016-02-04T11:35:56.846431 #3990]  INFO -- default-debian-78:     +            sudo -u "$user" $cmd
+I, [2016-02-04T11:35:56.846448 #3990]  INFO -- default-debian-78:     +        fi
+I, [2016-02-04T11:35:56.846460 #3990]  INFO -- default-debian-78:     +        if ! is_running; then
+I, [2016-02-04T11:35:56.846473 #3990]  INFO -- default-debian-78:     +            echo "Unable to start, see logs"
+I, [2016-02-04T11:35:56.846879 #3990]  INFO -- default-debian-78:     +            exit 1
+I, [2016-02-04T11:35:56.846938 #3990]  INFO -- default-debian-78:     +        fi
+I, [2016-02-04T11:35:56.846966 #3990]  INFO -- default-debian-78:     +    fi
+I, [2016-02-04T11:35:56.847003 #3990]  INFO -- default-debian-78:     +    ;;
+I, [2016-02-04T11:35:56.847026 #3990]  INFO -- default-debian-78:     +    stop)
+I, [2016-02-04T11:35:56.847044 #3990]  INFO -- default-debian-78:     +    if is_running; then
+I, [2016-02-04T11:35:56.847303 #3990]  INFO -- default-debian-78:     +        echo -n "Stopping $name.."
+I, [2016-02-04T11:35:56.847337 #3990]  INFO -- default-debian-78:     +        kill `get_pid`
+I, [2016-02-04T11:35:56.847390 #3990]  INFO -- default-debian-78:     +        for i in {1..10}
+I, [2016-02-04T11:35:56.847648 #3990]  INFO -- default-debian-78:     +        do
+I, [2016-02-04T11:35:56.847680 #3990]  INFO -- default-debian-78:     +            if ! is_running; then
+I, [2016-02-04T11:35:56.847696 #3990]  INFO -- default-debian-78:     +                break
+I, [2016-02-04T11:35:56.847710 #3990]  INFO -- default-debian-78:     +            fi
+I, [2016-02-04T11:35:56.847723 #3990]  INFO -- default-debian-78:     +
+I, [2016-02-04T11:35:56.847736 #3990]  INFO -- default-debian-78:     +            echo -n "."
+I, [2016-02-04T11:35:56.847749 #3990]  INFO -- default-debian-78:     +            sleep 1
+I, [2016-02-04T11:35:56.848079 #3990]  INFO -- default-debian-78:     +        done
+I, [2016-02-04T11:35:56.848106 #3990]  INFO -- default-debian-78:     +        echo
+I, [2016-02-04T11:35:56.848257 #3990]  INFO -- default-debian-78: 
+I, [2016-02-04T11:35:56.848447 #3990]  INFO -- default-debian-78: 
+I, [2016-02-04T11:35:56.848477 #3990]  INFO -- default-debian-78:     +            echo "Not stopped; may still be shutting down or shutdown may have failed"
+I, [2016-02-04T11:35:56.848504 #3990]  INFO -- default-debian-78:     +            exit 1
+I, [2016-02-04T11:35:56.848738 #3990]  INFO -- default-debian-78:     +        else
+I, [2016-02-04T11:35:56.848768 #3990]  INFO -- default-debian-78:     +            echo "Stopped"
+I, [2016-02-04T11:35:56.848784 #3990]  INFO -- default-debian-78:     +            if [ -f "$pid_file" ]; then
+I, [2016-02-04T11:35:56.848799 #3990]  INFO -- default-debian-78:     +                rm "$pid_file"
+I, [2016-02-04T11:35:56.848811 #3990]  INFO -- default-debian-78:     +            fi
+I, [2016-02-04T11:35:56.849006 #3990]  INFO -- default-debian-78:     +        fi
+I, [2016-02-04T11:35:56.849273 #3990]  INFO -- default-debian-78: 
+I, [2016-02-04T11:35:56.849480 #3990]  INFO -- default-debian-78: +        echo "Not running"
+I, [2016-02-04T11:35:56.849525 #3990]  INFO -- default-debian-78:     +    fi
+I, [2016-02-04T11:35:56.849554 #3990]  INFO -- default-debian-78:     +    ;;
+I, [2016-02-04T11:35:56.849574 #3990]  INFO -- default-debian-78:     +    restart)
+I, [2016-02-04T11:35:56.849588 #3990]  INFO -- default-debian-78:     +    $0 stop
+I, [2016-02-04T11:35:56.849892 #3990]  INFO -- default-debian-78:     +    if is_running; then
+I, [2016-02-04T11:35:56.850037 #3990]  INFO -- default-debian-78: 
+I, [2016-02-04T11:35:56.850207 #3990]  INFO -- default-debian-78:     +        exit 1
+I, [2016-02-04T11:35:56.850233 #3990]  INFO -- default-debian-78:     +    fi
+I, [2016-02-04T11:35:56.850396 #3990]  INFO -- default-debian-78:     +    $0 start
+I, [2016-02-04T11:35:56.850425 #3990]  INFO -- default-debian-78:     +    ;;
+I, [2016-02-04T11:35:56.850448 #3990]  INFO -- default-debian-78:     +    status)
+I, [2016-02-04T11:35:56.850605 #3990]  INFO -- default-debian-78: +    if is_running; then
+I, [2016-02-04T11:35:56.850635 #3990]  INFO -- default-debian-78:     +        echo "Running"
+I, [2016-02-04T11:35:56.850653 #3990]  INFO -- default-debian-78:     +    else
+I, [2016-02-04T11:35:56.850674 #3990]  INFO -- default-debian-78:     +        echo "Stopped"
+I, [2016-02-04T11:35:56.850687 #3990]  INFO -- default-debian-78:     +        exit 1
+I, [2016-02-04T11:35:56.850699 #3990]  INFO -- default-debian-78:     +    fi
+I, [2016-02-04T11:35:56.850711 #3990]  INFO -- default-debian-78:     +    ;;
+I, [2016-02-04T11:35:56.850991 #3990]  INFO -- default-debian-78: 
+I, [2016-02-04T11:35:56.851045 #3990]  INFO -- default-debian-78:     +    echo "Usage: $0 {start|stop|restart|status}"
+I, [2016-02-04T11:35:56.851256 #3990]  INFO -- default-debian-78:     +    exit 1
+I, [2016-02-04T11:35:56.851284 #3990]  INFO -- default-debian-78:     +    ;;
+I, [2016-02-04T11:35:56.853656 #3990]  INFO -- default-debian-78:     +esac
+I, [2016-02-04T11:35:56.853714 #3990]  INFO -- default-debian-78:     +
+I, [2016-02-04T11:35:56.853748 #3990]  INFO -- default-debian-78:     +exit 0
+I, [2016-02-04T11:35:56.854243 #3990]  INFO -- default-debian-78:     - change mode from '' to '0755'
+I, [2016-02-04T11:35:56.854665 #3990]  INFO -- default-debian-78:     - change owner from '' to 'root'
+I, [2016-02-04T11:35:56.855643 #3990]  INFO -- default-debian-78:     - change group from '' to 'root'
+I, [2016-02-04T11:35:56.858032 #3990]  INFO -- default-debian-78:   * cookbook_file[/var/www/index.rb] action create
+I, [2016-02-04T11:35:56.859708 #3990]  INFO -- default-debian-78:     - create new file /var/www/index.rb
+I, [2016-02-04T11:35:56.860498 #3990]  INFO -- default-debian-78:     - update content in file /var/www/index.rb from none to 5431ae
+I, [2016-02-04T11:35:56.861244 #3990]  INFO -- default-debian-78:     --- /var/www/index.rb	2016-02-04 17:35:55.033542001 +0000
+I, [2016-02-04T11:35:56.861866 #3990]  INFO -- default-debian-78:     +++ /var/www/.index.rb20160204-2937-jdgu7s	2016-02-04 17:35:55.033542001 +0000
+I, [2016-02-04T11:35:56.862229 #3990]  INFO -- default-debian-78:     @@ -1 +1,11 @@
+I, [2016-02-04T11:35:56.862713 #3990]  INFO -- default-debian-78:     +require "rubygems"
+I, [2016-02-04T11:35:56.863082 #3990]  INFO -- default-debian-78:     +require "sinatra/base"
+I, [2016-02-04T11:35:56.863511 #3990]  INFO -- default-debian-78:     +
+I, [2016-02-04T11:35:56.864218 #3990]  INFO -- default-debian-78:     +class SinatraApp < Sinatra::Base
+I, [2016-02-04T11:35:56.865066 #3990]  INFO -- default-debian-78:     +
+I, [2016-02-04T11:35:56.865639 #3990]  INFO -- default-debian-78:     +  get '/' do
+I, [2016-02-04T11:35:56.866387 #3990]  INFO -- default-debian-78:     +    'Hello, nginx and unicorn!'
+I, [2016-02-04T11:35:56.866937 #3990]  INFO -- default-debian-78:     +  end
+I, [2016-02-04T11:35:56.866987 #3990]  INFO -- default-debian-78:     +
+I, [2016-02-04T11:35:56.869409 #3990]  INFO -- default-debian-78:     +end
+I, [2016-02-04T11:35:56.869921 #3990]  INFO -- default-debian-78:     - change mode from '' to '0755'
+I, [2016-02-04T11:35:56.870372 #3990]  INFO -- default-debian-78:     - change owner from '' to 'root'
+I, [2016-02-04T11:35:56.871335 #3990]  INFO -- default-debian-78:     - change group from '' to 'root'
+I, [2016-02-04T11:35:56.873692 #3990]  INFO -- default-debian-78:   * cookbook_file[/var/www/config.ru] action create
+I, [2016-02-04T11:35:56.875408 #3990]  INFO -- default-debian-78:     - create new file /var/www/config.ru
+I, [2016-02-04T11:35:56.875922 #3990]  INFO -- default-debian-78:     - update content in file /var/www/config.ru from none to 43c50f
+I, [2016-02-04T11:35:56.876639 #3990]  INFO -- default-debian-78:     --- /var/www/config.ru	2016-02-04 17:35:55.049550000 +0000
+I, [2016-02-04T11:35:56.877525 #3990]  INFO -- default-debian-78:     +++ /var/www/.config.ru20160204-2937-18tpssl	2016-02-04 17:35:55.049550000 +0000
+I, [2016-02-04T11:35:56.878013 #3990]  INFO -- default-debian-78:     @@ -1 +1,7 @@
+I, [2016-02-04T11:35:56.878491 #3990]  INFO -- default-debian-78:     +require "rubygems"
+I, [2016-02-04T11:35:56.878934 #3990]  INFO -- default-debian-78:     +require "sinatra"
+I, [2016-02-04T11:35:56.879336 #3990]  INFO -- default-debian-78:     +
+I, [2016-02-04T11:35:56.879969 #3990]  INFO -- default-debian-78:     +require File.expand_path '../index.rb', __FILE__
+I, [2016-02-04T11:35:56.880423 #3990]  INFO -- default-debian-78:     +
+I, [2016-02-04T11:35:56.882108 #3990]  INFO -- default-debian-78:     +run SinatraApp
+I, [2016-02-04T11:35:56.882597 #3990]  INFO -- default-debian-78:     - change mode from '' to '0644'
+I, [2016-02-04T11:35:56.883032 #3990]  INFO -- default-debian-78:     - change owner from '' to 'root'
+I, [2016-02-04T11:35:56.884112 #3990]  INFO -- default-debian-78:     - change group from '' to 'root'
+I, [2016-02-04T11:35:58.302170 #3990]  INFO -- default-debian-78:   * service[unicorn] action restart
+I, [2016-02-04T11:35:58.302230 #3990]  INFO -- default-debian-78:     - restart service service[unicorn]
+I, [2016-02-04T11:35:59.477089 #3990]  INFO -- default-debian-78: 
+I, [2016-02-04T11:35:59.477209 #3990]  INFO -- default-debian-78:     - restart service service[nginx]
+I, [2016-02-04T11:35:59.525926 #3990]  INFO -- default-debian-78: 
+I, [2016-02-04T11:35:59.525982 #3990]  INFO -- default-debian-78:     - reload service service[nginx]
+I, [2016-02-04T11:35:59.527261 #3990]  INFO -- default-debian-78: 
+I, [2016-02-04T11:35:59.527619 #3990]  INFO -- default-debian-78: Running handlers:
+I, [2016-02-04T11:35:59.528015 #3990]  INFO -- default-debian-78: Running handlers complete
+I, [2016-02-04T11:35:59.530481 #3990]  INFO -- default-debian-78: Chef Client finished, 45/60 resources updated in 02 minutes 00 seconds
+I, [2016-02-04T11:35:59.907561 #3990]  INFO -- default-debian-78: Finished converging <default-debian-78> (2m17.03s).
+I, [2016-02-04T11:35:59.907707 #3990]  INFO -- default-debian-78: -----> Setting up <default-debian-78>...
+I, [2016-02-04T11:35:59.909868 #3990]  INFO -- default-debian-78: Finished setting up <default-debian-78> (0m0.00s).
+I, [2016-02-04T11:35:59.909990 #3990]  INFO -- default-debian-78: -----> Verifying <default-debian-78>...
+I, [2016-02-04T11:35:59.911414 #3990]  INFO -- default-debian-78: Preparing files for transfer
+I, [2016-02-04T11:35:59.911738 #3990]  INFO -- default-debian-78: Transferring files to <default-debian-78>
+I, [2016-02-04T11:35:59.912630 #3990]  INFO -- default-debian-78: Finished verifying <default-debian-78> (0m0.00s).
+I, [2016-02-04T11:35:59.914042 #3990]  INFO -- default-debian-78: -----> Destroying <default-debian-78>...
+I, [2016-02-04T11:36:03.018811 #3990]  INFO -- default-debian-78: ==> default: Forcing shutdown of VM...
+I, [2016-02-04T11:36:04.197987 #3990]  INFO -- default-debian-78: ==> default: Destroying VM and associated drives...
+I, [2016-02-04T11:36:04.437393 #3990]  INFO -- default-debian-78: Vagrant instance <default-debian-78> destroyed.
+I, [2016-02-04T11:36:04.438339 #3990]  INFO -- default-debian-78: Finished destroying <default-debian-78> (0m4.52s).
+I, [2016-02-04T11:36:04.439312 #3990]  INFO -- default-debian-78: Finished testing <default-debian-78> (2m59.32s).

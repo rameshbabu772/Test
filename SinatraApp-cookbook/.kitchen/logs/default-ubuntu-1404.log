@@ -1,0 +1,940 @@
+I, [2016-02-04T11:27:58.946030 #3990]  INFO -- default-ubuntu-1404: -----> Cleaning up any prior instances of <default-ubuntu-1404>
+I, [2016-02-04T11:27:58.946141 #3990]  INFO -- default-ubuntu-1404: -----> Destroying <default-ubuntu-1404>...
+I, [2016-02-04T11:27:58.946921 #3990]  INFO -- default-ubuntu-1404: Finished destroying <default-ubuntu-1404> (0m0.00s).
+I, [2016-02-04T11:27:58.947976 #3990]  INFO -- default-ubuntu-1404: -----> Testing <default-ubuntu-1404>
+I, [2016-02-04T11:27:58.948085 #3990]  INFO -- default-ubuntu-1404: -----> Creating <default-ubuntu-1404>...
+I, [2016-02-04T11:28:01.326572 #3990]  INFO -- default-ubuntu-1404: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2016-02-04T11:28:01.590749 #3990]  INFO -- default-ubuntu-1404: ==> default: Importing base box 'opscode-ubuntu-14.04'...
+I, [2016-02-04T11:28:08.906667 #3990]  INFO -- default-ubuntu-1404: [KProgress: 10%[KProgress: 20%[KProgress: 30%[KProgress: 40%[KProgress: 60%[KProgress: 70%[KProgress: 80%[KProgress: 90%[K==> default: Matching MAC address for NAT networking...
+I, [2016-02-04T11:28:09.659515 #3990]  INFO -- default-ubuntu-1404: ==> default: Setting the name of the VM: kitchen-sinatra-default-ubuntu-1404_default_1454606889617_93821
+I, [2016-02-04T11:28:10.050721 #3990]  INFO -- default-ubuntu-1404: ==> default: Fixed port collision for 22 => 2222. Now on port 2201.
+I, [2016-02-04T11:28:10.101664 #3990]  INFO -- default-ubuntu-1404: ==> default: Clearing any previously set network interfaces...
+I, [2016-02-04T11:28:10.150337 #3990]  INFO -- default-ubuntu-1404: ==> default: Preparing network interfaces based on configuration...
+I, [2016-02-04T11:28:10.150791 #3990]  INFO -- default-ubuntu-1404:     default: Adapter 1: nat
+I, [2016-02-04T11:28:10.202407 #3990]  INFO -- default-ubuntu-1404: ==> default: Forwarding ports...
+I, [2016-02-04T11:28:10.263642 #3990]  INFO -- default-ubuntu-1404:     default: 22 => 2201 (adapter 1)
+I, [2016-02-04T11:28:10.405357 #3990]  INFO -- default-ubuntu-1404: ==> default: Booting VM...
+I, [2016-02-04T11:28:10.652018 #3990]  INFO -- default-ubuntu-1404: ==> default: Waiting for machine to boot. This may take a few minutes...
+I, [2016-02-04T11:28:11.171384 #3990]  INFO -- default-ubuntu-1404:     default: SSH address: 127.0.0.1:2201
+I, [2016-02-04T11:28:11.171593 #3990]  INFO -- default-ubuntu-1404:     default: SSH username: vagrant
+I, [2016-02-04T11:28:11.171770 #3990]  INFO -- default-ubuntu-1404:     default: SSH auth method: private key
+I, [2016-02-04T11:28:26.312536 #3990]  INFO -- default-ubuntu-1404:     default: Warning: Connection timeout. Retrying...
+I, [2016-02-04T11:28:26.736199 #3990]  INFO -- default-ubuntu-1404:     default: 
+I, [2016-02-04T11:28:26.736254 #3990]  INFO -- default-ubuntu-1404:     default: Vagrant insecure key detected. Vagrant will automatically replace
+I, [2016-02-04T11:28:26.736283 #3990]  INFO -- default-ubuntu-1404:     default: this with a newly generated keypair for better security.
+I, [2016-02-04T11:28:27.341087 #3990]  INFO -- default-ubuntu-1404:     default: 
+I, [2016-02-04T11:28:27.341194 #3990]  INFO -- default-ubuntu-1404:     default: Inserting generated public key within guest...
+I, [2016-02-04T11:28:27.397491 #3990]  INFO -- default-ubuntu-1404:     default: Removing insecure key from the guest if it's present...
+I, [2016-02-04T11:28:27.438324 #3990]  INFO -- default-ubuntu-1404:     default: Key inserted! Disconnecting and reconnecting using new SSH key...
+I, [2016-02-04T11:28:27.698677 #3990]  INFO -- default-ubuntu-1404: ==> default: Machine booted and ready!
+I, [2016-02-04T11:28:27.699208 #3990]  INFO -- default-ubuntu-1404: ==> default: Checking for guest additions in VM...
+I, [2016-02-04T11:28:27.740356 #3990]  INFO -- default-ubuntu-1404: ==> default: Setting hostname...
+I, [2016-02-04T11:28:30.437677 #3990]  INFO -- default-ubuntu-1404: ==> default: Machine not provisioned because `--no-provision` is specified.
+I, [2016-02-04T11:28:32.901980 #3990]  INFO -- default-ubuntu-1404: [SSH] Established
+I, [2016-02-04T11:28:32.902307 #3990]  INFO -- default-ubuntu-1404: Vagrant instance <default-ubuntu-1404> created.
+I, [2016-02-04T11:28:32.903554 #3990]  INFO -- default-ubuntu-1404: Finished creating <default-ubuntu-1404> (0m33.95s).
+I, [2016-02-04T11:28:32.904642 #3990]  INFO -- default-ubuntu-1404: -----> Converging <default-ubuntu-1404>...
+I, [2016-02-04T11:28:32.905813 #3990]  INFO -- default-ubuntu-1404: Preparing files for transfer
+I, [2016-02-04T11:28:32.905924 #3990]  INFO -- default-ubuntu-1404: Preparing dna.json
+I, [2016-02-04T11:28:32.906366 #3990]  INFO -- default-ubuntu-1404: Resolving cookbook dependencies with Berkshelf 4.0.1...
+I, [2016-02-04T11:28:34.712814 #3990]  INFO -- default-ubuntu-1404: Removing non-cookbook files before transfer
+I, [2016-02-04T11:28:34.730817 #3990]  INFO -- default-ubuntu-1404: Preparing solo.rb
+I, [2016-02-04T11:28:34.742563 #3990]  INFO -- default-ubuntu-1404: -----> Installing Chef Omnibus (install only if missing)
+I, [2016-02-04T11:28:34.742609 #3990]  INFO -- default-ubuntu-1404: Downloading https://www.chef.io/chef/install.sh to file /tmp/install.sh
+I, [2016-02-04T11:28:34.742626 #3990]  INFO -- default-ubuntu-1404: Trying wget...
+I, [2016-02-04T11:28:35.019780 #3990]  INFO -- default-ubuntu-1404: Download complete.
+I, [2016-02-04T11:28:35.032727 #3990]  INFO -- default-ubuntu-1404: Getting information for chef stable  for ubuntu...
+I, [2016-02-04T11:28:35.033091 #3990]  INFO -- default-ubuntu-1404: downloading https://omnitruck-direct.chef.io/stable/chef/metadata?v=&p=ubuntu&pv=14.04&m=x86_64
+I, [2016-02-04T11:28:35.033429 #3990]  INFO -- default-ubuntu-1404:   to file /tmp/install.sh.1372/metadata.txt
+I, [2016-02-04T11:28:35.033700 #3990]  INFO -- default-ubuntu-1404: trying wget...
+I, [2016-02-04T11:28:35.353439 #3990]  INFO -- default-ubuntu-1404: url	https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/14.04/x86_64/chef_12.6.0-1_amd64.deb
+I, [2016-02-04T11:28:35.353921 #3990]  INFO -- default-ubuntu-1404: md5	5cfc19d5a036b3f7860716bc9795a85e
+I, [2016-02-04T11:28:35.354436 #3990]  INFO -- default-ubuntu-1404: sha256	e0b42748daf55b5dab815a8ace1de06385db98e29a27ca916cb44f375ef65453
+I, [2016-02-04T11:28:35.356795 #3990]  INFO -- default-ubuntu-1404: version	12.6.0downloaded metadata file looks valid...
+I, [2016-02-04T11:28:35.361211 #3990]  INFO -- default-ubuntu-1404: downloading https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/14.04/x86_64/chef_12.6.0-1_amd64.deb
+I, [2016-02-04T11:28:35.361600 #3990]  INFO -- default-ubuntu-1404:   to file /tmp/install.sh.1372/chef_12.6.0-1_amd64.deb
+I, [2016-02-04T11:28:35.362073 #3990]  INFO -- default-ubuntu-1404: trying wget...
+I, [2016-02-04T11:28:42.307463 #3990]  INFO -- default-ubuntu-1404: Comparing checksum with sha256sum...
+I, [2016-02-04T11:28:42.511219 #3990]  INFO -- default-ubuntu-1404: 
+I, [2016-02-04T11:28:42.511558 #3990]  INFO -- default-ubuntu-1404: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2016-02-04T11:28:42.511757 #3990]  INFO -- default-ubuntu-1404: 
+I, [2016-02-04T11:28:42.512008 #3990]  INFO -- default-ubuntu-1404: You are installing an omnibus package without a version pin.  If you are installing
+I, [2016-02-04T11:28:42.512307 #3990]  INFO -- default-ubuntu-1404: on production servers via an automated process this is DANGEROUS and you will
+I, [2016-02-04T11:28:42.512628 #3990]  INFO -- default-ubuntu-1404: be upgraded without warning on new releases, even to new major releases.
+I, [2016-02-04T11:28:42.512833 #3990]  INFO -- default-ubuntu-1404: Letting the version float is only appropriate in desktop, test, development or
+I, [2016-02-04T11:28:42.513095 #3990]  INFO -- default-ubuntu-1404: CI/CD environments.
+I, [2016-02-04T11:28:42.513287 #3990]  INFO -- default-ubuntu-1404: 
+I, [2016-02-04T11:28:42.513686 #3990]  INFO -- default-ubuntu-1404: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2016-02-04T11:28:42.514165 #3990]  INFO -- default-ubuntu-1404: 
+I, [2016-02-04T11:28:42.514689 #3990]  INFO -- default-ubuntu-1404: Installing chef 
+I, [2016-02-04T11:28:42.515168 #3990]  INFO -- default-ubuntu-1404: installing with dpkg...
+I, [2016-02-04T11:28:42.606461 #3990]  INFO -- default-ubuntu-1404: Selecting previously unselected package chef.
+I, [2016-02-04T11:28:42.805043 #3990]  INFO -- default-ubuntu-1404: (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 33142 files and directories currently installed.)
+I, [2016-02-04T11:28:42.806465 #3990]  INFO -- default-ubuntu-1404: Preparing to unpack .../chef_12.6.0-1_amd64.deb ...
+I, [2016-02-04T11:28:42.811375 #3990]  INFO -- default-ubuntu-1404: Unpacking chef (12.6.0-1) ...
+I, [2016-02-04T11:28:48.404805 #3990]  INFO -- default-ubuntu-1404: Setting up chef (12.6.0-1) ...
+I, [2016-02-04T11:28:48.484183 #3990]  INFO -- default-ubuntu-1404: Thank you for installing Chef!
+I, [2016-02-04T11:28:48.563535 #3990]  INFO -- default-ubuntu-1404: Transferring files to <default-ubuntu-1404>
+I, [2016-02-04T11:28:51.138987 #3990]  INFO -- default-ubuntu-1404: Starting Chef Client, version 12.6.0
+I, [2016-02-04T11:28:52.986927 #3990]  INFO -- default-ubuntu-1404: Compiling Cookbooks...
+I, [2016-02-04T11:28:53.119851 #3990]  INFO -- default-ubuntu-1404: Recipe: ohai::default
+I, [2016-02-04T11:28:53.129613 #3990]  INFO -- default-ubuntu-1404:   * remote_directory[/etc/chef/ohai_plugins for cookbook ohai] action create
+I, [2016-02-04T11:28:53.131076 #3990]  INFO -- default-ubuntu-1404:     - create new directory /etc/chef/ohai_plugins
+I, [2016-02-04T11:28:53.135017 #3990]  INFO -- default-ubuntu-1404:     - change mode from '' to '0755'
+I, [2016-02-04T11:28:53.136965 #3990]  INFO -- default-ubuntu-1404:   Recipe: <Dynamically Defined Resource>
+I, [2016-02-04T11:28:53.144674 #3990]  INFO -- default-ubuntu-1404:     * cookbook_file[/etc/chef/ohai_plugins/README] action create
+I, [2016-02-04T11:28:53.147478 #3990]  INFO -- default-ubuntu-1404:       - create new file /etc/chef/ohai_plugins/README
+I, [2016-02-04T11:28:53.148251 #3990]  INFO -- default-ubuntu-1404:       - update content in file /etc/chef/ohai_plugins/README from none to 775fa7
+I, [2016-02-04T11:28:53.149630 #3990]  INFO -- default-ubuntu-1404:       --- /etc/chef/ohai_plugins/README	2016-02-04 17:28:53.189106187 +0000
+I, [2016-02-04T11:28:53.151021 #3990]  INFO -- default-ubuntu-1404:       +++ /etc/chef/ohai_plugins/.README20160204-1477-phuxry	2016-02-04 17:28:53.189106187 +0000
+I, [2016-02-04T11:28:53.151453 #3990]  INFO -- default-ubuntu-1404:       @@ -1 +1,2 @@
+I, [2016-02-04T11:28:53.153290 #3990]  INFO -- default-ubuntu-1404:       +This directory contains custom plugins for Ohai.
+I, [2016-02-04T11:28:53.155244 #3990]  INFO -- default-ubuntu-1404:       - change mode from '' to '0644'
+I, [2016-02-04T11:28:53.156194 #3990]  INFO -- default-ubuntu-1404:   
+I, [2016-02-04T11:28:53.159790 #3990]  INFO -- default-ubuntu-1404: Recipe: ohai::default
+I, [2016-02-04T11:28:53.164657 #3990]  INFO -- default-ubuntu-1404:   * ohai[custom_plugins] action reload[2016-02-04T17:28:53+00:00] WARN: Ohai::Config[:plugin_path] is set. Ohai::Config[:plugin_path] is deprecated and will be removed in future releases of ohai. Use ohai.plugin_path in your configuration file to configure :plugin_path for ohai.
+I, [2016-02-04T11:28:53.166611 #3990]  INFO -- default-ubuntu-1404: [2016-02-04T17:28:53+00:00] WARN: Ohai::Config[:plugin_path] is set. Ohai::Config[:plugin_path] is deprecated and will be removed in future releases of ohai. Use ohai.plugin_path in your configuration file to configure :plugin_path for ohai.
+I, [2016-02-04T11:28:54.547910 #3990]  INFO -- default-ubuntu-1404: 
+I, [2016-02-04T11:28:54.548520 #3990]  INFO -- default-ubuntu-1404:     - re-run ohai and merge results into node attributes
+I, [2016-02-04T11:28:54.566373 #3990]  INFO -- default-ubuntu-1404: [2016-02-04T17:28:54+00:00] WARN: Cloning resource attributes for service[nginx] from prior resource (CHEF-3694)
+I, [2016-02-04T11:28:54.567015 #3990]  INFO -- default-ubuntu-1404: [2016-02-04T17:28:54+00:00] WARN: Previous service[nginx]: /tmp/kitchen/cookbooks/nginx/recipes/package.rb:47:in `from_file'
+I, [2016-02-04T11:28:54.567512 #3990]  INFO -- default-ubuntu-1404: [2016-02-04T17:28:54+00:00] WARN: Current  service[nginx]: /tmp/kitchen/cookbooks/nginx/recipes/default.rb:24:in `from_file'
+I, [2016-02-04T11:28:54.588398 #3990]  INFO -- default-ubuntu-1404: [2016-02-04T17:28:54+00:00] WARN: Cloning resource attributes for service[nginx] from prior resource (CHEF-3694)
+I, [2016-02-04T11:28:54.588940 #3990]  INFO -- default-ubuntu-1404: [2016-02-04T17:28:54+00:00] WARN: Previous service[nginx]: /tmp/kitchen/cookbooks/nginx/recipes/default.rb:24:in `from_file'
+I, [2016-02-04T11:28:54.589466 #3990]  INFO -- default-ubuntu-1404: [2016-02-04T17:28:54+00:00] WARN: Current  service[nginx]: /tmp/kitchen/cookbooks/sinatra/recipes/configure.rb:87:in `from_file'
+I, [2016-02-04T11:28:54.590514 #3990]  INFO -- default-ubuntu-1404:   Converging 53 resources
+I, [2016-02-04T11:28:54.595272 #3990]  INFO -- default-ubuntu-1404: Recipe: apt::default
+I, [2016-02-04T11:28:54.598053 #3990]  INFO -- default-ubuntu-1404:   * file[/var/lib/apt/periodic/update-success-stamp] action nothing (skipped due to action :nothing)
+I, [2016-02-04T11:28:54.601887 #3990]  INFO -- default-ubuntu-1404:   * directory[/etc/apt/apt.conf.d] action create (up to date)
+I, [2016-02-04T11:28:54.615709 #3990]  INFO -- default-ubuntu-1404:   * cookbook_file[/etc/apt/apt.conf.d/15update-stamp] action create
+I, [2016-02-04T11:28:54.617398 #3990]  INFO -- default-ubuntu-1404:     - create new file /etc/apt/apt.conf.d/15update-stamp
+I, [2016-02-04T11:28:54.617883 #3990]  INFO -- default-ubuntu-1404:     - update content in file /etc/apt/apt.conf.d/15update-stamp from none to 174cdb
+I, [2016-02-04T11:28:54.618715 #3990]  INFO -- default-ubuntu-1404:     --- /etc/apt/apt.conf.d/15update-stamp	2016-02-04 17:28:54.657497808 +0000
+I, [2016-02-04T11:28:54.619917 #3990]  INFO -- default-ubuntu-1404:     +++ /etc/apt/apt.conf.d/.15update-stamp20160204-1477-7olu31	2016-02-04 17:28:54.657497808 +0000
+I, [2016-02-04T11:28:54.620637 #3990]  INFO -- default-ubuntu-1404:     @@ -1 +1,2 @@
+I, [2016-02-04T11:28:54.625920 #3990]  INFO -- default-ubuntu-1404:     +APT::Update::Post-Invoke-Success {"touch /var/lib/apt/periodic/update-success-stamp 2>/dev/null || true";};
+I, [2016-02-04T11:28:54.628032 #3990]  INFO -- default-ubuntu-1404:   * execute[apt-get update] action nothing (skipped due to action :nothing)
+I, [2016-02-04T11:28:54.629767 #3990]  INFO -- default-ubuntu-1404:   * execute[apt-get autoremove] action nothing (skipped due to action :nothing)
+I, [2016-02-04T11:28:54.631198 #3990]  INFO -- default-ubuntu-1404:   * execute[apt-get autoclean] action nothing (skipped due to action :nothing)
+I, [2016-02-04T11:29:06.180201 #3990]  INFO -- default-ubuntu-1404:   * execute[apt-get-update-periodic] action run
+I, [2016-02-04T11:29:06.181404 #3990]  INFO -- default-ubuntu-1404:     - execute apt-get update
+I, [2016-02-04T11:29:06.190193 #3990]  INFO -- default-ubuntu-1404: * file[/var/lib/apt/periodic/update-success-stamp] action touch
+I, [2016-02-04T11:29:06.191009 #3990]  INFO -- default-ubuntu-1404:     - update utime on file /var/lib/apt/periodic/update-success-stamp
+I, [2016-02-04T11:29:06.200802 #3990]  INFO -- default-ubuntu-1404:   * directory[/var/cache/local] action create
+I, [2016-02-04T11:29:06.204409 #3990]  INFO -- default-ubuntu-1404:     - create new directory /var/cache/local
+I, [2016-02-04T11:29:06.204783 #3990]  INFO -- default-ubuntu-1404:     - change mode from '' to '0755'
+I, [2016-02-04T11:29:06.205533 #3990]  INFO -- default-ubuntu-1404:     - change owner from '' to 'root'
+I, [2016-02-04T11:29:06.206644 #3990]  INFO -- default-ubuntu-1404:     - change group from '' to 'root'
+I, [2016-02-04T11:29:06.211933 #3990]  INFO -- default-ubuntu-1404:   * directory[/var/cache/local/preseeding] action create
+I, [2016-02-04T11:29:06.217149 #3990]  INFO -- default-ubuntu-1404:     - create new directory /var/cache/local/preseeding
+I, [2016-02-04T11:29:06.217703 #3990]  INFO -- default-ubuntu-1404:     - change mode from '' to '0755'
+I, [2016-02-04T11:29:06.218429 #3990]  INFO -- default-ubuntu-1404:     - change owner from '' to 'root'
+I, [2016-02-04T11:29:06.219769 #3990]  INFO -- default-ubuntu-1404:     - change group from '' to 'root'
+I, [2016-02-04T11:29:06.239116 #3990]  INFO -- default-ubuntu-1404:   * template[/etc/apt/apt.conf.d/10recommends] action create
+I, [2016-02-04T11:29:06.247189 #3990]  INFO -- default-ubuntu-1404:     - create new file /etc/apt/apt.conf.d/10recommends
+I, [2016-02-04T11:29:06.248270 #3990]  INFO -- default-ubuntu-1404:     - update content in file /etc/apt/apt.conf.d/10recommends from none to f41e1d
+I, [2016-02-04T11:29:06.250832 #3990]  INFO -- default-ubuntu-1404:     --- /etc/apt/apt.conf.d/10recommends	2016-02-04 17:29:06.282335819 +0000
+I, [2016-02-04T11:29:06.254962 #3990]  INFO -- default-ubuntu-1404:     +++ /etc/apt/apt.conf.d/.10recommends20160204-1477-1roezuh	2016-02-04 17:29:06.282335819 +0000
+I, [2016-02-04T11:29:06.255058 #3990]  INFO -- default-ubuntu-1404:     @@ -1 +1,4 @@
+I, [2016-02-04T11:29:06.255099 #3990]  INFO -- default-ubuntu-1404:     +# Managed by Chef
+I, [2016-02-04T11:29:06.255119 #3990]  INFO -- default-ubuntu-1404:     +APT::Install-Recommends "1";
+I, [2016-02-04T11:29:06.255140 #3990]  INFO -- default-ubuntu-1404:     +APT::Install-Suggests "0";
+I, [2016-02-04T11:29:06.256203 #3990]  INFO -- default-ubuntu-1404:     - change mode from '' to '0644'
+I, [2016-02-04T11:29:06.257255 #3990]  INFO -- default-ubuntu-1404:     - change owner from '' to 'root'
+I, [2016-02-04T11:29:06.259161 #3990]  INFO -- default-ubuntu-1404:     - change group from '' to 'root'
+I, [2016-02-04T11:29:06.342790 #3990]  INFO -- default-ubuntu-1404:   * apt_package[apt-transport-https] action install (up to date)
+I, [2016-02-04T11:29:06.343434 #3990]  INFO -- default-ubuntu-1404: Recipe: sinatra::default
+I, [2016-02-04T11:29:13.711751 #3990]  INFO -- default-ubuntu-1404:   * apt_package[ruby-dev] action install
+I, [2016-02-04T11:29:13.712814 #3990]  INFO -- default-ubuntu-1404:     - install version 1:1.9.3.4 of package ruby-dev
+I, [2016-02-04T11:29:13.714198 #3990]  INFO -- default-ubuntu-1404: Recipe: nginx::ohai_plugin
+I, [2016-02-04T11:29:13.715669 #3990]  INFO -- default-ubuntu-1404:   * ohai[reload_nginx] action nothing (skipped due to action :nothing)
+I, [2016-02-04T11:29:13.949387 #3990]  INFO -- default-ubuntu-1404:   * template[/etc/chef/ohai_plugins/nginx.rb] action create
+I, [2016-02-04T11:29:13.951665 #3990]  INFO -- default-ubuntu-1404:     - create new file /etc/chef/ohai_plugins/nginx.rb
+I, [2016-02-04T11:29:13.952958 #3990]  INFO -- default-ubuntu-1404:     - update content in file /etc/chef/ohai_plugins/nginx.rb from none to 9f7e82
+I, [2016-02-04T11:29:13.954155 #3990]  INFO -- default-ubuntu-1404:     --- /etc/chef/ohai_plugins/nginx.rb	2016-02-04 17:29:13.994920732 +0000
+I, [2016-02-04T11:29:13.957382 #3990]  INFO -- default-ubuntu-1404:     +++ /etc/chef/ohai_plugins/.nginx.rb20160204-1477-nhfnhy	2016-02-04 17:29:13.994920732 +0000
+I, [2016-02-04T11:29:13.957593 #3990]  INFO -- default-ubuntu-1404:     @@ -1 +1,67 @@
+I, [2016-02-04T11:29:13.957659 #3990]  INFO -- default-ubuntu-1404:     +#
+I, [2016-02-04T11:29:13.957704 #3990]  INFO -- default-ubuntu-1404:     +# Author:: Jamie Winsor (<jamie@vialstudios.com>)
+I, [2016-02-04T11:29:13.958920 #3990]  INFO -- default-ubuntu-1404:     +#
+I, [2016-02-04T11:29:13.959007 #3990]  INFO -- default-ubuntu-1404:     +# Copyright 2012, Riot Games
+I, [2016-02-04T11:29:13.959042 #3990]  INFO -- default-ubuntu-1404:     +#
+I, [2016-02-04T11:29:13.959078 #3990]  INFO -- default-ubuntu-1404:     +# Licensed under the Apache License, Version 2.0 (the "License");
+I, [2016-02-04T11:29:13.959989 #3990]  INFO -- default-ubuntu-1404: +# you may not use this file except in compliance with the License.
+I, [2016-02-04T11:29:13.960030 #3990]  INFO -- default-ubuntu-1404:     +# You may obtain a copy of the License at
+I, [2016-02-04T11:29:13.960050 #3990]  INFO -- default-ubuntu-1404:     +#
+I, [2016-02-04T11:29:13.960066 #3990]  INFO -- default-ubuntu-1404:     +#     http://www.apache.org/licenses/LICENSE-2.0
+I, [2016-02-04T11:29:13.960081 #3990]  INFO -- default-ubuntu-1404:     +#
+I, [2016-02-04T11:29:13.960739 #3990]  INFO -- default-ubuntu-1404: 
+I, [2016-02-04T11:29:13.960781 #3990]  INFO -- default-ubuntu-1404:     +# distributed under the License is distributed on an "AS IS" BASIS,
+I, [2016-02-04T11:29:13.960802 #3990]  INFO -- default-ubuntu-1404:     +# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+I, [2016-02-04T11:29:13.960819 #3990]  INFO -- default-ubuntu-1404:     +# See the License for the specific language governing permissions and
+I, [2016-02-04T11:29:13.960836 #3990]  INFO -- default-ubuntu-1404:     +# limitations under the License.
+I, [2016-02-04T11:29:13.960852 #3990]  INFO -- default-ubuntu-1404:     +#
+I, [2016-02-04T11:29:13.960867 #3990]  INFO -- default-ubuntu-1404:     +
+I, [2016-02-04T11:29:13.960882 #3990]  INFO -- default-ubuntu-1404:     +provides "nginx"
+I, [2016-02-04T11:29:13.960898 #3990]  INFO -- default-ubuntu-1404:     +provides "nginx/version"
+I, [2016-02-04T11:29:13.960913 #3990]  INFO -- default-ubuntu-1404:     +provides "nginx/configure_arguments"
+I, [2016-02-04T11:29:13.960928 #3990]  INFO -- default-ubuntu-1404:     +provides "nginx/prefix"
+I, [2016-02-04T11:29:13.960943 #3990]  INFO -- default-ubuntu-1404:     +provides "nginx/conf_path"
+I, [2016-02-04T11:29:13.960958 #3990]  INFO -- default-ubuntu-1404:     +
+I, [2016-02-04T11:29:13.960973 #3990]  INFO -- default-ubuntu-1404:     +def parse_flags(flags)
+I, [2016-02-04T11:29:13.960988 #3990]  INFO -- default-ubuntu-1404:     +  prefix = nil
+I, [2016-02-04T11:29:13.961003 #3990]  INFO -- default-ubuntu-1404:     +  conf_path = nil
+I, [2016-02-04T11:29:13.961018 #3990]  INFO -- default-ubuntu-1404:     +
+I, [2016-02-04T11:29:13.961033 #3990]  INFO -- default-ubuntu-1404:     +  flags.each do |flag|
+I, [2016-02-04T11:29:13.961048 #3990]  INFO -- default-ubuntu-1404:     +    case flag
+I, [2016-02-04T11:29:13.961063 #3990]  INFO -- default-ubuntu-1404:     +    when /^--prefix=(.+)$/
+I, [2016-02-04T11:29:13.961078 #3990]  INFO -- default-ubuntu-1404:     +      prefix = $1
+I, [2016-02-04T11:29:13.961093 #3990]  INFO -- default-ubuntu-1404:     +    when /^--conf-path=(.+)$/
+I, [2016-02-04T11:29:13.961113 #3990]  INFO -- default-ubuntu-1404:     +      conf_path = $1
+I, [2016-02-04T11:29:13.961140 #3990]  INFO -- default-ubuntu-1404:     +    end
+I, [2016-02-04T11:29:13.961169 #3990]  INFO -- default-ubuntu-1404:     +  end
+I, [2016-02-04T11:29:13.987589 #3990]  INFO -- default-ubuntu-1404: +
+I, [2016-02-04T11:29:13.987669 #3990]  INFO -- default-ubuntu-1404:     +  [ prefix, conf_path ]
+I, [2016-02-04T11:29:13.987706 #3990]  INFO -- default-ubuntu-1404:     +end
+I, [2016-02-04T11:29:13.987738 #3990]  INFO -- default-ubuntu-1404:     +
+I, [2016-02-04T11:29:13.987768 #3990]  INFO -- default-ubuntu-1404:     +nginx Mash.new unless nginx
+I, [2016-02-04T11:29:13.987799 #3990]  INFO -- default-ubuntu-1404:     +nginx[:version]             = nil unless nginx[:version]
+I, [2016-02-04T11:29:13.987830 #3990]  INFO -- default-ubuntu-1404:     +nginx[:configure_arguments] = Array.new unless nginx[:configure_arguments]
+I, [2016-02-04T11:29:13.987860 #3990]  INFO -- default-ubuntu-1404:     +nginx[:prefix]              = nil unless nginx[:prefix]
+I, [2016-02-04T11:29:13.987891 #3990]  INFO -- default-ubuntu-1404:     +nginx[:conf_path]           = nil unless nginx[:conf_path]
+I, [2016-02-04T11:29:13.987923 #3990]  INFO -- default-ubuntu-1404:     +
+I, [2016-02-04T11:29:13.987955 #3990]  INFO -- default-ubuntu-1404:     +status, stdout, stderr = run_command(:no_status_check => true, :command => "/usr/sbin/nginx -V")
+I, [2016-02-04T11:29:13.988017 #3990]  INFO -- default-ubuntu-1404:     +
+I, [2016-02-04T11:29:13.988045 #3990]  INFO -- default-ubuntu-1404:     +if status == 0
+I, [2016-02-04T11:29:13.988074 #3990]  INFO -- default-ubuntu-1404:     +  stderr.split("\n").each do |line|
+I, [2016-02-04T11:29:13.988104 #3990]  INFO -- default-ubuntu-1404:     +    case line
+I, [2016-02-04T11:29:13.988132 #3990]  INFO -- default-ubuntu-1404:     +    when /^configure arguments:(.+)/
+I, [2016-02-04T11:29:13.988160 #3990]  INFO -- default-ubuntu-1404:     +      # This could be better: I'm splitting on configure arguments which removes them and also
+I, [2016-02-04T11:29:13.989218 #3990]  INFO -- default-ubuntu-1404: 
+I, [2016-02-04T11:29:13.989350 #3990]  INFO -- default-ubuntu-1404:     +      # add the '--' prefix back to the configure argument.
+I, [2016-02-04T11:29:13.989394 #3990]  INFO -- default-ubuntu-1404:     +      nginx[:configure_arguments] = $1.split(/\s--/).drop(1).map { |ca| "--#{ca}" }
+I, [2016-02-04T11:29:13.989436 #3990]  INFO -- default-ubuntu-1404:     +
+I, [2016-02-04T11:29:13.989976 #3990]  INFO -- default-ubuntu-1404: +      prefix, conf_path = parse_flags(nginx[:configure_arguments])
+I, [2016-02-04T11:29:13.990025 #3990]  INFO -- default-ubuntu-1404:     +
+I, [2016-02-04T11:29:13.990063 #3990]  INFO -- default-ubuntu-1404:     +      nginx[:prefix] = prefix
+I, [2016-02-04T11:29:13.990119 #3990]  INFO -- default-ubuntu-1404:     +      nginx[:conf_path] = conf_path
+I, [2016-02-04T11:29:13.990169 #3990]  INFO -- default-ubuntu-1404:     +    when /^nginx version: nginx\/(\d+\.\d+\.\d+)/
+I, [2016-02-04T11:29:13.990215 #3990]  INFO -- default-ubuntu-1404:     +      nginx[:version] = $1
+I, [2016-02-04T11:29:13.990242 #3990]  INFO -- default-ubuntu-1404:     +    end
+I, [2016-02-04T11:29:13.990270 #3990]  INFO -- default-ubuntu-1404:     +  end
+I, [2016-02-04T11:29:13.990642 #3990]  INFO -- default-ubuntu-1404: 
+I, [2016-02-04T11:29:13.991116 #3990]  INFO -- default-ubuntu-1404:     - change mode from '' to '0755'
+I, [2016-02-04T11:29:13.991506 #3990]  INFO -- default-ubuntu-1404:     - change owner from '' to 'root'
+I, [2016-02-04T11:29:13.991918 #3990]  INFO -- default-ubuntu-1404:     - change group from '' to 'root'
+I, [2016-02-04T11:29:13.992442 #3990]  INFO -- default-ubuntu-1404:   * ohai[reload_nginx] action reload[2016-02-04T17:29:14+00:00] WARN: Ohai::Config[:plugin_path] is set. Ohai::Config[:plugin_path] is deprecated and will be removed in future releases of ohai. Use ohai.plugin_path in your configuration file to configure :plugin_path for ohai.
+I, [2016-02-04T11:29:13.992904 #3990]  INFO -- default-ubuntu-1404: [2016-02-04T17:29:14+00:00] WARN: Ohai::Config[:plugin_path] is set. Ohai::Config[:plugin_path] is deprecated and will be removed in future releases of ohai. Use ohai.plugin_path in your configuration file to configure :plugin_path for ohai.
+I, [2016-02-04T11:29:13.993257 #3990]  INFO -- default-ubuntu-1404: [2016-02-04T17:29:14+00:00] WARN: [DEPRECATION] Plugin at /etc/chef/ohai_plugins/nginx.rb is a version 6 plugin. Version 6 plugins will not be supported in future releases of Ohai. Please upgrade your plugin to version 7 plugin syntax. For more information visit here: docs.chef.io/ohai_custom.html
+I, [2016-02-04T11:29:14.335059 #3990]  INFO -- default-ubuntu-1404: 
+I, [2016-02-04T11:29:14.336358 #3990]  INFO -- default-ubuntu-1404:     - re-run ohai and merge results into node attributes
+I, [2016-02-04T11:29:14.337376 #3990]  INFO -- default-ubuntu-1404: Recipe: ohai::default
+I, [2016-02-04T11:29:14.338802 #3990]  INFO -- default-ubuntu-1404:   * remote_directory[/etc/chef/ohai_plugins for cookbook ohai] action nothing (skipped due to action :nothing)
+I, [2016-02-04T11:29:14.340203 #3990]  INFO -- default-ubuntu-1404:   * ohai[custom_plugins] action nothing (skipped due to action :nothing)
+I, [2016-02-04T11:29:14.340749 #3990]  INFO -- default-ubuntu-1404: Recipe: nginx::package
+I, [2016-02-04T11:29:25.957141 #3990]  INFO -- default-ubuntu-1404:   * apt_package[nginx] action install
+I, [2016-02-04T11:29:25.958493 #3990]  INFO -- default-ubuntu-1404:     - install version 1.4.6-1ubuntu3.3 of package nginx
+I, [2016-02-04T11:29:25.960245 #3990]  INFO -- default-ubuntu-1404: Recipe: nginx::ohai_plugin
+I, [2016-02-04T11:29:25.964465 #3990]  INFO -- default-ubuntu-1404:   * ohai[reload_nginx] action reload[2016-02-04T17:29:26+00:00] WARN: Ohai::Config[:plugin_path] is set. Ohai::Config[:plugin_path] is deprecated and will be removed in future releases of ohai. Use ohai.plugin_path in your configuration file to configure :plugin_path for ohai.
+I, [2016-02-04T11:29:25.966579 #3990]  INFO -- default-ubuntu-1404: [2016-02-04T17:29:26+00:00] WARN: Ohai::Config[:plugin_path] is set. Ohai::Config[:plugin_path] is deprecated and will be removed in future releases of ohai. Use ohai.plugin_path in your configuration file to configure :plugin_path for ohai.
+I, [2016-02-04T11:29:25.968381 #3990]  INFO -- default-ubuntu-1404: [2016-02-04T17:29:26+00:00] WARN: [DEPRECATION] Plugin at /etc/chef/ohai_plugins/nginx.rb is a version 6 plugin. Version 6 plugins will not be supported in future releases of Ohai. Please upgrade your plugin to version 7 plugin syntax. For more information visit here: docs.chef.io/ohai_custom.html
+I, [2016-02-04T11:29:26.267915 #3990]  INFO -- default-ubuntu-1404: 
+I, [2016-02-04T11:29:26.268036 #3990]  INFO -- default-ubuntu-1404:     - re-run ohai and merge results into node attributes
+I, [2016-02-04T11:29:26.268082 #3990]  INFO -- default-ubuntu-1404: Recipe: nginx::package
+I, [2016-02-04T11:29:26.325290 #3990]  INFO -- default-ubuntu-1404:  (up to date)
+I, [2016-02-04T11:29:26.325723 #3990]  INFO -- default-ubuntu-1404: Recipe: nginx::commons_dir
+I, [2016-02-04T11:29:26.329113 #3990]  INFO -- default-ubuntu-1404:   * directory[/etc/nginx] action create (up to date)
+I, [2016-02-04T11:29:26.337224 #3990]  INFO -- default-ubuntu-1404:   * directory[/var/log/nginx] action create (up to date)
+I, [2016-02-04T11:29:26.342213 #3990]  INFO -- default-ubuntu-1404:   * directory[/run] action create (up to date)
+I, [2016-02-04T11:29:26.347749 #3990]  INFO -- default-ubuntu-1404:   * directory[/etc/nginx/sites-available] action create (up to date)
+I, [2016-02-04T11:29:26.364290 #3990]  INFO -- default-ubuntu-1404:   * directory[/etc/nginx/sites-enabled] action create (up to date)
+I, [2016-02-04T11:29:26.367586 #3990]  INFO -- default-ubuntu-1404:   * directory[/etc/nginx/conf.d] action create (up to date)
+I, [2016-02-04T11:29:26.368189 #3990]  INFO -- default-ubuntu-1404: Recipe: nginx::commons_script
+I, [2016-02-04T11:29:26.374109 #3990]  INFO -- default-ubuntu-1404:   * template[/usr/sbin/nxensite] action create
+I, [2016-02-04T11:29:26.380550 #3990]  INFO -- default-ubuntu-1404:     - create new file /usr/sbin/nxensite
+I, [2016-02-04T11:29:26.381572 #3990]  INFO -- default-ubuntu-1404:     - update content in file /usr/sbin/nxensite from none to fa46fb
+I, [2016-02-04T11:29:26.382119 #3990]  INFO -- default-ubuntu-1404:     --- /usr/sbin/nxensite	2016-02-04 17:29:26.418920732 +0000
+I, [2016-02-04T11:29:26.382934 #3990]  INFO -- default-ubuntu-1404:     +++ /usr/sbin/.nxensite20160204-1477-1vl01uf	2016-02-04 17:29:26.418920732 +0000
+I, [2016-02-04T11:29:26.383482 #3990]  INFO -- default-ubuntu-1404:     @@ -1 +1,39 @@
+I, [2016-02-04T11:29:26.384075 #3990]  INFO -- default-ubuntu-1404:     +#!/bin/sh -e
+I, [2016-02-04T11:29:26.384465 #3990]  INFO -- default-ubuntu-1404:     +
+I, [2016-02-04T11:29:26.385099 #3990]  INFO -- default-ubuntu-1404:     +SYSCONFDIR='/etc/nginx'
+I, [2016-02-04T11:29:26.385579 #3990]  INFO -- default-ubuntu-1404:     +
+I, [2016-02-04T11:29:26.385968 #3990]  INFO -- default-ubuntu-1404:     +if [ -z $1 ]; then
+I, [2016-02-04T11:29:26.386040 #3990]  INFO -- default-ubuntu-1404:     +        echo "Which site would you like to enable?"
+I, [2016-02-04T11:29:26.386071 #3990]  INFO -- default-ubuntu-1404:     +        echo -n "Your choices are: "
+I, [2016-02-04T11:29:26.386089 #3990]  INFO -- default-ubuntu-1404:     +        ls $SYSCONFDIR/sites-available/* | \
+I, [2016-02-04T11:29:26.386128 #3990]  INFO -- default-ubuntu-1404:     +        sed -e "s,$SYSCONFDIR/sites-available/,,g" | xargs echo
+I, [2016-02-04T11:29:26.386146 #3990]  INFO -- default-ubuntu-1404:     +        echo -n "Site name? "
+I, [2016-02-04T11:29:26.387212 #3990]  INFO -- default-ubuntu-1404:     +        read SITENAME
+I, [2016-02-04T11:29:26.387522 #3990]  INFO -- default-ubuntu-1404:     +else
+I, [2016-02-04T11:29:26.387828 #3990]  INFO -- default-ubuntu-1404:     +        SITENAME=$1
+I, [2016-02-04T11:29:26.387884 #3990]  INFO -- default-ubuntu-1404:     +fi
+I, [2016-02-04T11:29:26.387925 #3990]  INFO -- default-ubuntu-1404:     +
+I, [2016-02-04T11:29:26.387966 #3990]  INFO -- default-ubuntu-1404:     +if [ $SITENAME = "default" ]; then
+I, [2016-02-04T11:29:26.388290 #3990]  INFO -- default-ubuntu-1404: 
+I, [2016-02-04T11:29:26.388508 #3990]  INFO -- default-ubuntu-1404:     +fi
+I, [2016-02-04T11:29:26.388551 #3990]  INFO -- default-ubuntu-1404:     +
+I, [2016-02-04T11:29:26.388773 #3990]  INFO -- default-ubuntu-1404:     +if [ -e $SYSCONFDIR/sites-enabled/$SITENAME -o \
+I, [2016-02-04T11:29:26.389082 #3990]  INFO -- default-ubuntu-1404:     +     -e $SYSCONFDIR/sites-enabled/"$PRIORITY"-"$SITENAME" ]; then
+I, [2016-02-04T11:29:26.389385 #3990]  INFO -- default-ubuntu-1404:     +        echo "This site is already enabled!"
+I, [2016-02-04T11:29:26.389594 #3990]  INFO -- default-ubuntu-1404: 
+I, [2016-02-04T11:29:26.389633 #3990]  INFO -- default-ubuntu-1404:     +fi
+I, [2016-02-04T11:29:26.389662 #3990]  INFO -- default-ubuntu-1404:     +
+I, [2016-02-04T11:29:26.389691 #3990]  INFO -- default-ubuntu-1404:     +if ! [ -e $SYSCONFDIR/sites-available/$SITENAME ]; then
+I, [2016-02-04T11:29:26.389916 #3990]  INFO -- default-ubuntu-1404:     +        echo "This site does not exist!"
+I, [2016-02-04T11:29:26.389952 #3990]  INFO -- default-ubuntu-1404:     +        exit 1
+I, [2016-02-04T11:29:26.389980 #3990]  INFO -- default-ubuntu-1404:     +fi
+I, [2016-02-04T11:29:26.390008 #3990]  INFO -- default-ubuntu-1404:     +
+I, [2016-02-04T11:29:26.390037 #3990]  INFO -- default-ubuntu-1404:     +if [ $SITENAME = "default" ]; then
+I, [2016-02-04T11:29:26.390069 #3990]  INFO -- default-ubuntu-1404:     +        ln -sf $SYSCONFDIR/sites-available/$SITENAME \
+I, [2016-02-04T11:29:26.390771 #3990]  INFO -- default-ubuntu-1404:     +               $SYSCONFDIR/sites-enabled/"$PRIORITY"-"$SITENAME"
+I, [2016-02-04T11:29:26.390840 #3990]  INFO -- default-ubuntu-1404:     +else
+I, [2016-02-04T11:29:26.390877 #3990]  INFO -- default-ubuntu-1404:     +        ln -sf $SYSCONFDIR/sites-available/$SITENAME $SYSCONFDIR/sites-enabled/$SITENAME
+I, [2016-02-04T11:29:26.390909 #3990]  INFO -- default-ubuntu-1404:     +fi
+I, [2016-02-04T11:29:26.390937 #3990]  INFO -- default-ubuntu-1404:     +
+I, [2016-02-04T11:29:26.392895 #3990]  INFO -- default-ubuntu-1404: 
+I, [2016-02-04T11:29:26.393621 #3990]  INFO -- default-ubuntu-1404:     - change mode from '' to '0755'
+I, [2016-02-04T11:29:26.394256 #3990]  INFO -- default-ubuntu-1404:     - change owner from '' to 'root'
+I, [2016-02-04T11:29:26.395888 #3990]  INFO -- default-ubuntu-1404:     - change group from '' to 'root'
+I, [2016-02-04T11:29:26.403705 #3990]  INFO -- default-ubuntu-1404:   * template[/usr/sbin/nxdissite] action create
+I, [2016-02-04T11:29:26.405760 #3990]  INFO -- default-ubuntu-1404:     - create new file /usr/sbin/nxdissite
+I, [2016-02-04T11:29:26.406409 #3990]  INFO -- default-ubuntu-1404:     - update content in file /usr/sbin/nxdissite from none to cc16ec
+I, [2016-02-04T11:29:26.407304 #3990]  INFO -- default-ubuntu-1404:     --- /usr/sbin/nxdissite	2016-02-04 17:29:26.446920732 +0000
+I, [2016-02-04T11:29:26.408274 #3990]  INFO -- default-ubuntu-1404:     +++ /usr/sbin/.nxdissite20160204-1477-wtp2sd	2016-02-04 17:29:26.446920732 +0000
+I, [2016-02-04T11:29:26.408625 #3990]  INFO -- default-ubuntu-1404:     @@ -1 +1,30 @@
+I, [2016-02-04T11:29:26.409240 #3990]  INFO -- default-ubuntu-1404:     +#!/bin/sh -e
+I, [2016-02-04T11:29:26.409839 #3990]  INFO -- default-ubuntu-1404:     +
+I, [2016-02-04T11:29:26.410380 #3990]  INFO -- default-ubuntu-1404:     +SYSCONFDIR='/etc/nginx'
+I, [2016-02-04T11:29:26.411003 #3990]  INFO -- default-ubuntu-1404:     +
+I, [2016-02-04T11:29:26.411681 #3990]  INFO -- default-ubuntu-1404:     +if [ -z $1 ]; then
+I, [2016-02-04T11:29:26.412260 #3990]  INFO -- default-ubuntu-1404:     +        echo "Which site would you like to disable?"
+I, [2016-02-04T11:29:26.412319 #3990]  INFO -- default-ubuntu-1404:     +        echo -n "Your choices are: "
+I, [2016-02-04T11:29:26.412390 #3990]  INFO -- default-ubuntu-1404:     +        ls $SYSCONFDIR/sites-enabled/* | \
+I, [2016-02-04T11:29:26.412426 #3990]  INFO -- default-ubuntu-1404:     +        sed -e "s,$SYSCONFDIR/sites-enabled/,,g" | xargs echo
+I, [2016-02-04T11:29:26.412449 #3990]  INFO -- default-ubuntu-1404:     +        echo -n "Site name? "
+I, [2016-02-04T11:29:26.412469 #3990]  INFO -- default-ubuntu-1404:     +        read SITENAME
+I, [2016-02-04T11:29:26.412881 #3990]  INFO -- default-ubuntu-1404:     +else
+I, [2016-02-04T11:29:26.412916 #3990]  INFO -- default-ubuntu-1404:     +        SITENAME=$1
+I, [2016-02-04T11:29:26.412936 #3990]  INFO -- default-ubuntu-1404:     +fi
+I, [2016-02-04T11:29:26.412958 #3990]  INFO -- default-ubuntu-1404:     +
+I, [2016-02-04T11:29:26.412989 #3990]  INFO -- default-ubuntu-1404:     +if [ $SITENAME = "default" ]; then
+I, [2016-02-04T11:29:26.413022 #3990]  INFO -- default-ubuntu-1404:     +        PRIORITY="000"
+I, [2016-02-04T11:29:26.413046 #3990]  INFO -- default-ubuntu-1404:     +fi
+I, [2016-02-04T11:29:26.413063 #3990]  INFO -- default-ubuntu-1404:     +
+I, [2016-02-04T11:29:26.413078 #3990]  INFO -- default-ubuntu-1404:     +if ! [ -e $SYSCONFDIR/sites-enabled/$SITENAME -o \
+I, [2016-02-04T11:29:26.413095 #3990]  INFO -- default-ubuntu-1404:     +       -e $SYSCONFDIR/sites-enabled/"$PRIORITY"-"$SITENAME" ]; then
+I, [2016-02-04T11:29:26.437454 #3990]  INFO -- default-ubuntu-1404: +        echo "This site is already disabled, or does not exist!"
+I, [2016-02-04T11:29:26.437510 #3990]  INFO -- default-ubuntu-1404:     +        exit 1
+I, [2016-02-04T11:29:26.437545 #3990]  INFO -- default-ubuntu-1404:     +fi
+I, [2016-02-04T11:29:26.437894 #3990]  INFO -- default-ubuntu-1404:     +
+I, [2016-02-04T11:29:26.437949 #3990]  INFO -- default-ubuntu-1404:     +if ! rm $SYSCONFDIR/sites-enabled/$SITENAME 2>/dev/null; then
+I, [2016-02-04T11:29:26.437987 #3990]  INFO -- default-ubuntu-1404:     +        rm -f $SYSCONFDIR/sites-enabled/"$PRIORITY"-"$SITENAME"
+I, [2016-02-04T11:29:26.438017 #3990]  INFO -- default-ubuntu-1404:     +fi
+I, [2016-02-04T11:29:26.438273 #3990]  INFO -- default-ubuntu-1404: 
+I, [2016-02-04T11:29:26.438659 #3990]  INFO -- default-ubuntu-1404:     - change mode from '' to '0755'
+I, [2016-02-04T11:29:26.438930 #3990]  INFO -- default-ubuntu-1404:     - change owner from '' to 'root'
+I, [2016-02-04T11:29:26.439176 #3990]  INFO -- default-ubuntu-1404:     - change group from '' to 'root'
+I, [2016-02-04T11:29:26.439399 #3990]  INFO -- default-ubuntu-1404: Recipe: nginx::commons_conf
+I, [2016-02-04T11:29:26.439616 #3990]  INFO -- default-ubuntu-1404:   * template[nginx.conf] action create
+I, [2016-02-04T11:29:26.439927 #3990]  INFO -- default-ubuntu-1404:     - update content in file /etc/nginx/nginx.conf from 9492ca to 2610e2
+I, [2016-02-04T11:29:26.440324 #3990]  INFO -- default-ubuntu-1404:     --- /etc/nginx/nginx.conf	2014-03-04 22:25:36.000000000 +0000
+I, [2016-02-04T11:29:26.440788 #3990]  INFO -- default-ubuntu-1404:     +++ /etc/nginx/.nginx.conf20160204-1477-1xp1agx	2016-02-04 17:29:26.474920732 +0000
+I, [2016-02-04T11:29:26.441274 #3990]  INFO -- default-ubuntu-1404:     @@ -1,96 +1,48 @@
+I, [2016-02-04T11:29:26.441870 #3990]  INFO -- default-ubuntu-1404:      user www-data;
+I, [2016-02-04T11:29:26.442266 #3990]  INFO -- default-ubuntu-1404:     -worker_processes 4;
+I, [2016-02-04T11:29:26.442699 #3990]  INFO -- default-ubuntu-1404:     -pid /run/nginx.pid;
+I, [2016-02-04T11:29:26.443058 #3990]  INFO -- default-ubuntu-1404:     +worker_processes  1;
+I, [2016-02-04T11:29:26.443508 #3990]  INFO -- default-ubuntu-1404:      
+I, [2016-02-04T11:29:26.443949 #3990]  INFO -- default-ubuntu-1404:     +error_log  /var/log/nginx/error.log;
+I, [2016-02-04T11:29:26.444049 #3990]  INFO -- default-ubuntu-1404:     +pid        /run/nginx.pid;
+I, [2016-02-04T11:29:26.444092 #3990]  INFO -- default-ubuntu-1404:     +
+I, [2016-02-04T11:29:26.444145 #3990]  INFO -- default-ubuntu-1404:      events {
+I, [2016-02-04T11:29:26.444180 #3990]  INFO -- default-ubuntu-1404:     -	worker_connections 768;
+I, [2016-02-04T11:29:26.444682 #3990]  INFO -- default-ubuntu-1404:     -	# multi_accept on;
+I, [2016-02-04T11:29:26.444729 #3990]  INFO -- default-ubuntu-1404:     +  worker_connections  1024;
+I, [2016-02-04T11:29:26.444770 #3990]  INFO -- default-ubuntu-1404:      }
+I, [2016-02-04T11:29:26.444810 #3990]  INFO -- default-ubuntu-1404:      
+I, [2016-02-04T11:29:26.444847 #3990]  INFO -- default-ubuntu-1404:      http {
+I, [2016-02-04T11:29:26.445175 #3990]  INFO -- default-ubuntu-1404: 
+I, [2016-02-04T11:29:26.445254 #3990]  INFO -- default-ubuntu-1404:     -	##
+I, [2016-02-04T11:29:26.445298 #3990]  INFO -- default-ubuntu-1404:     -	# Basic Settings
+I, [2016-02-04T11:29:26.445864 #3990]  INFO -- default-ubuntu-1404:     -	##
+I, [2016-02-04T11:29:26.445960 #3990]  INFO -- default-ubuntu-1404:     +  include       /etc/nginx/mime.types;
+I, [2016-02-04T11:29:26.445998 #3990]  INFO -- default-ubuntu-1404:     +  default_type  application/octet-stream;
+I, [2016-02-04T11:29:26.446036 #3990]  INFO -- default-ubuntu-1404:      
+I, [2016-02-04T11:29:26.446073 #3990]  INFO -- default-ubuntu-1404:     -	sendfile on;
+I, [2016-02-04T11:29:26.446485 #3990]  INFO -- default-ubuntu-1404: -	tcp_nopush on;
+I, [2016-02-04T11:29:26.446776 #3990]  INFO -- default-ubuntu-1404: -	tcp_nodelay on;
+I, [2016-02-04T11:29:26.447277 #3990]  INFO -- default-ubuntu-1404:     -	keepalive_timeout 65;
+I, [2016-02-04T11:29:26.447749 #3990]  INFO -- default-ubuntu-1404:     -	types_hash_max_size 2048;
+I, [2016-02-04T11:29:26.447819 #3990]  INFO -- default-ubuntu-1404:     -	# server_tokens off;
+I, [2016-02-04T11:29:26.447866 #3990]  INFO -- default-ubuntu-1404:      
+I, [2016-02-04T11:29:26.448173 #3990]  INFO -- default-ubuntu-1404: 	# server_names_hash_bucket_size 64;
+I, [2016-02-04T11:29:26.448233 #3990]  INFO -- default-ubuntu-1404:     -	# server_name_in_redirect off;
+I, [2016-02-04T11:29:26.448269 #3990]  INFO -- default-ubuntu-1404:     +  access_log    /var/log/nginx/access.log;
+I, [2016-02-04T11:29:26.448593 #3990]  INFO -- default-ubuntu-1404:      
+I, [2016-02-04T11:29:26.448638 #3990]  INFO -- default-ubuntu-1404:     -	include /etc/nginx/mime.types;
+I, [2016-02-04T11:29:26.448671 #3990]  INFO -- default-ubuntu-1404:     -	default_type application/octet-stream;
+I, [2016-02-04T11:29:26.448707 #3990]  INFO -- default-ubuntu-1404:     +  sendfile on;
+I, [2016-02-04T11:29:26.448738 #3990]  INFO -- default-ubuntu-1404:     +  tcp_nopush on;
+I, [2016-02-04T11:29:26.449067 #3990]  INFO -- default-ubuntu-1404: 
+I, [2016-02-04T11:29:26.449251 #3990]  INFO -- default-ubuntu-1404:  
+I, [2016-02-04T11:29:26.449457 #3990]  INFO -- default-ubuntu-1404:     -	##
+I, [2016-02-04T11:29:26.449591 #3990]  INFO -- default-ubuntu-1404:     -	# Logging Settings
+I, [2016-02-04T11:29:26.449631 #3990]  INFO -- default-ubuntu-1404:     -	##
+I, [2016-02-04T11:29:26.449822 #3990]  INFO -- default-ubuntu-1404:     +  keepalive_requests 100;
+I, [2016-02-04T11:29:26.449861 #3990]  INFO -- default-ubuntu-1404:     +  keepalive_timeout  65;
+I, [2016-02-04T11:29:26.449889 #3990]  INFO -- default-ubuntu-1404:      
+I, [2016-02-04T11:29:26.450072 #3990]  INFO -- default-ubuntu-1404:     -	access_log /var/log/nginx/access.log;
+I, [2016-02-04T11:29:26.450108 #3990]  INFO -- default-ubuntu-1404:     -	error_log /var/log/nginx/error.log;
+I, [2016-02-04T11:29:26.450127 #3990]  INFO -- default-ubuntu-1404:      
+I, [2016-02-04T11:29:26.450143 #3990]  INFO -- default-ubuntu-1404:     -	##
+I, [2016-02-04T11:29:26.450351 #3990]  INFO -- default-ubuntu-1404: -	# Gzip Settings
+I, [2016-02-04T11:29:26.450401 #3990]  INFO -- default-ubuntu-1404:     -	##
+I, [2016-02-04T11:29:26.450433 #3990]  INFO -- default-ubuntu-1404:     +  gzip  on;
+I, [2016-02-04T11:29:26.450464 #3990]  INFO -- default-ubuntu-1404:     +  gzip_http_version 1.0;
+I, [2016-02-04T11:29:26.450493 #3990]  INFO -- default-ubuntu-1404:     +  gzip_comp_level 2;
+I, [2016-02-04T11:29:26.450512 #3990]  INFO -- default-ubuntu-1404:     +  gzip_proxied any;
+I, [2016-02-04T11:29:26.450528 #3990]  INFO -- default-ubuntu-1404:     +  gzip_vary off;
+I, [2016-02-04T11:29:26.450781 #3990]  INFO -- default-ubuntu-1404: 
+I, [2016-02-04T11:29:26.450817 #3990]  INFO -- default-ubuntu-1404:     +  gzip_min_length  1000;
+I, [2016-02-04T11:29:26.450849 #3990]  INFO -- default-ubuntu-1404:     +  gzip_disable     "MSIE [1-6]\.";
+I, [2016-02-04T11:29:26.450878 #3990]  INFO -- default-ubuntu-1404:      
+I, [2016-02-04T11:29:26.451100 #3990]  INFO -- default-ubuntu-1404:     -	gzip on;
+I, [2016-02-04T11:29:26.451141 #3990]  INFO -- default-ubuntu-1404:     -	gzip_disable "msie6";
+I, [2016-02-04T11:29:26.451172 #3990]  INFO -- default-ubuntu-1404:      
+I, [2016-02-04T11:29:26.451358 #3990]  INFO -- default-ubuntu-1404:     -	# gzip_vary on;
+I, [2016-02-04T11:29:26.451397 #3990]  INFO -- default-ubuntu-1404:     -	# gzip_proxied any;
+I, [2016-02-04T11:29:26.451423 #3990]  INFO -- default-ubuntu-1404:     -	# gzip_comp_level 6;
+I, [2016-02-04T11:29:26.451440 #3990]  INFO -- default-ubuntu-1404:     -	# gzip_buffers 16 8k;
+I, [2016-02-04T11:29:26.451636 #3990]  INFO -- default-ubuntu-1404:     -	# gzip_http_version 1.1;
+I, [2016-02-04T11:29:26.451853 #3990]  INFO -- default-ubuntu-1404: 	# gzip_types text/plain text/css application/json application/x-javascript text/xml application/xml application/xml+rss text/javascript;
+I, [2016-02-04T11:29:26.451897 #3990]  INFO -- default-ubuntu-1404:     +  variables_hash_max_size 1024;
+I, [2016-02-04T11:29:26.451925 #3990]  INFO -- default-ubuntu-1404:     +  variables_hash_bucket_size 64;
+I, [2016-02-04T11:29:26.451943 #3990]  INFO -- default-ubuntu-1404:     +  server_names_hash_bucket_size 64;
+I, [2016-02-04T11:29:26.452417 #3990]  INFO -- default-ubuntu-1404:     +  types_hash_max_size 2048;
+I, [2016-02-04T11:29:26.452462 #3990]  INFO -- default-ubuntu-1404:     +  types_hash_bucket_size 64;
+I, [2016-02-04T11:29:26.452486 #3990]  INFO -- default-ubuntu-1404:      
+I, [2016-02-04T11:29:26.452506 #3990]  INFO -- default-ubuntu-1404:     -	##
+I, [2016-02-04T11:29:26.452524 #3990]  INFO -- default-ubuntu-1404:     -	# nginx-naxsi config
+I, [2016-02-04T11:29:26.452542 #3990]  INFO -- default-ubuntu-1404:     -	##
+I, [2016-02-04T11:29:26.452560 #3990]  INFO -- default-ubuntu-1404:     -	# Uncomment it if you installed nginx-naxsi
+I, [2016-02-04T11:29:26.452576 #3990]  INFO -- default-ubuntu-1404:     -	##
+I, [2016-02-04T11:29:26.452592 #3990]  INFO -- default-ubuntu-1404:      
+I, [2016-02-04T11:29:26.452606 #3990]  INFO -- default-ubuntu-1404:     -	#include /etc/nginx/naxsi_core.rules;
+I, [2016-02-04T11:29:26.452624 #3990]  INFO -- default-ubuntu-1404:      
+I, [2016-02-04T11:29:26.452639 #3990]  INFO -- default-ubuntu-1404:     -	##
+I, [2016-02-04T11:29:26.453195 #3990]  INFO -- default-ubuntu-1404: 	# nginx-passenger config
+I, [2016-02-04T11:29:26.453239 #3990]  INFO -- default-ubuntu-1404:     -	##
+I, [2016-02-04T11:29:26.453260 #3990]  INFO -- default-ubuntu-1404:     -	# Uncomment it if you installed nginx-passenger
+I, [2016-02-04T11:29:26.453278 #3990]  INFO -- default-ubuntu-1404:     -	##
+I, [2016-02-04T11:29:26.453301 #3990]  INFO -- default-ubuntu-1404:     -	
+I, [2016-02-04T11:29:26.453330 #3990]  INFO -- default-ubuntu-1404:     -	#passenger_root /usr;
+I, [2016-02-04T11:29:26.453389 #3990]  INFO -- default-ubuntu-1404:     -	#passenger_ruby /usr/bin/ruby;
+I, [2016-02-04T11:29:26.453441 #3990]  INFO -- default-ubuntu-1404:     -
+I, [2016-02-04T11:29:26.453484 #3990]  INFO -- default-ubuntu-1404:     -	##
+I, [2016-02-04T11:29:26.453505 #3990]  INFO -- default-ubuntu-1404:     -	# Virtual Host Configs
+I, [2016-02-04T11:29:26.453544 #3990]  INFO -- default-ubuntu-1404:     -	##
+I, [2016-02-04T11:29:26.453562 #3990]  INFO -- default-ubuntu-1404:     -
+I, [2016-02-04T11:29:26.453579 #3990]  INFO -- default-ubuntu-1404:     -	include /etc/nginx/conf.d/*.conf;
+I, [2016-02-04T11:29:26.453595 #3990]  INFO -- default-ubuntu-1404:     -	include /etc/nginx/sites-enabled/*;
+I, [2016-02-04T11:29:26.453622 #3990]  INFO -- default-ubuntu-1404:     +  include /etc/nginx/conf.d/*.conf;
+I, [2016-02-04T11:29:26.453657 #3990]  INFO -- default-ubuntu-1404:     +  include /etc/nginx/sites-enabled/*;
+I, [2016-02-04T11:29:26.453687 #3990]  INFO -- default-ubuntu-1404:      }
+I, [2016-02-04T11:29:26.453706 #3990]  INFO -- default-ubuntu-1404:     -
+I, [2016-02-04T11:29:26.453722 #3990]  INFO -- default-ubuntu-1404:     -
+I, [2016-02-04T11:29:26.454123 #3990]  INFO -- default-ubuntu-1404:     -#mail {
+I, [2016-02-04T11:29:26.454158 #3990]  INFO -- default-ubuntu-1404:     -#	# See sample authentication script at:
+I, [2016-02-04T11:29:26.454178 #3990]  INFO -- default-ubuntu-1404:     -#	# http://wiki.nginx.org/ImapAuthenticateWithApachePhpScript
+I, [2016-02-04T11:29:26.454195 #3990]  INFO -- default-ubuntu-1404:     -# 
+I, [2016-02-04T11:29:26.454409 #3990]  INFO -- default-ubuntu-1404:     -#	# auth_http localhost/auth.php;
+I, [2016-02-04T11:29:26.454434 #3990]  INFO -- default-ubuntu-1404:     -#	# pop3_capabilities "TOP" "USER";
+I, [2016-02-04T11:29:26.454453 #3990]  INFO -- default-ubuntu-1404:     -#	# imap_capabilities "IMAP4rev1" "UIDPLUS";
+I, [2016-02-04T11:29:26.454469 #3990]  INFO -- default-ubuntu-1404:     -# 
+I, [2016-02-04T11:29:26.454485 #3990]  INFO -- default-ubuntu-1404:     -#	server {
+I, [2016-02-04T11:29:26.454501 #3990]  INFO -- default-ubuntu-1404:     -#		listen     localhost:110;
+I, [2016-02-04T11:29:26.488312 #3990]  INFO -- default-ubuntu-1404: 		protocol   pop3;
+I, [2016-02-04T11:29:26.488518 #3990]  INFO -- default-ubuntu-1404:     -#		proxy      on;
+I, [2016-02-04T11:29:26.488559 #3990]  INFO -- default-ubuntu-1404:     -#	}
+I, [2016-02-04T11:29:26.488601 #3990]  INFO -- default-ubuntu-1404:     -# 
+I, [2016-02-04T11:29:26.488639 #3990]  INFO -- default-ubuntu-1404:     -#	server {
+I, [2016-02-04T11:29:26.488674 #3990]  INFO -- default-ubuntu-1404:     -#		listen     localhost:143;
+I, [2016-02-04T11:29:26.488706 #3990]  INFO -- default-ubuntu-1404:     -#		protocol   imap;
+I, [2016-02-04T11:29:26.488742 #3990]  INFO -- default-ubuntu-1404:     -#		proxy      on;
+I, [2016-02-04T11:29:26.488774 #3990]  INFO -- default-ubuntu-1404:     -#	}
+I, [2016-02-04T11:29:26.489210 #3990]  INFO -- default-ubuntu-1404: 
+I, [2016-02-04T11:29:26.489663 #3990]  INFO -- default-ubuntu-1404:   * template[/etc/nginx/sites-available/default] action create
+I, [2016-02-04T11:29:26.490097 #3990]  INFO -- default-ubuntu-1404:     - update content in file /etc/nginx/sites-available/default from cda500 to 1ac789
+I, [2016-02-04T11:29:26.490766 #3990]  INFO -- default-ubuntu-1404:     --- /etc/nginx/sites-available/default	2014-03-04 22:25:36.000000000 +0000
+I, [2016-02-04T11:29:26.491385 #3990]  INFO -- default-ubuntu-1404:     +++ /etc/nginx/sites-available/.default20160204-1477-nvd7ug	2016-02-04 17:29:26.502920732 +0000
+I, [2016-02-04T11:29:26.491905 #3990]  INFO -- default-ubuntu-1404:     @@ -1,113 +1,12 @@
+I, [2016-02-04T11:29:26.492245 #3990]  INFO -- default-ubuntu-1404:     -# You may add here your
+I, [2016-02-04T11:29:26.492579 #3990]  INFO -- default-ubuntu-1404:     -# server {
+I, [2016-02-04T11:29:26.492624 #3990]  INFO -- default-ubuntu-1404:     -#	...
+I, [2016-02-04T11:29:26.492656 #3990]  INFO -- default-ubuntu-1404:     -# }
+I, [2016-02-04T11:29:26.492687 #3990]  INFO -- default-ubuntu-1404:     -# statements for each of your virtual hosts to this file
+I, [2016-02-04T11:29:26.492715 #3990]  INFO -- default-ubuntu-1404:     -
+I, [2016-02-04T11:29:26.492742 #3990]  INFO -- default-ubuntu-1404:     -##
+I, [2016-02-04T11:29:26.492772 #3990]  INFO -- default-ubuntu-1404:     -# You should look at the following URL's in order to grasp a solid understanding
+I, [2016-02-04T11:29:26.493120 #3990]  INFO -- default-ubuntu-1404: -# of Nginx configuration files in order to fully unleash the power of Nginx.
+I, [2016-02-04T11:29:26.493170 #3990]  INFO -- default-ubuntu-1404:     -# http://wiki.nginx.org/Pitfalls
+I, [2016-02-04T11:29:26.493202 #3990]  INFO -- default-ubuntu-1404:     -# http://wiki.nginx.org/QuickStart
+I, [2016-02-04T11:29:26.493232 #3990]  INFO -- default-ubuntu-1404:     -# http://wiki.nginx.org/Configuration
+I, [2016-02-04T11:29:26.493598 #3990]  INFO -- default-ubuntu-1404:     -#
+I, [2016-02-04T11:29:26.493858 #3990]  INFO -- default-ubuntu-1404: -# Generally, you will want to move this file somewhere, and start with a clean
+I, [2016-02-04T11:29:26.493920 #3990]  INFO -- default-ubuntu-1404:     -# file but keep this around for reference. Or just disable in sites-enabled.
+I, [2016-02-04T11:29:26.493965 #3990]  INFO -- default-ubuntu-1404:     -#
+I, [2016-02-04T11:29:26.494384 #3990]  INFO -- default-ubuntu-1404: -# Please see /usr/share/doc/nginx-doc/examples/ for more detailed examples.
+I, [2016-02-04T11:29:26.494464 #3990]  INFO -- default-ubuntu-1404:     -##
+I, [2016-02-04T11:29:26.494514 #3990]  INFO -- default-ubuntu-1404:     -
+I, [2016-02-04T11:29:26.494574 #3990]  INFO -- default-ubuntu-1404:      server {
+I, [2016-02-04T11:29:26.494622 #3990]  INFO -- default-ubuntu-1404:     -	listen 80 default_server;
+I, [2016-02-04T11:29:26.494939 #3990]  INFO -- default-ubuntu-1404: -	listen [::]:80 default_server ipv6only=on;
+I, [2016-02-04T11:29:26.494979 #3990]  INFO -- default-ubuntu-1404:     +  listen   80;
+I, [2016-02-04T11:29:26.495012 #3990]  INFO -- default-ubuntu-1404:     +  server_name  default-ubuntu-1404;
+I, [2016-02-04T11:29:26.495365 #3990]  INFO -- default-ubuntu-1404:  
+I, [2016-02-04T11:29:26.495612 #3990]  INFO -- default-ubuntu-1404:     -	root /usr/share/nginx/html;
+I, [2016-02-04T11:29:26.495664 #3990]  INFO -- default-ubuntu-1404:     -	index index.html index.htm;
+I, [2016-02-04T11:29:26.495708 #3990]  INFO -- default-ubuntu-1404:     +  access_log  /var/log/nginx/localhost.access.log;
+I, [2016-02-04T11:29:26.496001 #3990]  INFO -- default-ubuntu-1404:      
+I, [2016-02-04T11:29:26.496288 #3990]  INFO -- default-ubuntu-1404: -	# Make site accessible from http://localhost/
+I, [2016-02-04T11:29:26.496596 #3990]  INFO -- default-ubuntu-1404: -	server_name localhost;
+I, [2016-02-04T11:29:26.496798 #3990]  INFO -- default-ubuntu-1404:     -
+I, [2016-02-04T11:29:26.497006 #3990]  INFO -- default-ubuntu-1404: 	location / {
+I, [2016-02-04T11:29:26.497392 #3990]  INFO -- default-ubuntu-1404:     -		# First attempt to serve request as file, then
+I, [2016-02-04T11:29:26.497640 #3990]  INFO -- default-ubuntu-1404:     -		# as directory, then fall back to displaying a 404.
+I, [2016-02-04T11:29:26.497904 #3990]  INFO -- default-ubuntu-1404:     -		try_files $uri $uri/ =404;
+I, [2016-02-04T11:29:26.498271 #3990]  INFO -- default-ubuntu-1404:     -		# Uncomment to enable naxsi on this location
+I, [2016-02-04T11:29:26.498315 #3990]  INFO -- default-ubuntu-1404:     -		# include /etc/nginx/naxsi.rules
+I, [2016-02-04T11:29:26.498346 #3990]  INFO -- default-ubuntu-1404:     -	}
+I, [2016-02-04T11:29:26.498554 #3990]  INFO -- default-ubuntu-1404: 
+I, [2016-02-04T11:29:26.498617 #3990]  INFO -- default-ubuntu-1404:     -	# Only for nginx-naxsi used with nginx-naxsi-ui : process denied requests
+I, [2016-02-04T11:29:26.498811 #3990]  INFO -- default-ubuntu-1404:     -	#location /RequestDenied {
+I, [2016-02-04T11:29:26.498985 #3990]  INFO -- default-ubuntu-1404: -	#	proxy_pass http://127.0.0.1:8080;    
+I, [2016-02-04T11:29:26.499320 #3990]  INFO -- default-ubuntu-1404: -	#}
+I, [2016-02-04T11:29:26.499549 #3990]  INFO -- default-ubuntu-1404:     -
+I, [2016-02-04T11:29:26.499586 #3990]  INFO -- default-ubuntu-1404:     -	#error_page 404 /404.html;
+I, [2016-02-04T11:29:26.499752 #3990]  INFO -- default-ubuntu-1404:     -
+I, [2016-02-04T11:29:26.499912 #3990]  INFO -- default-ubuntu-1404:     -	# redirect server error pages to the static page /50x.html
+I, [2016-02-04T11:29:26.500106 #3990]  INFO -- default-ubuntu-1404:     -	#
+I, [2016-02-04T11:29:26.500271 #3990]  INFO -- default-ubuntu-1404:     -	#error_page 500 502 503 504 /50x.html;
+I, [2016-02-04T11:29:26.500523 #3990]  INFO -- default-ubuntu-1404:     -	#location = /50x.html {
+I, [2016-02-04T11:29:26.500565 #3990]  INFO -- default-ubuntu-1404:     -	#	root /usr/share/nginx/html;
+I, [2016-02-04T11:29:26.500617 #3990]  INFO -- default-ubuntu-1404:     -	#}
+I, [2016-02-04T11:29:26.500649 #3990]  INFO -- default-ubuntu-1404:     -
+I, [2016-02-04T11:29:26.500679 #3990]  INFO -- default-ubuntu-1404:     -	# pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
+I, [2016-02-04T11:29:26.500707 #3990]  INFO -- default-ubuntu-1404:     -	#
+I, [2016-02-04T11:29:26.500735 #3990]  INFO -- default-ubuntu-1404:     -	#location ~ \.php$ {
+I, [2016-02-04T11:29:26.500762 #3990]  INFO -- default-ubuntu-1404:     -	#	fastcgi_split_path_info ^(.+\.php)(/.+)$;
+I, [2016-02-04T11:29:26.500789 #3990]  INFO -- default-ubuntu-1404:     -	#	# NOTE: You should have "cgi.fix_pathinfo = 0;" in php.ini
+I, [2016-02-04T11:29:26.500823 #3990]  INFO -- default-ubuntu-1404:     -	#
+I, [2016-02-04T11:29:26.500852 #3990]  INFO -- default-ubuntu-1404:     -	#	# With php5-cgi alone:
+I, [2016-02-04T11:29:26.500892 #3990]  INFO -- default-ubuntu-1404:     -	#	fastcgi_pass 127.0.0.1:9000;
+I, [2016-02-04T11:29:26.500921 #3990]  INFO -- default-ubuntu-1404:     -	#	# With php5-fpm:
+I, [2016-02-04T11:29:26.501317 #3990]  INFO -- default-ubuntu-1404: 	#	fastcgi_pass unix:/var/run/php5-fpm.sock;
+I, [2016-02-04T11:29:26.501361 #3990]  INFO -- default-ubuntu-1404:     -	#	fastcgi_index index.php;
+I, [2016-02-04T11:29:26.501392 #3990]  INFO -- default-ubuntu-1404:     -	#	include fastcgi_params;
+I, [2016-02-04T11:29:26.501420 #3990]  INFO -- default-ubuntu-1404:     -	#}
+I, [2016-02-04T11:29:26.501448 #3990]  INFO -- default-ubuntu-1404:     -
+I, [2016-02-04T11:29:26.501728 #3990]  INFO -- default-ubuntu-1404: # deny access to .htaccess files, if Apache's document root
+I, [2016-02-04T11:29:26.501771 #3990]  INFO -- default-ubuntu-1404:     -	# concurs with nginx's one
+I, [2016-02-04T11:29:26.501803 #3990]  INFO -- default-ubuntu-1404:     -	#
+I, [2016-02-04T11:29:26.501833 #3990]  INFO -- default-ubuntu-1404:     -	#location ~ /\.ht {
+I, [2016-02-04T11:29:26.501863 #3990]  INFO -- default-ubuntu-1404:     -	#	deny all;
+I, [2016-02-04T11:29:26.501893 #3990]  INFO -- default-ubuntu-1404:     -	#}
+I, [2016-02-04T11:29:26.501922 #3990]  INFO -- default-ubuntu-1404:     +  location / {
+I, [2016-02-04T11:29:26.501951 #3990]  INFO -- default-ubuntu-1404:     +    root   /var/www/nginx-default;
+I, [2016-02-04T11:29:26.501979 #3990]  INFO -- default-ubuntu-1404:     +    index  index.html index.htm;
+I, [2016-02-04T11:29:26.502004 #3990]  INFO -- default-ubuntu-1404:     +  }
+I, [2016-02-04T11:29:26.502032 #3990]  INFO -- default-ubuntu-1404:      }
+I, [2016-02-04T11:29:26.502061 #3990]  INFO -- default-ubuntu-1404:     -
+I, [2016-02-04T11:29:26.502089 #3990]  INFO -- default-ubuntu-1404:     -
+I, [2016-02-04T11:29:26.502119 #3990]  INFO -- default-ubuntu-1404:     -# another virtual host using mix of IP-, name-, and port-based configuration
+I, [2016-02-04T11:29:26.502473 #3990]  INFO -- default-ubuntu-1404:     -#
+I, [2016-02-04T11:29:26.502515 #3990]  INFO -- default-ubuntu-1404:     -#server {
+I, [2016-02-04T11:29:26.502548 #3990]  INFO -- default-ubuntu-1404:     -#	listen 8000;
+I, [2016-02-04T11:29:26.502567 #3990]  INFO -- default-ubuntu-1404:     -#	listen somename:8080;
+I, [2016-02-04T11:29:26.502585 #3990]  INFO -- default-ubuntu-1404:     -#	server_name somename alias another.alias;
+I, [2016-02-04T11:29:26.502601 #3990]  INFO -- default-ubuntu-1404:     -#	root html;
+I, [2016-02-04T11:29:26.502617 #3990]  INFO -- default-ubuntu-1404:     -#	index index.html index.htm;
+I, [2016-02-04T11:29:26.502632 #3990]  INFO -- default-ubuntu-1404:     -#
+I, [2016-02-04T11:29:26.502647 #3990]  INFO -- default-ubuntu-1404:     -#	location / {
+I, [2016-02-04T11:29:26.502685 #3990]  INFO -- default-ubuntu-1404:     -#		try_files $uri $uri/ =404;
+I, [2016-02-04T11:29:26.502702 #3990]  INFO -- default-ubuntu-1404:     -#	}
+I, [2016-02-04T11:29:26.502718 #3990]  INFO -- default-ubuntu-1404:     -#}
+I, [2016-02-04T11:29:26.502732 #3990]  INFO -- default-ubuntu-1404:     -
+I, [2016-02-04T11:29:26.502748 #3990]  INFO -- default-ubuntu-1404:     -
+I, [2016-02-04T11:29:26.502763 #3990]  INFO -- default-ubuntu-1404:     -# HTTPS server
+I, [2016-02-04T11:29:26.502779 #3990]  INFO -- default-ubuntu-1404:     -#
+I, [2016-02-04T11:29:26.502794 #3990]  INFO -- default-ubuntu-1404:     -#server {
+I, [2016-02-04T11:29:26.503190 #3990]  INFO -- default-ubuntu-1404:     -#	listen 443;
+I, [2016-02-04T11:29:26.503234 #3990]  INFO -- default-ubuntu-1404:     -#	server_name localhost;
+I, [2016-02-04T11:29:26.503258 #3990]  INFO -- default-ubuntu-1404:     -#
+I, [2016-02-04T11:29:26.503276 #3990]  INFO -- default-ubuntu-1404:     -#	root html;
+I, [2016-02-04T11:29:26.503292 #3990]  INFO -- default-ubuntu-1404:     -#	index index.html index.htm;
+I, [2016-02-04T11:29:26.503307 #3990]  INFO -- default-ubuntu-1404:     -#
+I, [2016-02-04T11:29:26.503323 #3990]  INFO -- default-ubuntu-1404:     -#	ssl on;
+I, [2016-02-04T11:29:26.503338 #3990]  INFO -- default-ubuntu-1404:     -#	ssl_certificate cert.pem;
+I, [2016-02-04T11:29:26.503353 #3990]  INFO -- default-ubuntu-1404:     -#	ssl_certificate_key cert.key;
+I, [2016-02-04T11:29:26.503372 #3990]  INFO -- default-ubuntu-1404:     -#
+I, [2016-02-04T11:29:26.503391 #3990]  INFO -- default-ubuntu-1404:     -#	ssl_session_timeout 5m;
+I, [2016-02-04T11:29:26.503407 #3990]  INFO -- default-ubuntu-1404:     -#
+I, [2016-02-04T11:29:26.503638 #3990]  INFO -- default-ubuntu-1404:     -#	ssl_protocols SSLv3 TLSv1 TLSv1.1 TLSv1.2;
+I, [2016-02-04T11:29:26.503663 #3990]  INFO -- default-ubuntu-1404:     -#	ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+I, [2016-02-04T11:29:26.503682 #3990]  INFO -- default-ubuntu-1404:     -#	ssl_prefer_server_ciphers on;
+I, [2016-02-04T11:29:26.503699 #3990]  INFO -- default-ubuntu-1404:     -#
+I, [2016-02-04T11:29:26.503838 #3990]  INFO -- default-ubuntu-1404: 	location / {
+I, [2016-02-04T11:29:26.503860 #3990]  INFO -- default-ubuntu-1404:     -#		try_files $uri $uri/ =404;
+I, [2016-02-04T11:29:26.503878 #3990]  INFO -- default-ubuntu-1404:     -#	}
+I, [2016-02-04T11:29:26.504003 #3990]  INFO -- default-ubuntu-1404: 
+I, [2016-02-04T11:29:26.504254 #3990]  INFO -- default-ubuntu-1404:   * execute[nxensite default] action run (skipped due to not_if)
+I, [2016-02-04T11:29:26.504400 #3990]  INFO -- default-ubuntu-1404: Recipe: nginx::default
+I, [2016-02-04T11:29:26.572079 #3990]  INFO -- default-ubuntu-1404:   * service[nginx] action start (up to date)
+I, [2016-02-04T11:29:26.574042 #3990]  INFO -- default-ubuntu-1404: Recipe: build-essential::_debian
+I, [2016-02-04T11:29:31.347813 #3990]  INFO -- default-ubuntu-1404:   * apt_package[autoconf] action install
+I, [2016-02-04T11:29:31.347887 #3990]  INFO -- default-ubuntu-1404:     - install version 2.69-6 of package autoconf
+I, [2016-02-04T11:29:33.692731 #3990]  INFO -- default-ubuntu-1404: 
+I, [2016-02-04T11:29:33.692797 #3990]  INFO -- default-ubuntu-1404:     - install version 2.24-5ubuntu14 of package binutils-doc
+I, [2016-02-04T11:29:36.151792 #3990]  INFO -- default-ubuntu-1404: 
+I, [2016-02-04T11:29:36.152669 #3990]  INFO -- default-ubuntu-1404:     - install version 2:3.0.2.dfsg-2 of package bison
+I, [2016-02-04T11:31:29.208549 #3990]  INFO -- default-ubuntu-1404:   * apt_package[build-essential] action install
+I, [2016-02-04T11:31:29.209727 #3990]  INFO -- default-ubuntu-1404:     - install version 11.6ubuntu6 of package build-essential
+I, [2016-02-04T11:31:31.551666 #3990]  INFO -- default-ubuntu-1404: 
+I, [2016-02-04T11:31:31.551727 #3990]  INFO -- default-ubuntu-1404:     - install version 2.5.35-10.1ubuntu2 of package flex
+I, [2016-02-04T11:31:35.482470 #3990]  INFO -- default-ubuntu-1404: 
+I, [2016-02-04T11:31:35.483248 #3990]  INFO -- default-ubuntu-1404:     - install version 0.18.3.1-1ubuntu3 of package gettext
+I, [2016-02-04T11:31:37.151221 #3990]  INFO -- default-ubuntu-1404:   * apt_package[ncurses-dev] action install
+I, [2016-02-04T11:31:37.151274 #3990]  INFO -- default-ubuntu-1404:     - install version (none) of package ncurses-dev
+I, [2016-02-04T11:31:37.151292 #3990]  INFO -- default-ubuntu-1404: Recipe: unicorn::default
+I, [2016-02-04T11:31:54.824992 #3990]  INFO -- default-ubuntu-1404: 
+I, [2016-02-04T11:31:54.825079 #3990]  INFO -- default-ubuntu-1404:     - install version 5.0.1 of package unicorn
+I, [2016-02-04T11:31:54.825131 #3990]  INFO -- default-ubuntu-1404: Recipe: sinatra::install
+I, [2016-02-04T11:32:39.669201 #3990]  INFO -- default-ubuntu-1404: 
+I, [2016-02-04T11:32:39.669392 #3990]  INFO -- default-ubuntu-1404:     - install version 1.4.6 of package sinatra
+I, [2016-02-04T11:32:56.188229 #3990]  INFO -- default-ubuntu-1404: 
+I, [2016-02-04T11:32:56.189501 #3990]  INFO -- default-ubuntu-1404:     - install version >0 of package sinatra-contrib
+I, [2016-02-04T11:32:56.189603 #3990]  INFO -- default-ubuntu-1404: Recipe: sinatra::configure
+I, [2016-02-04T11:32:56.199318 #3990]  INFO -- default-ubuntu-1404: 
+I, [2016-02-04T11:32:56.201564 #3990]  INFO -- default-ubuntu-1404:     - create new directory /var/www
+I, [2016-02-04T11:32:56.202236 #3990]  INFO -- default-ubuntu-1404:     - change mode from '' to '0755'
+I, [2016-02-04T11:32:56.202778 #3990]  INFO -- default-ubuntu-1404:     - change owner from '' to 'root'
+I, [2016-02-04T11:32:56.204209 #3990]  INFO -- default-ubuntu-1404:     - change group from '' to 'root'
+I, [2016-02-04T11:32:56.206158 #3990]  INFO -- default-ubuntu-1404:   * directory[/var/www/public] action create
+I, [2016-02-04T11:32:56.208003 #3990]  INFO -- default-ubuntu-1404:     - create new directory /var/www/public
+I, [2016-02-04T11:32:56.208524 #3990]  INFO -- default-ubuntu-1404:     - change mode from '' to '0755'
+I, [2016-02-04T11:32:56.208780 #3990]  INFO -- default-ubuntu-1404:     - change owner from '' to 'root'
+I, [2016-02-04T11:32:56.209618 #3990]  INFO -- default-ubuntu-1404:     - change group from '' to 'root'
+I, [2016-02-04T11:32:56.211804 #3990]  INFO -- default-ubuntu-1404:   * directory[/var/www/tmp] action create
+I, [2016-02-04T11:32:56.213964 #3990]  INFO -- default-ubuntu-1404:     - create new directory /var/www/tmp
+I, [2016-02-04T11:32:56.214427 #3990]  INFO -- default-ubuntu-1404:     - change mode from '' to '0755'
+I, [2016-02-04T11:32:56.214906 #3990]  INFO -- default-ubuntu-1404:     - change owner from '' to 'root'
+I, [2016-02-04T11:32:56.215870 #3990]  INFO -- default-ubuntu-1404:     - change group from '' to 'root'
+I, [2016-02-04T11:32:56.217667 #3990]  INFO -- default-ubuntu-1404:   * directory[/var/www/tmp/sockets] action create
+I, [2016-02-04T11:32:56.219531 #3990]  INFO -- default-ubuntu-1404:     - create new directory /var/www/tmp/sockets
+I, [2016-02-04T11:32:56.220156 #3990]  INFO -- default-ubuntu-1404:     - change mode from '' to '0755'
+I, [2016-02-04T11:32:56.220587 #3990]  INFO -- default-ubuntu-1404:     - change owner from '' to 'root'
+I, [2016-02-04T11:32:56.221638 #3990]  INFO -- default-ubuntu-1404:     - change group from '' to 'root'
+I, [2016-02-04T11:32:56.223606 #3990]  INFO -- default-ubuntu-1404:   * directory[/var/www/tmp/pids] action create
+I, [2016-02-04T11:32:56.225322 #3990]  INFO -- default-ubuntu-1404:     - create new directory /var/www/tmp/pids
+I, [2016-02-04T11:32:56.225823 #3990]  INFO -- default-ubuntu-1404:     - change mode from '' to '0755'
+I, [2016-02-04T11:32:56.239418 #3990]  INFO -- default-ubuntu-1404:     - change owner from '' to 'root'
+I, [2016-02-04T11:32:56.239754 #3990]  INFO -- default-ubuntu-1404:     - change group from '' to 'root'
+I, [2016-02-04T11:32:56.240037 #3990]  INFO -- default-ubuntu-1404:   * directory[/var/www/log] action create
+I, [2016-02-04T11:32:56.240296 #3990]  INFO -- default-ubuntu-1404:     - create new directory /var/www/log
+I, [2016-02-04T11:32:56.240504 #3990]  INFO -- default-ubuntu-1404:     - change mode from '' to '0755'
+I, [2016-02-04T11:32:56.242884 #3990]  INFO -- default-ubuntu-1404:     - change owner from '' to 'root'
+I, [2016-02-04T11:32:56.243228 #3990]  INFO -- default-ubuntu-1404:     - change group from '' to 'root'
+I, [2016-02-04T11:32:56.287774 #3990]  INFO -- default-ubuntu-1404:   * template[/etc/nginx/nginx.conf] action create
+I, [2016-02-04T11:32:56.288499 #3990]  INFO -- default-ubuntu-1404:     - update content in file /etc/nginx/nginx.conf from 2610e2 to b06b29
+I, [2016-02-04T11:32:56.289290 #3990]  INFO -- default-ubuntu-1404:     --- /etc/nginx/nginx.conf	2016-02-04 17:29:26.474920732 +0000
+I, [2016-02-04T11:32:56.290159 #3990]  INFO -- default-ubuntu-1404:     +++ /etc/nginx/.nginx.conf20160204-1477-150redk	2016-02-04 17:32:56.318920732 +0000
+I, [2016-02-04T11:32:56.290721 #3990]  INFO -- default-ubuntu-1404:     @@ -1,48 +1,77 @@
+I, [2016-02-04T11:32:56.291188 #3990]  INFO -- default-ubuntu-1404:     -user www-data;
+I, [2016-02-04T11:32:56.291682 #3990]  INFO -- default-ubuntu-1404:     -worker_processes  1;
+I, [2016-02-04T11:32:56.292311 #3990]  INFO -- default-ubuntu-1404:     +# this sets the user nginx will run as,
+I, [2016-02-04T11:32:56.292963 #3990]  INFO -- default-ubuntu-1404:     +#and the number of worker processes
+I, [2016-02-04T11:32:56.293569 #3990]  INFO -- default-ubuntu-1404:     +user nobody nogroup;
+I, [2016-02-04T11:32:56.294223 #3990]  INFO -- default-ubuntu-1404:     +worker_processes  4;
+I, [2016-02-04T11:32:56.294552 #3990]  INFO -- default-ubuntu-1404:      
+I, [2016-02-04T11:32:56.294591 #3990]  INFO -- default-ubuntu-1404:     +# setup where nginx will log errors to
+I, [2016-02-04T11:32:56.294611 #3990]  INFO -- default-ubuntu-1404:     +# and where the nginx process id resides
+I, [2016-02-04T11:32:56.295052 #3990]  INFO -- default-ubuntu-1404:      error_log  /var/log/nginx/error.log;
+I, [2016-02-04T11:32:56.295088 #3990]  INFO -- default-ubuntu-1404:     -pid        /run/nginx.pid;
+I, [2016-02-04T11:32:56.295104 #3990]  INFO -- default-ubuntu-1404:     +pid        /var/run/nginx.pid;
+I, [2016-02-04T11:32:56.295132 #3990]  INFO -- default-ubuntu-1404:      
+I, [2016-02-04T11:32:56.295145 #3990]  INFO -- default-ubuntu-1404:      events {
+I, [2016-02-04T11:32:56.295191 #3990]  INFO -- default-ubuntu-1404: worker_connections  1024;
+I, [2016-02-04T11:32:56.295219 #3990]  INFO -- default-ubuntu-1404:     +  # set to on if you have more than 1 worker_processes
+I, [2016-02-04T11:32:56.295239 #3990]  INFO -- default-ubuntu-1404:     +  accept_mutex off;
+I, [2016-02-04T11:32:56.295252 #3990]  INFO -- default-ubuntu-1404:      }
+I, [2016-02-04T11:32:56.295264 #3990]  INFO -- default-ubuntu-1404:      
+I, [2016-02-04T11:32:56.295514 #3990]  INFO -- default-ubuntu-1404:  http {
+I, [2016-02-04T11:32:56.295549 #3990]  INFO -- default-ubuntu-1404:     -
+I, [2016-02-04T11:32:56.295583 #3990]  INFO -- default-ubuntu-1404: include       /etc/nginx/mime.types;
+I, [2016-02-04T11:32:56.295609 #3990]  INFO -- default-ubuntu-1404:     -  default_type  application/octet-stream;
+I, [2016-02-04T11:32:56.295627 #3990]  INFO -- default-ubuntu-1404:      
+I, [2016-02-04T11:32:56.295650 #3990]  INFO -- default-ubuntu-1404:     +  default_type application/octet-stream;
+I, [2016-02-04T11:32:56.295674 #3990]  INFO -- default-ubuntu-1404:     +  access_log /tmp/nginx.access.log combined;
+I, [2016-02-04T11:32:56.295688 #3990]  INFO -- default-ubuntu-1404:      
+I, [2016-02-04T11:32:56.295938 #3990]  INFO -- default-ubuntu-1404:     -  access_log    /var/log/nginx/access.log;
+I, [2016-02-04T11:32:56.295975 #3990]  INFO -- default-ubuntu-1404:     +  # use the kernel sendfile
+I, [2016-02-04T11:32:56.296002 #3990]  INFO -- default-ubuntu-1404:     +  sendfile        on;
+I, [2016-02-04T11:32:56.296019 #3990]  INFO -- default-ubuntu-1404:     +  # prepend http headers before sendfile()
+I, [2016-02-04T11:32:56.296033 #3990]  INFO -- default-ubuntu-1404:     +  tcp_nopush     on;
+I, [2016-02-04T11:32:56.296046 #3990]  INFO -- default-ubuntu-1404:      
+I, [2016-02-04T11:32:56.296058 #3990]  INFO -- default-ubuntu-1404:     -  sendfile on;
+I, [2016-02-04T11:32:56.296089 #3990]  INFO -- default-ubuntu-1404:     -  tcp_nopush on;
+I, [2016-02-04T11:32:56.296111 #3990]  INFO -- default-ubuntu-1404:     -  tcp_nodelay on;
+I, [2016-02-04T11:32:56.296134 #3990]  INFO -- default-ubuntu-1404:     +  keepalive_timeout  5;
+I, [2016-02-04T11:32:56.296374 #3990]  INFO -- default-ubuntu-1404: +  tcp_nodelay        on;
+I, [2016-02-04T11:32:56.296409 #3990]  INFO -- default-ubuntu-1404:      
+I, [2016-02-04T11:32:56.296577 #3990]  INFO -- default-ubuntu-1404: -  keepalive_requests 100;
+I, [2016-02-04T11:32:56.296607 #3990]  INFO -- default-ubuntu-1404:     -  keepalive_timeout  65;
+I, [2016-02-04T11:32:56.296627 #3990]  INFO -- default-ubuntu-1404:     -
+I, [2016-02-04T11:32:56.296651 #3990]  INFO -- default-ubuntu-1404:     -
+I, [2016-02-04T11:32:56.296682 #3990]  INFO -- default-ubuntu-1404: gzip  on;
+I, [2016-02-04T11:32:56.296703 #3990]  INFO -- default-ubuntu-1404:     -  gzip_http_version 1.0;
+I, [2016-02-04T11:32:56.296926 #3990]  INFO -- default-ubuntu-1404:     -  gzip_comp_level 2;
+I, [2016-02-04T11:32:56.297196 #3990]  INFO -- default-ubuntu-1404:     -  gzip_proxied any;
+I, [2016-02-04T11:32:56.297430 #3990]  INFO -- default-ubuntu-1404:     -  gzip_vary off;
+I, [2016-02-04T11:32:56.297459 #3990]  INFO -- default-ubuntu-1404:     -  gzip_types text/plain text/css application/x-javascript text/xml application/xml application/rss+xml application/atom+xml text/javascript application/javascript application/json text/mathml;
+I, [2016-02-04T11:32:56.297475 #3990]  INFO -- default-ubuntu-1404:     -  gzip_min_length  1000;
+I, [2016-02-04T11:32:56.297627 #3990]  INFO -- default-ubuntu-1404: -  gzip_disable     "MSIE [1-6]\.";
+I, [2016-02-04T11:32:56.297851 #3990]  INFO -- default-ubuntu-1404:     +  gzip_vary on;
+I, [2016-02-04T11:32:56.298435 #3990]  INFO -- default-ubuntu-1404:     +  gzip_min_length 500;
+I, [2016-02-04T11:32:56.298692 #3990]  INFO -- default-ubuntu-1404:      
+I, [2016-02-04T11:32:56.299020 #3990]  INFO -- default-ubuntu-1404:     +  gzip_disable "MSIE [1-6]\.(?!.*SV1)";
+I, [2016-02-04T11:32:56.299518 #3990]  INFO -- default-ubuntu-1404:     +  gzip_types text/plain text/xml text/css
+I, [2016-02-04T11:32:56.299564 #3990]  INFO -- default-ubuntu-1404:     +     text/comma-separated-values
+I, [2016-02-04T11:32:56.299593 #3990]  INFO -- default-ubuntu-1404:     +     text/javascript application/x-javascript
+I, [2016-02-04T11:32:56.299609 #3990]  INFO -- default-ubuntu-1404:     +     application/atom+xml image/x-icon;
+I, [2016-02-04T11:32:56.299622 #3990]  INFO -- default-ubuntu-1404:      
+I, [2016-02-04T11:32:56.299635 #3990]  INFO -- default-ubuntu-1404:     -  variables_hash_max_size 1024;
+I, [2016-02-04T11:32:56.299647 #3990]  INFO -- default-ubuntu-1404:     -  variables_hash_bucket_size 64;
+I, [2016-02-04T11:32:56.299659 #3990]  INFO -- default-ubuntu-1404:     -  server_names_hash_bucket_size 64;
+I, [2016-02-04T11:32:56.299671 #3990]  INFO -- default-ubuntu-1404:     -  types_hash_max_size 2048;
+I, [2016-02-04T11:32:56.299683 #3990]  INFO -- default-ubuntu-1404:     -  types_hash_bucket_size 64;
+I, [2016-02-04T11:32:56.299936 #3990]  INFO -- default-ubuntu-1404: 
+I, [2016-02-04T11:32:56.299972 #3990]  INFO -- default-ubuntu-1404:     +  upstream unicorn_server {
+I, [2016-02-04T11:32:56.300123 #3990]  INFO -- default-ubuntu-1404: +    server unix:/var/www/tmp/sockets/unicorn.sock
+I, [2016-02-04T11:32:56.300145 #3990]  INFO -- default-ubuntu-1404:     +        fail_timeout=0;
+I, [2016-02-04T11:32:56.300159 #3990]  INFO -- default-ubuntu-1404:     +  }
+I, [2016-02-04T11:32:56.300172 #3990]  INFO -- default-ubuntu-1404:      
+I, [2016-02-04T11:32:56.300185 #3990]  INFO -- default-ubuntu-1404:     +  # configure the virtual host
+I, [2016-02-04T11:32:56.300197 #3990]  INFO -- default-ubuntu-1404:     +  server {
+I, [2016-02-04T11:32:56.300209 #3990]  INFO -- default-ubuntu-1404:     +    # replace with your domain name
+I, [2016-02-04T11:32:56.300224 #3990]  INFO -- default-ubuntu-1404:     +    server_name my-sinatra-app.com;
+I, [2016-02-04T11:32:56.300268 #3990]  INFO -- default-ubuntu-1404:     +    # replace this with your static Sinatra app files, root + public
+I, [2016-02-04T11:32:56.300526 #3990]  INFO -- default-ubuntu-1404:     +    root /var/www/public;
+I, [2016-02-04T11:32:56.300561 #3990]  INFO -- default-ubuntu-1404:     +    # port to listen for requests on
+I, [2016-02-04T11:32:56.300586 #3990]  INFO -- default-ubuntu-1404:     +    listen 443;
+I, [2016-02-04T11:32:56.300603 #3990]  INFO -- default-ubuntu-1404:     +    # SSL config
+I, [2016-02-04T11:32:56.300617 #3990]  INFO -- default-ubuntu-1404:     +    ssl_certificate /etc/nginx/ssl/ess-dashboard.crt;
+I, [2016-02-04T11:32:56.300630 #3990]  INFO -- default-ubuntu-1404:     +    ssl_certificate_key /etc/nginx/ssl/ess-dashboard.key;
+I, [2016-02-04T11:32:56.300826 #3990]  INFO -- default-ubuntu-1404: +    # maximum accepted body size of client request
+I, [2016-02-04T11:32:56.300860 #3990]  INFO -- default-ubuntu-1404:     +    client_max_body_size 4G;
+I, [2016-02-04T11:32:56.300876 #3990]  INFO -- default-ubuntu-1404:     +    # the server will close connections after this time
+I, [2016-02-04T11:32:56.301053 #3990]  INFO -- default-ubuntu-1404:     +    keepalive_timeout 5;
+I, [2016-02-04T11:32:56.301085 #3990]  INFO -- default-ubuntu-1404:      
+I, [2016-02-04T11:32:56.301100 #3990]  INFO -- default-ubuntu-1404:     +    location / {
+I, [2016-02-04T11:32:56.301264 #3990]  INFO -- default-ubuntu-1404: +      try_files \$uri @app;
+I, [2016-02-04T11:32:56.301425 #3990]  INFO -- default-ubuntu-1404:     +    }
+I, [2016-02-04T11:32:56.301694 #3990]  INFO -- default-ubuntu-1404:      
+I, [2016-02-04T11:32:56.302168 #3990]  INFO -- default-ubuntu-1404: -  include /etc/nginx/conf.d/*.conf;
+I, [2016-02-04T11:32:56.302207 #3990]  INFO -- default-ubuntu-1404:     -  include /etc/nginx/sites-enabled/*;
+I, [2016-02-04T11:32:56.302234 #3990]  INFO -- default-ubuntu-1404:     +    location @app {
+I, [2016-02-04T11:32:56.302259 #3990]  INFO -- default-ubuntu-1404:     +      proxy_set_header X-Forwarded-For \$proxy_add_x_forwarded_for; 
+I, [2016-02-04T11:32:56.302310 #3990]  INFO -- default-ubuntu-1404:     +      proxy_set_header Host \$http_host;
+I, [2016-02-04T11:32:56.302330 #3990]  INFO -- default-ubuntu-1404:     +      proxy_redirect off;
+I, [2016-02-04T11:32:56.302553 #3990]  INFO -- default-ubuntu-1404:     +      # pass to the upstream unicorn server mentioned above
+I, [2016-02-04T11:32:56.302592 #3990]  INFO -- default-ubuntu-1404:     +      proxy_pass http://unicorn_server;
+I, [2016-02-04T11:32:56.303435 #3990]  INFO -- default-ubuntu-1404:     +      proxy_set_header X-Forwarded-Proto \$scheme;
+I, [2016-02-04T11:32:56.303484 #3990]  INFO -- default-ubuntu-1404:     +    }
+I, [2016-02-04T11:32:56.303500 #3990]  INFO -- default-ubuntu-1404:     +  }
+I, [2016-02-04T11:32:56.304190 #3990]  INFO -- default-ubuntu-1404: 
+I, [2016-02-04T11:32:56.308164 #3990]  INFO -- default-ubuntu-1404:   * template[/var/www/unicorn.rb] action create
+I, [2016-02-04T11:32:56.310746 #3990]  INFO -- default-ubuntu-1404:     - create new file /var/www/unicorn.rb
+I, [2016-02-04T11:32:56.311638 #3990]  INFO -- default-ubuntu-1404:     - update content in file /var/www/unicorn.rb from none to 6b0581
+I, [2016-02-04T11:32:56.312425 #3990]  INFO -- default-ubuntu-1404:     --- /var/www/unicorn.rb	2016-02-04 17:32:56.350920732 +0000
+I, [2016-02-04T11:32:56.313191 #3990]  INFO -- default-ubuntu-1404:     +++ /var/www/.unicorn.rb20160204-1477-rx1or3	2016-02-04 17:32:56.350920732 +0000
+I, [2016-02-04T11:32:56.313595 #3990]  INFO -- default-ubuntu-1404:     @@ -1 +1,20 @@
+I, [2016-02-04T11:32:56.313974 #3990]  INFO -- default-ubuntu-1404:     +# set path to app that will be used to configure unicorn,
+I, [2016-02-04T11:32:56.314372 #3990]  INFO -- default-ubuntu-1404:     +# note the trailing slash in this example
+I, [2016-02-04T11:32:56.314804 #3990]  INFO -- default-ubuntu-1404:     +@dir = "/var/www/"
+I, [2016-02-04T11:32:56.315187 #3990]  INFO -- default-ubuntu-1404:     +
+I, [2016-02-04T11:32:56.315607 #3990]  INFO -- default-ubuntu-1404:     +worker_processes 2
+I, [2016-02-04T11:32:56.316056 #3990]  INFO -- default-ubuntu-1404:     +working_directory @dir
+I, [2016-02-04T11:32:56.316432 #3990]  INFO -- default-ubuntu-1404:     +
+I, [2016-02-04T11:32:56.316846 #3990]  INFO -- default-ubuntu-1404:     +timeout 30
+I, [2016-02-04T11:32:56.317153 #3990]  INFO -- default-ubuntu-1404:     +
+I, [2016-02-04T11:32:56.317440 #3990]  INFO -- default-ubuntu-1404:     +# Specify path to socket unicorn listens to,
+I, [2016-02-04T11:32:56.317720 #3990]  INFO -- default-ubuntu-1404:     +# we will use this in our nginx.conf later
+I, [2016-02-04T11:32:56.317983 #3990]  INFO -- default-ubuntu-1404:     +listen "#{@dir}tmp/sockets/unicorn.sock", :backlog => 64
+I, [2016-02-04T11:32:56.318661 #3990]  INFO -- default-ubuntu-1404:     +
+I, [2016-02-04T11:32:56.339314 #3990]  INFO -- default-ubuntu-1404:     +# Set process id path
+I, [2016-02-04T11:32:56.339497 #3990]  INFO -- default-ubuntu-1404:     +pid "#{@dir}tmp/pids/unicorn.pid"
+I, [2016-02-04T11:32:56.339632 #3990]  INFO -- default-ubuntu-1404: 
+I, [2016-02-04T11:32:56.339664 #3990]  INFO -- default-ubuntu-1404:     +# Set log file paths
+I, [2016-02-04T11:32:56.339687 #3990]  INFO -- default-ubuntu-1404:     +stderr_path "#{@dir}log/unicorn.stderr.log"
+I, [2016-02-04T11:32:56.339843 #3990]  INFO -- default-ubuntu-1404: +stdout_path "#{@dir}log/unicorn.stdout.log"
+I, [2016-02-04T11:32:56.340116 #3990]  INFO -- default-ubuntu-1404:     - change mode from '' to '0755'
+I, [2016-02-04T11:32:56.340364 #3990]  INFO -- default-ubuntu-1404:   * cookbook_file[/etc/init.d/unicorn] action create
+I, [2016-02-04T11:32:56.340628 #3990]  INFO -- default-ubuntu-1404:     - create new file /etc/init.d/unicorn
+I, [2016-02-04T11:32:56.340850 #3990]  INFO -- default-ubuntu-1404:     - update content in file /etc/init.d/unicorn from none to 885136
+I, [2016-02-04T11:32:56.341139 #3990]  INFO -- default-ubuntu-1404:     --- /etc/init.d/unicorn	2016-02-04 17:32:56.370920732 +0000
+I, [2016-02-04T11:32:56.341385 #3990]  INFO -- default-ubuntu-1404:     +++ /etc/init.d/.unicorn20160204-1477-7envnd	2016-02-04 17:32:56.370920732 +0000
+I, [2016-02-04T11:32:56.341628 #3990]  INFO -- default-ubuntu-1404:     @@ -1 +1,94 @@
+I, [2016-02-04T11:32:56.341864 #3990]  INFO -- default-ubuntu-1404:     +#!/bin/sh
+I, [2016-02-04T11:32:56.342133 #3990]  INFO -- default-ubuntu-1404:     +### BEGIN INIT INFO
+I, [2016-02-04T11:32:56.342357 #3990]  INFO -- default-ubuntu-1404:     +# Provides:
+I, [2016-02-04T11:32:56.342633 #3990]  INFO -- default-ubuntu-1404:     +# Required-Start:    $remote_fs $syslog
+I, [2016-02-04T11:32:56.342901 #3990]  INFO -- default-ubuntu-1404:     +# Required-Stop:     $remote_fs $syslog
+I, [2016-02-04T11:32:56.343123 #3990]  INFO -- default-ubuntu-1404:     +# Default-Start:     2 3 4 5
+I, [2016-02-04T11:32:56.343236 #3990]  INFO -- default-ubuntu-1404:     +# Default-Stop:      0 1 6
+I, [2016-02-04T11:32:56.343257 #3990]  INFO -- default-ubuntu-1404:     +# Short-Description: Start daemon at boot time
+I, [2016-02-04T11:32:56.343273 #3990]  INFO -- default-ubuntu-1404:     +# Description:       Enable service provided by daemon.
+I, [2016-02-04T11:32:56.343286 #3990]  INFO -- default-ubuntu-1404:     +### END INIT INFO
+I, [2016-02-04T11:32:56.343298 #3990]  INFO -- default-ubuntu-1404:     +
+I, [2016-02-04T11:32:56.343312 #3990]  INFO -- default-ubuntu-1404:     +cmd="unicorn -c "/var/www/unicorn.rb" -E development -D"
+I, [2016-02-04T11:32:56.343324 #3990]  INFO -- default-ubuntu-1404:     +user="root"
+I, [2016-02-04T11:32:56.343336 #3990]  INFO -- default-ubuntu-1404:     +
+I, [2016-02-04T11:32:56.343348 #3990]  INFO -- default-ubuntu-1404:     +name=`basename $0`
+I, [2016-02-04T11:32:56.343538 #3990]  INFO -- default-ubuntu-1404: +pid_file="/var/www/tmp/pids/unicorn.pid"
+I, [2016-02-04T11:32:56.343570 #3990]  INFO -- default-ubuntu-1404:     +
+I, [2016-02-04T11:32:56.343597 #3990]  INFO -- default-ubuntu-1404:     +get_pid() {
+I, [2016-02-04T11:32:56.343621 #3990]  INFO -- default-ubuntu-1404:     +    cat "$pid_file"
+I, [2016-02-04T11:32:56.343662 #3990]  INFO -- default-ubuntu-1404:     +}
+I, [2016-02-04T11:32:56.343678 #3990]  INFO -- default-ubuntu-1404:     +
+I, [2016-02-04T11:32:56.343690 #3990]  INFO -- default-ubuntu-1404:     +is_running() {
+I, [2016-02-04T11:32:56.343703 #3990]  INFO -- default-ubuntu-1404:     +    [ -f "$pid_file" ] && ps `get_pid` > /dev/null 2>&1
+I, [2016-02-04T11:32:56.343715 #3990]  INFO -- default-ubuntu-1404:     +}
+I, [2016-02-04T11:32:56.343967 #3990]  INFO -- default-ubuntu-1404: 
+I, [2016-02-04T11:32:56.344001 #3990]  INFO -- default-ubuntu-1404:     +case "$1" in
+I, [2016-02-04T11:32:56.344024 #3990]  INFO -- default-ubuntu-1404:     +    start)
+I, [2016-02-04T11:32:56.344037 #3990]  INFO -- default-ubuntu-1404:     +    if is_running; then
+I, [2016-02-04T11:32:56.344050 #3990]  INFO -- default-ubuntu-1404:     +        echo "Already started"
+I, [2016-02-04T11:32:56.344062 #3990]  INFO -- default-ubuntu-1404:     +    else
+I, [2016-02-04T11:32:56.344075 #3990]  INFO -- default-ubuntu-1404:     +        echo "Starting $name"
+I, [2016-02-04T11:32:56.344096 #3990]  INFO -- default-ubuntu-1404:     +        if [ -z "$user" ]; then
+I, [2016-02-04T11:32:56.344121 #3990]  INFO -- default-ubuntu-1404:     +            sudo $cmd 
+I, [2016-02-04T11:32:56.344143 #3990]  INFO -- default-ubuntu-1404:     +        else
+I, [2016-02-04T11:32:56.344161 #3990]  INFO -- default-ubuntu-1404:     +            sudo -u "$user" $cmd
+I, [2016-02-04T11:32:56.344444 #3990]  INFO -- default-ubuntu-1404: 
+I, [2016-02-04T11:32:56.344481 #3990]  INFO -- default-ubuntu-1404:     +        if ! is_running; then
+I, [2016-02-04T11:32:56.344497 #3990]  INFO -- default-ubuntu-1404:     +            echo "Unable to start, see logs"
+I, [2016-02-04T11:32:56.344511 #3990]  INFO -- default-ubuntu-1404:     +            exit 1
+I, [2016-02-04T11:32:56.344672 #3990]  INFO -- default-ubuntu-1404:     +        fi
+I, [2016-02-04T11:32:56.344700 #3990]  INFO -- default-ubuntu-1404:     +    fi
+I, [2016-02-04T11:32:56.344724 #3990]  INFO -- default-ubuntu-1404:     +    ;;
+I, [2016-02-04T11:32:56.344746 #3990]  INFO -- default-ubuntu-1404:     +    stop)
+I, [2016-02-04T11:32:56.344770 #3990]  INFO -- default-ubuntu-1404:     +    if is_running; then
+I, [2016-02-04T11:32:56.344801 #3990]  INFO -- default-ubuntu-1404:     +        echo -n "Stopping $name.."
+I, [2016-02-04T11:32:56.344831 #3990]  INFO -- default-ubuntu-1404:     +        kill `get_pid`
+I, [2016-02-04T11:32:56.344855 #3990]  INFO -- default-ubuntu-1404:     +        for i in {1..10}
+I, [2016-02-04T11:32:56.344881 #3990]  INFO -- default-ubuntu-1404:     +        do
+I, [2016-02-04T11:32:56.344910 #3990]  INFO -- default-ubuntu-1404:     +            if ! is_running; then
+I, [2016-02-04T11:32:56.344939 #3990]  INFO -- default-ubuntu-1404:     +                break
+I, [2016-02-04T11:32:56.345299 #3990]  INFO -- default-ubuntu-1404: +            fi
+I, [2016-02-04T11:32:56.345464 #3990]  INFO -- default-ubuntu-1404: +
+I, [2016-02-04T11:32:56.345501 #3990]  INFO -- default-ubuntu-1404:     +            echo -n "."
+I, [2016-02-04T11:32:56.345620 #3990]  INFO -- default-ubuntu-1404: 
+I, [2016-02-04T11:32:56.345778 #3990]  INFO -- default-ubuntu-1404: +        done
+I, [2016-02-04T11:32:56.345903 #3990]  INFO -- default-ubuntu-1404:     +        echo
+I, [2016-02-04T11:32:56.346027 #3990]  INFO -- default-ubuntu-1404:     +
+I, [2016-02-04T11:32:56.346069 #3990]  INFO -- default-ubuntu-1404:     +        if is_running; then
+I, [2016-02-04T11:32:56.346112 #3990]  INFO -- default-ubuntu-1404:     +            echo "Not stopped; may still be shutting down or shutdown may have failed"
+I, [2016-02-04T11:32:56.346178 #3990]  INFO -- default-ubuntu-1404:     +            exit 1
+I, [2016-02-04T11:32:56.346211 #3990]  INFO -- default-ubuntu-1404:     +        else
+I, [2016-02-04T11:32:56.346236 #3990]  INFO -- default-ubuntu-1404:     +            echo "Stopped"
+I, [2016-02-04T11:32:56.346254 #3990]  INFO -- default-ubuntu-1404:     +            if [ -f "$pid_file" ]; then
+I, [2016-02-04T11:32:56.346267 #3990]  INFO -- default-ubuntu-1404:     +                rm "$pid_file"
+I, [2016-02-04T11:32:56.346310 #3990]  INFO -- default-ubuntu-1404:     +            fi
+I, [2016-02-04T11:32:56.346872 #3990]  INFO -- default-ubuntu-1404:     +        fi
+I, [2016-02-04T11:32:56.346948 #3990]  INFO -- default-ubuntu-1404:     +    else
+I, [2016-02-04T11:32:56.346976 #3990]  INFO -- default-ubuntu-1404:     +        echo "Not running"
+I, [2016-02-04T11:32:56.346991 #3990]  INFO -- default-ubuntu-1404:     +    fi
+I, [2016-02-04T11:32:56.347027 #3990]  INFO -- default-ubuntu-1404:     +    ;;
+I, [2016-02-04T11:32:56.347056 #3990]  INFO -- default-ubuntu-1404:     +    restart)
+I, [2016-02-04T11:32:56.347080 #3990]  INFO -- default-ubuntu-1404:     +    $0 stop
+I, [2016-02-04T11:32:56.347365 #3990]  INFO -- default-ubuntu-1404:     +    if is_running; then
+I, [2016-02-04T11:32:56.347540 #3990]  INFO -- default-ubuntu-1404:     +        echo "Unable to stop, will not attempt to start"
+I, [2016-02-04T11:32:56.347587 #3990]  INFO -- default-ubuntu-1404:     +        exit 1
+I, [2016-02-04T11:32:56.347614 #3990]  INFO -- default-ubuntu-1404:     +    fi
+I, [2016-02-04T11:32:56.347836 #3990]  INFO -- default-ubuntu-1404: 
+I, [2016-02-04T11:32:56.347869 #3990]  INFO -- default-ubuntu-1404:     +    ;;
+I, [2016-02-04T11:32:56.347894 #3990]  INFO -- default-ubuntu-1404:     +    status)
+I, [2016-02-04T11:32:56.347925 #3990]  INFO -- default-ubuntu-1404:     +    if is_running; then
+I, [2016-02-04T11:32:56.347951 #3990]  INFO -- default-ubuntu-1404:     +        echo "Running"
+I, [2016-02-04T11:32:56.347974 #3990]  INFO -- default-ubuntu-1404:     +    else
+I, [2016-02-04T11:32:56.347997 #3990]  INFO -- default-ubuntu-1404:     +        echo "Stopped"
+I, [2016-02-04T11:32:56.348020 #3990]  INFO -- default-ubuntu-1404:     +        exit 1
+I, [2016-02-04T11:32:56.348062 #3990]  INFO -- default-ubuntu-1404:     +    fi
+I, [2016-02-04T11:32:56.348083 #3990]  INFO -- default-ubuntu-1404:     +    ;;
+I, [2016-02-04T11:32:56.348097 #3990]  INFO -- default-ubuntu-1404:     +    *)
+I, [2016-02-04T11:32:56.348110 #3990]  INFO -- default-ubuntu-1404:     +    echo "Usage: $0 {start|stop|restart|status}"
+I, [2016-02-04T11:32:56.348124 #3990]  INFO -- default-ubuntu-1404:     +    exit 1
+I, [2016-02-04T11:32:56.348420 #3990]  INFO -- default-ubuntu-1404:     +    ;;
+I, [2016-02-04T11:32:56.348444 #3990]  INFO -- default-ubuntu-1404:     +esac
+I, [2016-02-04T11:32:56.348458 #3990]  INFO -- default-ubuntu-1404:     +
+I, [2016-02-04T11:32:56.348596 #3990]  INFO -- default-ubuntu-1404: 
+I, [2016-02-04T11:32:56.348797 #3990]  INFO -- default-ubuntu-1404:     - change mode from '' to '0755'
+I, [2016-02-04T11:32:56.349032 #3990]  INFO -- default-ubuntu-1404:     - change owner from '' to 'root'
+I, [2016-02-04T11:32:56.349324 #3990]  INFO -- default-ubuntu-1404:     - change group from '' to 'root'
+I, [2016-02-04T11:32:56.349597 #3990]  INFO -- default-ubuntu-1404:   * cookbook_file[/var/www/index.rb] action create
+I, [2016-02-04T11:32:56.349840 #3990]  INFO -- default-ubuntu-1404:     - create new file /var/www/index.rb
+I, [2016-02-04T11:32:56.350099 #3990]  INFO -- default-ubuntu-1404:     - update content in file /var/www/index.rb from none to 5431ae
+I, [2016-02-04T11:32:56.350438 #3990]  INFO -- default-ubuntu-1404:     --- /var/www/index.rb	2016-02-04 17:32:56.390920732 +0000
+I, [2016-02-04T11:32:56.351038 #3990]  INFO -- default-ubuntu-1404:     +++ /var/www/.index.rb20160204-1477-bjlprg	2016-02-04 17:32:56.390920732 +0000
+I, [2016-02-04T11:32:56.351530 #3990]  INFO -- default-ubuntu-1404:     @@ -1 +1,11 @@
+I, [2016-02-04T11:32:56.352085 #3990]  INFO -- default-ubuntu-1404:     +require "rubygems"
+I, [2016-02-04T11:32:56.352593 #3990]  INFO -- default-ubuntu-1404:     +require "sinatra/base"
+I, [2016-02-04T11:32:56.353179 #3990]  INFO -- default-ubuntu-1404:     +
+I, [2016-02-04T11:32:56.354021 #3990]  INFO -- default-ubuntu-1404:     +class SinatraApp < Sinatra::Base
+I, [2016-02-04T11:32:56.354566 #3990]  INFO -- default-ubuntu-1404:     +
+I, [2016-02-04T11:32:56.355047 #3990]  INFO -- default-ubuntu-1404:     +  get '/' do
+I, [2016-02-04T11:32:56.355540 #3990]  INFO -- default-ubuntu-1404:     +    'Hello, nginx and unicorn!'
+I, [2016-02-04T11:32:56.355984 #3990]  INFO -- default-ubuntu-1404:     +  end
+I, [2016-02-04T11:32:56.356452 #3990]  INFO -- default-ubuntu-1404:     +
+I, [2016-02-04T11:32:56.358107 #3990]  INFO -- default-ubuntu-1404:     +end
+I, [2016-02-04T11:32:56.358383 #3990]  INFO -- default-ubuntu-1404:     - change mode from '' to '0755'
+I, [2016-02-04T11:32:56.358804 #3990]  INFO -- default-ubuntu-1404:     - change owner from '' to 'root'
+I, [2016-02-04T11:32:56.360111 #3990]  INFO -- default-ubuntu-1404:     - change group from '' to 'root'
+I, [2016-02-04T11:32:56.362348 #3990]  INFO -- default-ubuntu-1404:   * cookbook_file[/var/www/config.ru] action create
+I, [2016-02-04T11:32:56.363517 #3990]  INFO -- default-ubuntu-1404:     - create new file /var/www/config.ru
+I, [2016-02-04T11:32:56.363985 #3990]  INFO -- default-ubuntu-1404:     - update content in file /var/www/config.ru from none to 43c50f
+I, [2016-02-04T11:32:56.364755 #3990]  INFO -- default-ubuntu-1404:     --- /var/www/config.ru	2016-02-04 17:32:56.406920732 +0000
+I, [2016-02-04T11:32:56.365265 #3990]  INFO -- default-ubuntu-1404:     +++ /var/www/.config.ru20160204-1477-xggqgb	2016-02-04 17:32:56.406920732 +0000
+I, [2016-02-04T11:32:56.365858 #3990]  INFO -- default-ubuntu-1404:     @@ -1 +1,7 @@
+I, [2016-02-04T11:32:56.366336 #3990]  INFO -- default-ubuntu-1404:     +require "rubygems"
+I, [2016-02-04T11:32:56.366649 #3990]  INFO -- default-ubuntu-1404:     +require "sinatra"
+I, [2016-02-04T11:32:56.367176 #3990]  INFO -- default-ubuntu-1404:     +
+I, [2016-02-04T11:32:56.367695 #3990]  INFO -- default-ubuntu-1404:     +require File.expand_path '../index.rb', __FILE__
+I, [2016-02-04T11:32:56.368203 #3990]  INFO -- default-ubuntu-1404:     +
+I, [2016-02-04T11:32:56.370530 #3990]  INFO -- default-ubuntu-1404:     +run SinatraApp
+I, [2016-02-04T11:32:56.371261 #3990]  INFO -- default-ubuntu-1404:     - change mode from '' to '0644'
+I, [2016-02-04T11:32:56.371687 #3990]  INFO -- default-ubuntu-1404:     - change owner from '' to 'root'
+I, [2016-02-04T11:32:56.389368 #3990]  INFO -- default-ubuntu-1404:     - change group from '' to 'root'
+I, [2016-02-04T11:32:57.836519 #3990]  INFO -- default-ubuntu-1404:   * service[unicorn] action restart
+I, [2016-02-04T11:32:57.836573 #3990]  INFO -- default-ubuntu-1404:     - restart service service[unicorn]
+I, [2016-02-04T11:32:58.029149 #3990]  INFO -- default-ubuntu-1404: 
+I, [2016-02-04T11:32:58.029207 #3990]  INFO -- default-ubuntu-1404:     - restart service service[nginx]
+I, [2016-02-04T11:32:58.186948 #3990]  INFO -- default-ubuntu-1404: 
+I, [2016-02-04T11:32:58.187012 #3990]  INFO -- default-ubuntu-1404:     - reload service service[nginx]
+I, [2016-02-04T11:32:58.189069 #3990]  INFO -- default-ubuntu-1404: 
+I, [2016-02-04T11:32:58.189413 #3990]  INFO -- default-ubuntu-1404: Running handlers:
+I, [2016-02-04T11:32:58.190192 #3990]  INFO -- default-ubuntu-1404: Running handlers complete
+I, [2016-02-04T11:32:58.194368 #3990]  INFO -- default-ubuntu-1404: Chef Client finished, 42/60 resources updated in 04 minutes 07 seconds
+I, [2016-02-04T11:32:59.219151 #3990]  INFO -- default-ubuntu-1404: Finished converging <default-ubuntu-1404> (4m26.31s).
+I, [2016-02-04T11:32:59.219297 #3990]  INFO -- default-ubuntu-1404: -----> Setting up <default-ubuntu-1404>...
+I, [2016-02-04T11:32:59.221873 #3990]  INFO -- default-ubuntu-1404: Finished setting up <default-ubuntu-1404> (0m0.00s).
+I, [2016-02-04T11:32:59.221988 #3990]  INFO -- default-ubuntu-1404: -----> Verifying <default-ubuntu-1404>...
+I, [2016-02-04T11:32:59.223613 #3990]  INFO -- default-ubuntu-1404: Preparing files for transfer
+I, [2016-02-04T11:32:59.223959 #3990]  INFO -- default-ubuntu-1404: Transferring files to <default-ubuntu-1404>
+I, [2016-02-04T11:32:59.224635 #3990]  INFO -- default-ubuntu-1404: Finished verifying <default-ubuntu-1404> (0m0.00s).
+I, [2016-02-04T11:32:59.226245 #3990]  INFO -- default-ubuntu-1404: -----> Destroying <default-ubuntu-1404>...
+I, [2016-02-04T11:33:03.581984 #3990]  INFO -- default-ubuntu-1404: ==> default: Forcing shutdown of VM...
+I, [2016-02-04T11:33:04.754827 #3990]  INFO -- default-ubuntu-1404: ==> default: Destroying VM and associated drives...
+I, [2016-02-04T11:33:05.113602 #3990]  INFO -- default-ubuntu-1404: Vagrant instance <default-ubuntu-1404> destroyed.
+I, [2016-02-04T11:33:05.114368 #3990]  INFO -- default-ubuntu-1404: Finished destroying <default-ubuntu-1404> (0m5.89s).
+I, [2016-02-04T11:33:05.115653 #3990]  INFO -- default-ubuntu-1404: Finished testing <default-ubuntu-1404> (5m6.17s).
