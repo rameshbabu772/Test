@@ -1,4 +1,4 @@
-ource 'https://rubygems.org'
+source 'https://rubygems.org'
 
 gem 'berkshelf'
 
@@ -18,6 +18,7 @@ gem 'rubocop'
 gem 'foodcritic'
 
 gem 'chefspec'
+gem 'chef/sugar'
 gem 'fauxhai'
 
 gem 'pry'
